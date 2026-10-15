@@ -12,3 +12,4 @@ why, and who decided it.
 | 2026-10-14 | Added 31st role: Diagram Designer (Product & UX) | diagram-design-inspired (MIT, credited): 44 editorial diagram families as self-contained HTML+SVG; reason-first, truth-checked arrows, fresh-eyes review loop. | owner |
 | 2026-10-14 | Added 32nd role: Harness Engineer (Architecture & Code) | DeepSeek-Harness-inspired (MIT, credited): owns agent runtimes — plan→tools→loop, everything-is-a-plugin; seats as runtime-agnostic plugins. | owner |
 | 2026-10-14 | Added 33rd role: Art Director (Product & UX) | taste-skill-inspired (MIT, credited): art direction first, real references, browser-checked output, slop test; owns the office's visual taste standard. | owner |
+| 2026-10-14 | Added 34th role: Mission Control (Quality & Ops) | AgentCraft-inspired (MIT, credited): live operations picture, walk-over owner questions, review-and-merge gate, persistent state. | owner |

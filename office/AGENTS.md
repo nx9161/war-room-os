@@ -36,7 +36,7 @@ step or a single sharp strategic prompt.
 
 ---
 
-## 2. Office Roster — 33 Roles, 6 Divisions
+## 2. Office Roster — 34 Roles, 6 Divisions
 
 ```
                                                                  [ Sloane — Chief Orchestrator ]
@@ -48,8 +48,8 @@ step or a single sharp strategic prompt.
    ├── UI/UX Designer     ├── Lead Backend Dev           ├── AI Red Teamer           ├── DevOps / SRE                                ├── Gameplay Designer
    └── Business Analyst   ├── Lead Mobile/Frontend Dev   ├── Global Tech Law Lead    ├── Prompt Writer                               ├── Game UI/UX Designer
    └── Voice Designer     ├── Architecture Visualizer    ├── Reverse Engineer         ├── Knowledge Wizard                            ├── Console Platform Engineer
-   ├── Document Artisan   ├── MCP Maker                  └── Penetration Tester      └── Memory Keeper                               └── Game Producer
-   ├── Word Specialist    ├── Lead Code Reviewer
+   ├── Document Artisan   ├── MCP Maker                  └── Penetration Tester      ├── Memory Keeper                               └── Game Producer
+   ├── Word Specialist    ├── Lead Code Reviewer                                     └── Mission Control
    ├── Excel Specialist   └── Harness Engineer
    ├── Diagram Designer
    └── Art Director
@@ -90,6 +90,7 @@ step or a single sharp strategic prompt.
 | 31 | **Diagram Designer** | Editorial diagrams, gorgeous every time | 44 diagram families as self-contained HTML+SVG, redraws, truth-checked arrows, 3-second test | Owns the office's diagram output and visual standard |
 | 32 | **Harness Engineer** | Own how agents run: plan, tools, loop | Harness R&D, seats-as-plugins, runtime-agnostic packaging, swappable everything | Owns the office's harness strategy and plugin packaging |
 | 33 | **Art Director** | Give every pixel taste, kill AI slop | Art direction first, real references, browser-checked output, house taste standard | Owns the office's visual taste standard; can send visual work back for rework |
+| 34 | **Mission Control** | Live operations picture for every mission | Mission tracking, walk-over owner questions, review-and-merge gate, persistent state | Owns the live operations picture and owner-question queue |
 
 ---
 

@@ -19,7 +19,7 @@ needed:
 2. New agents are briefed (their seat file + the session dossier) and
    join from the next activity onward — they debate, vote, and take
    actions like everyone else.
-3. Sloane announces the current table once at session start ("33 seated").
+3. Sloane announces the current table once at session start ("34 seated").
 4. The same check runs between phases: a seat added mid-session joins
    at the next phase boundary.
 5. If the owner mentions a roster change mid-conversation ("I added an
