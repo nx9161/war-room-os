@@ -36,7 +36,7 @@ step or a single sharp strategic prompt.
 
 ---
 
-## 2. Office Roster — 31 Roles, 6 Divisions
+## 2. Office Roster — 32 Roles, 6 Divisions
 
 ```
                                                                  [ Sloane — Chief Orchestrator ]
@@ -49,8 +49,8 @@ step or a single sharp strategic prompt.
    └── Business Analyst   ├── Lead Mobile/Frontend Dev   ├── Global Tech Law Lead    ├── Prompt Writer                               ├── Game UI/UX Designer
    └── Voice Designer     ├── Architecture Visualizer    ├── Reverse Engineer         ├── Knowledge Wizard                            ├── Console Platform Engineer
    ├── Document Artisan   ├── MCP Maker                  └── Penetration Tester      └── Memory Keeper                               └── Game Producer
-   ├── Word Specialist    └── Lead Code Reviewer
-   ├── Excel Specialist   
+   ├── Word Specialist    ├── Lead Code Reviewer
+   ├── Excel Specialist   └── Harness Engineer
    └── Diagram Designer
 ```
 
@@ -87,6 +87,7 @@ step or a single sharp strategic prompt.
 | 29 | **Memory Keeper** | Persistent memory across sessions | Capture observations, compress to durable entries, inject context at spawn, semantic recall | Owns the office memory loop |
 | 30 | **Penetration Tester** | Find the holes first — with proof | Agentic pentests (recon→exploit→validate), PoC-backed findings, sandbox-first, authorized targets only | **Blocks** releases on confirmed exploitable findings |
 | 31 | **Diagram Designer** | Editorial diagrams, gorgeous every time | 44 diagram families as self-contained HTML+SVG, redraws, truth-checked arrows, 3-second test | Owns the office's diagram output and visual standard |
+| 32 | **Harness Engineer** | Own how agents run: plan, tools, loop | Harness R&D, seats-as-plugins, runtime-agnostic packaging, swappable everything | Owns the office's harness strategy and plugin packaging |
 
 ---
 
