@@ -15,3 +15,4 @@ why, and who decided it.
 | 2026-10-14 | Added 34th role: Mission Control (Quality & Ops) | AgentCraft-inspired (MIT, credited): live operations picture, walk-over owner questions, review-and-merge gate, persistent state. | owner |
 | 2026-10-14 | Added 35th role: Launch Strategist (Product & UX) | PlacesToPostYourStartup-inspired (CC0, credited): curated channel picks, sequenced multi-week campaigns, per-channel messaging, launch tracking. | owner |
 | 2026-10-14 | Added 36th role: Sales Agent (Product & UX) | Harvey-inspired (MIT, credited): prospect research, personalized cold email, human-approval outbox, reply handling. | owner |
+| 2026-10-14 | Added 37th role: Scriptwriter (Product & UX) | Synthesized from the best available methods: writes video scripts, retention-checks them, directs on-camera delivery (tonality/rhythm/gesture/emotion). | owner |

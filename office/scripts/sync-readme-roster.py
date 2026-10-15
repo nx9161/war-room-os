@@ -20,7 +20,7 @@ DIVISIONS = {
                      'voice-designer', 'document-artisan', 'word-specialist',
                      'excel-specialist', 'diagram-designer',
                      'art-director', 'launch-strategist',
-                     'sales-agent'],
+                     'sales-agent', 'scriptwriter'],
     'Architecture & Code': ['enterprise-architect', 'lead-backend-dev',
                             'lead-frontend-dev', 'architecture-visualizer',
                             'mcp-maker', 'lead-code-reviewer',

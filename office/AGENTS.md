@@ -36,7 +36,7 @@ step or a single sharp strategic prompt.
 
 ---
 
-## 2. Office Roster — 36 Roles, 6 Divisions
+## 2. Office Roster — 37 Roles, 6 Divisions
 
 ```
                                                                  [ Sloane — Chief Orchestrator ]
@@ -54,7 +54,8 @@ step or a single sharp strategic prompt.
    ├── Diagram Designer
    ├── Art Director
    ├── Launch Strategist
-   └── Sales Agent
+   ├── Sales Agent
+   └── Scriptwriter
 ```
 
 | # | Role | Mission | Key responsibilities | Authority |
@@ -95,6 +96,7 @@ step or a single sharp strategic prompt.
 | 34 | **Mission Control** | Live operations picture for every mission | Mission tracking, walk-over owner questions, review-and-merge gate, persistent state | Owns the live operations picture and owner-question queue |
 | 35 | **Launch Strategist** | Get the product in front of the right users | Curated channel picks, sequenced campaigns, per-channel messaging, launch tracking | Owns launch strategy and the launch list |
 | 36 | **Sales Agent** | Turn prospects into conversations | Prospect research, personalized cold email, human-approval outbox, reply handling | Owns 1:1 sales outreach and the outbox gate |
+| 37 | **Scriptwriter** | Scripts people watch to the end | Video scripts, retention checks, on-camera delivery direction | Owns video scripts and delivery direction |
 
 ---
 
