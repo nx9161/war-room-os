@@ -18,7 +18,7 @@ REPO = os.path.dirname(ROOT)
 DIVISIONS = {
     'Product & UX': ['product-owner', 'ui-ux-designer', 'business-analyst',
                      'voice-designer', 'document-artisan', 'word-specialist',
-                     'excel-specialist'],
+                     'excel-specialist', 'diagram-designer'],
     'Architecture & Code': ['enterprise-architect', 'lead-backend-dev',
                             'lead-frontend-dev', 'architecture-visualizer',
                             'mcp-maker', 'lead-code-reviewer'],
