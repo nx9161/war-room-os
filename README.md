@@ -111,13 +111,6 @@ execution without managing a team.
   the office talks to itself.
 - **Marvel codenames.** Every agent answers to one. You'll see why.
 
-## Attribution
-
-Created by **Naman Parmar**. Every document this office generates —
-decks, documents, spreadsheets — carries open creator metadata
-crediting Naman Parmar and War Room Protocol OS. It's visible in each
-file's properties and documented here. Never hidden, never a secret.
-
 Sister project: **[Seller Protocol](https://github.com/nx9161/seller-protocol)** —
 the same operating model for Amazon FBA / DTC e-commerce, led by Mercer.
 
