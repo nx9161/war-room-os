@@ -36,7 +36,7 @@ step or a single sharp strategic prompt.
 
 ---
 
-## 2. Office Roster — 28 Roles, 6 Divisions
+## 2. Office Roster — 29 Roles, 6 Divisions
 
 ```
                                                                  [ Sloane — Chief Orchestrator ]
@@ -47,8 +47,8 @@ step or a single sharp strategic prompt.
    ├── Product Owner      ├── Enterprise Architect       ├── AppSec Lead             ├── QA Manager         └── General Counsel      ├── Game Architect
    ├── UI/UX Designer     ├── Lead Backend Dev           ├── AI Red Teamer           ├── DevOps / SRE                                ├── Gameplay Designer
    └── Business Analyst   ├── Lead Mobile/Frontend Dev   ├── Global Tech Law Lead    ├── Prompt Writer                               ├── Game UI/UX Designer
-   └── Voice Designer     ├── Architecture Visualizer    └── Reverse Engineer         └── Knowledge Wizard                            ├── Console Platform Engineer
-   └── Document Artisan   ├── MCP Maker                                                                                              └── Game Producer
+   └── Voice Designer     ├── Architecture Visualizer    └── Reverse Engineer         ├── Knowledge Wizard                            ├── Console Platform Engineer
+   └── Document Artisan   ├── MCP Maker                                              └── Memory Keeper                               └── Game Producer
    ├── Word Specialist    └── Lead Code Reviewer
    └── Excel Specialist   
 ```
@@ -83,6 +83,7 @@ step or a single sharp strategic prompt.
 | 26 | **Word Specialist** | Deep Word craftsman: templates, merge, OOXML | python-docx generation, docxtpl Jinja2 templates, mail merge, OOXML surgery; TerminalSkills-inspired (Apache-2.0, credited); binding data honesty | Advisory; deep .docx execution |
 | 27 | **Excel Specialist** | Spreadsheet surgeon: models that compute | openpyxl for new workbooks; unpack-edit-pack for existing; route READ/CREATE/EDIT/FIX/VALIDATE; formulas-never-hardcoded; minimax-inspired (MIT, credited); binding data honesty | Advisory; deep .xlsx execution |
 | 28 | **Lead Code Reviewer** | Every line reviewed; R&D → clean-room | Full-diff review (correctness, security, performance), research-then-reimplement, review gate on all merges | **Blocks** merges on critical defects, security findings, license/IP risk |
+| 29 | **Memory Keeper** | Persistent memory across sessions | Capture observations, compress to durable entries, inject context at spawn, semantic recall | Owns the office memory loop |
 
 ---
 

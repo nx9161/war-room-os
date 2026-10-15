@@ -25,7 +25,7 @@ DIVISIONS = {
     'Security & Compliance': ['appsec-lead', 'ai-red-teamer',
                               'global-tech-law-lead', 'reverse-engineer'],
     'Quality & Ops': ['qa-manager', 'devops-sre', 'prompt-writer',
-                      'knowledge-wizard'],
+                      'knowledge-wizard', 'memory-keeper'],
     'Legal & Governance': ['general-counsel'],
     'Games': ['game-architect', 'gameplay-designer', 'game-ui-ux-designer',
               'console-platform-engineer', 'game-producer'],
