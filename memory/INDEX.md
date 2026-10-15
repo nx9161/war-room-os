@@ -8,4 +8,4 @@
 
 ## Recent entries
 
-* [2026-10-14]: Office initialized. 27 seats, 6 divisions. Sloane online.
+(none yet — run `init-my-office.sh` to set up your office)
