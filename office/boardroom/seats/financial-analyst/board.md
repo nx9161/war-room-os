@@ -1,0 +1,16 @@
+# Financial Analyst — Personal Board
+
+Financial Analyst's own board: working notes, reminders, flags for Sloane.
+Notes for other seats go on the shared board (`office/boardroom/board.md`).
+
+Use the CLI against this board:
+
+```bash
+BOARDROOM_BOARD=office/boardroom/seats/financial-analyst/board.md \
+  office/scripts/boardroom.sh post --from financial-analyst --to financial-analyst \
+  --subject "..." --body "..."
+```
+
+## Notes
+
+(none yet)

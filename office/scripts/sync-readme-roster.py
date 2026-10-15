@@ -21,7 +21,8 @@ DIVISIONS = {
                      'excel-specialist', 'diagram-designer',
                      'art-director', 'launch-strategist',
                      'sales-agent', 'scriptwriter',
-                     'product-visualizer'],
+                     'product-visualizer',
+                     'seo-specialist', 'social-media-strategist'],
     'Architecture & Code': ['enterprise-architect', 'lead-backend-dev',
                             'lead-frontend-dev', 'architecture-visualizer',
                             'mcp-maker', 'lead-code-reviewer',
@@ -36,6 +37,7 @@ DIVISIONS = {
     'Legal & Governance': ['general-counsel'],
     'Games': ['game-architect', 'gameplay-designer', 'game-ui-ux-designer',
               'console-platform-engineer', 'game-producer'],
+    'Finance': ['financial-analyst', 'tax-strategist'],
 }
 
 

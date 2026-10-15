@@ -18,3 +18,7 @@ why, and who decided it.
 | 2026-10-14 | Added 37th role: Scriptwriter (Product & UX) | Synthesized from the best available methods: writes video scripts, retention-checks them, directs on-camera delivery (tonality/rhythm/gesture/emotion). | owner |
 | 2026-10-14 | Added 38th role: Product Visualizer (Product & UX) | Reel-inspired (no repo met the popular+safe+verified bar): universal /blueprint /xray /explodedview /cutaway prompt packs for any image model, output checks, usage instructions, video scripts on request. | owner |
 | 2026-10-14 | Added 39th role: Casting Director (Quality & Ops) | agency-agents-inspired (MIT, credited): on-demand specialist persona forging, universal model-agnostic format, casting checks, usage briefs. | owner |
+| 2026-10-15 | Added 40th role: Financial Analyst (Finance, new 7th division) | agency-agents-inspired (MIT, credited): financial modeling, forecasting, pricing. | owner |
+| 2026-10-15 | Added 41st role: Tax Strategist (Finance) | agency-agents-inspired (MIT, credited): tax planning, F-1/ITIN track, CPA handoff packs. | owner |
+| 2026-10-15 | Added 42nd role: SEO Specialist (Product & UX) | agency-agents-inspired (MIT, credited): technical SEO, white-hat only. | owner |
+| 2026-10-15 | Added 43rd role: Social Media Strategist (Product & UX) | agency-agents-inspired (MIT, credited): platform-native content, community building. | owner |

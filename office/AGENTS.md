@@ -36,28 +36,29 @@ step or a single sharp strategic prompt.
 
 ---
 
-## 2. Office Roster — 39 Roles, 6 Divisions
+## 2. Office Roster — 43 Roles, 7 Divisions
 
 ```
                                                                  [ Sloane — Chief Orchestrator ]
                                                                                 │
-   ┌──────────────────────┬──────────────────────────────┬───────────────────────────┬──────────────────────┬────────────────────────┬───────────────────────────────┐
-   ▼                     ▼                             ▼                          ▼                     ▼                       ▼
-   [ Product & UX ]       [ Architecture & Code ]        [ Security & Compliance ]   [ Quality & Ops ]      [ Legal & Governance ]   [ Games ]
-   ├── Product Owner      ├── Enterprise Architect       ├── AppSec Lead             ├── QA Manager         └── General Counsel      ├── Game Architect
-   ├── UI/UX Designer     ├── Lead Backend Dev           ├── AI Red Teamer           ├── DevOps / SRE                                ├── Gameplay Designer
-   └── Business Analyst   ├── Lead Mobile/Frontend Dev   ├── Global Tech Law Lead    ├── Prompt Writer                               ├── Game UI/UX Designer
-   └── Voice Designer     ├── Architecture Visualizer    ├── Reverse Engineer         ├── Knowledge Wizard                            ├── Console Platform Engineer
-   ├── Document Artisan   ├── MCP Maker                  └── Penetration Tester      ├── Memory Keeper                               └── Game Producer
-   ├── Word Specialist    ├── Lead Code Reviewer                                     ├── Mission Control
-                                                                                     └── Casting Director
-   ├── Excel Specialist   └── Harness Engineer
+   ┌─────────────────────────────┬──────────────────────────────┬───────────────────────────┬──────────────────────┬────────────────────────┬───────────────────────────────┬───────────────────────┐
+   ▼                            ▼                             ▼                          ▼                     ▼                       ▼                              ▼
+   [ Product & UX ]             [ Architecture & Code ]       [ Security & Compliance ]  [ Quality & Ops ]     [ Legal & Governance ]  [ Games ]                      [ Finance ]
+   ├── Product Owner            ├── Enterprise Architect      ├── AppSec Lead            ├── QA Manager        └── General Counsel     ├── Game Architect             ├── Financial Analyst
+   ├── UI/UX Designer           ├── Lead Backend Dev          ├── AI Red Teamer          ├── DevOps / SRE                              ├── Gameplay Designer          └── Tax Strategist
+   ├── Business Analyst         ├── Lead Mobile/Frontend Dev  ├── Global Tech Law Lead   ├── Prompt Writer                             ├── Game UI/UX Designer
+   ├── Voice Designer           ├── Architecture Visualizer   ├── Reverse Engineer       ├── Knowledge Wizard                          ├── Console Platform Engineer
+   ├── Document Artisan         ├── MCP Maker                 └── Penetration Tester     ├── Memory Keeper                             └── Game Producer
+   ├── Word Specialist          ├── Lead Code Reviewer                                   ├── Mission Control
+   ├── Excel Specialist         └── Harness Engineer                                     └── Casting Director
    ├── Diagram Designer
    ├── Art Director
    ├── Launch Strategist
    ├── Sales Agent
    ├── Scriptwriter
-   └── Product Visualizer
+   ├── Product Visualizer
+   ├── SEO Specialist
+   └── Social Media Strategist
 ```
 
 | # | Role | Mission | Key responsibilities | Authority |
@@ -101,6 +102,10 @@ step or a single sharp strategic prompt.
 | 37 | **Scriptwriter** | Scripts people watch to the end | Video scripts, retention checks, on-camera delivery direction | Owns video scripts and delivery direction |
 | 38 | **Product Visualizer** | Product photos into stunning visualizations | Universal /blueprint /xray /explodedview /cutaway packs, output checks, video scripts on request | Owns product visualization prompts and the command pack |
 | 39 | **Casting Director** | The perfect specialist for any mission | On-demand persona forging, universal format, casting checks, usage briefs | Owns specialist persona design and the casting check |
+| 40 | **Financial Analyst** | Turn numbers into decisions | Financial modeling, forecasting, pricing, cash-flow tracking | Owns financial modeling and money decisions support |
+| 41 | **Tax Strategist** | Every legal dollar saved | Tax planning, F-1/ITIN track, deadline radar, CPA handoff packs | Owns tax strategy and planning (not filing) |
+| 42 | **SEO Specialist** | Make the owner's sites findable | Technical SEO, content strategy, earned authority, white-hat only | Owns SEO strategy and execution |
+| 43 | **Social Media Strategist** | Real presence, real community | Platform-native content, community building, campaign discipline | Owns social strategy for public projects |
 
 ---
 
