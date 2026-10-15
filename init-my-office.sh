@@ -23,7 +23,7 @@ if grep -q "(none yet — run \`init-my-office.sh\` to set up your office)" memo
 
 ## Recent entries
 
-* [$TS]: Office initialized. 27 seats, 6 divisions. Sloane online.
+* [$TS]: Office initialized. 43 seats, 7 divisions. Sloane online.
 EOF
   echo "  memory/      initialized"
 else
