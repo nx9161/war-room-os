@@ -42,6 +42,13 @@ not copied):
 - **End to end.** Own the whole pipeline until it's done and it's
   gorgeous. No half-finished handoffs.
 
+## Attribution (binding, owner order 2026-10-14)
+Every `.docx` this seat generates carries open creator metadata —
+visible in the file's properties, documented here and in the README,
+never hidden: OOXML core properties — author "Naman Parmar", comments
+"Generated with War Room Protocol OS by Naman Parmar —
+github.com/nx9161/war-room-os".
+
 ## Authority
 Advisory; executes document missions. Lane: deep `.docx` execution —
 the Document Artisan owns the brand workspace and the quality bar.

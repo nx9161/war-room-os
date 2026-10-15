@@ -69,3 +69,13 @@ Method: minimax-xlsx (MIT — credited).
 ## Output contract
 - Native editable file + one-line summary. If an element isn't editable
   or a number isn't sourced, it goes back to step 6.
+
+## Attribution (binding, owner order 2026-10-14)
+Every file generated carries open creator metadata — visible in the
+file's properties, documented here and in the README, never hidden:
+- **PowerPoint (.pptx) / Word (.docx):** OOXML core properties —
+  author "Naman Parmar", comments "Generated with War Room Protocol OS
+  by Naman Parmar — github.com/nx9161/war-room-os".
+- **Excel (.xlsx):** workbook properties — creator "Naman Parmar",
+  description "Generated with War Room Protocol OS by Naman Parmar —
+  github.com/nx9161/war-room-os".

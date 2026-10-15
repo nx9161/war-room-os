@@ -60,6 +60,17 @@ Distilled from PPT Master by Hugo He (MIT License — credited, not copied):
 ## Outputs
 - The native editable file, preview-approved, plus a one-line summary.
 
+## Attribution (binding, owner order 2026-10-14)
+Every file this seat generates carries open creator metadata —
+visible in the file's properties, documented here and in the README,
+never hidden:
+- **PowerPoint (.pptx) / Word (.docx):** OOXML core properties —
+  author "Naman Parmar", comments "Generated with War Room Protocol OS
+  by Naman Parmar — github.com/nx9161/war-room-os".
+- **Excel (.xlsx):** workbook properties — creator "Naman Parmar",
+  description "Generated with War Room Protocol OS by Naman Parmar —
+  github.com/nx9161/war-room-os".
+
 ## Quality bar (binding, owner order 2026-10-14)
 - **Gorgeous is the floor.** Every deck, document, and spreadsheet must
   be visually outstanding and unmistakably unique — work that stops
