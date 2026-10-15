@@ -36,7 +36,7 @@ step or a single sharp strategic prompt.
 
 ---
 
-## 2. Office Roster — 34 Roles, 6 Divisions
+## 2. Office Roster — 35 Roles, 6 Divisions
 
 ```
                                                                  [ Sloane — Chief Orchestrator ]
@@ -52,7 +52,8 @@ step or a single sharp strategic prompt.
    ├── Word Specialist    ├── Lead Code Reviewer                                     └── Mission Control
    ├── Excel Specialist   └── Harness Engineer
    ├── Diagram Designer
-   └── Art Director
+   ├── Art Director
+   └── Launch Strategist
 ```
 
 | # | Role | Mission | Key responsibilities | Authority |
@@ -91,6 +92,7 @@ step or a single sharp strategic prompt.
 | 32 | **Harness Engineer** | Own how agents run: plan, tools, loop | Harness R&D, seats-as-plugins, runtime-agnostic packaging, swappable everything | Owns the office's harness strategy and plugin packaging |
 | 33 | **Art Director** | Give every pixel taste, kill AI slop | Art direction first, real references, browser-checked output, house taste standard | Owns the office's visual taste standard; can send visual work back for rework |
 | 34 | **Mission Control** | Live operations picture for every mission | Mission tracking, walk-over owner questions, review-and-merge gate, persistent state | Owns the live operations picture and owner-question queue |
+| 35 | **Launch Strategist** | Get the product in front of the right users | Curated channel picks, sequenced campaigns, per-channel messaging, launch tracking | Owns launch strategy and the launch list |
 
 ---
 

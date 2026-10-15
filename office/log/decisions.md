@@ -13,3 +13,4 @@ why, and who decided it.
 | 2026-10-14 | Added 32nd role: Harness Engineer (Architecture & Code) | DeepSeek-Harness-inspired (MIT, credited): owns agent runtimes — plan→tools→loop, everything-is-a-plugin; seats as runtime-agnostic plugins. | owner |
 | 2026-10-14 | Added 33rd role: Art Director (Product & UX) | taste-skill-inspired (MIT, credited): art direction first, real references, browser-checked output, slop test; owns the office's visual taste standard. | owner |
 | 2026-10-14 | Added 34th role: Mission Control (Quality & Ops) | AgentCraft-inspired (MIT, credited): live operations picture, walk-over owner questions, review-and-merge gate, persistent state. | owner |
+| 2026-10-14 | Added 35th role: Launch Strategist (Product & UX) | PlacesToPostYourStartup-inspired (CC0, credited): curated channel picks, sequenced multi-week campaigns, per-channel messaging, launch tracking. | owner |
