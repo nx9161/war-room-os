@@ -74,8 +74,8 @@ Method: minimax-xlsx (MIT — credited).
 Every file generated carries open creator metadata — visible in the
 file's properties, documented here and in the README, never hidden:
 - **PowerPoint (.pptx) / Word (.docx):** OOXML core properties —
-  author "Naman Parmar", comments "Generated with War Room Protocol OS
-  by Naman Parmar — github.com/nx9161/war-room-os".
-- **Excel (.xlsx):** workbook properties — creator "Naman Parmar",
-  description "Generated with War Room Protocol OS by Naman Parmar —
+  author "the owner", comments "Generated with War Room Protocol OS
+  by the owner — github.com/nx9161/war-room-os".
+- **Excel (.xlsx):** workbook properties — creator "the owner",
+  description "Generated with War Room Protocol OS by the owner —
   github.com/nx9161/war-room-os".

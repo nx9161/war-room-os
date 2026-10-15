@@ -1,5 +1,5 @@
 ---
-description: Convene the War Room — Sloane runs all 27 seats through the four-phase loop on your request.
+description: Convene the War Room — Sloane runs all 43 seats through the four-phase loop on your request.
 ---
 
 Use the `war-room-protocol` MCP tools. First call `activate` for the

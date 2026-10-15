@@ -1,1 +1,19 @@
-{"author":{"name":"nx9161","url":"https://github.com/nx9161"},"description":"Sloane's 27-seat autonomous AI software office. Say the phrase and the War Room convenes: four phases from prompt to QA sign-off, every seat with its own skill.","license":"MIT","mcpServers":{"war-room-protocol":{"args":["${CLAUDE_PLUGIN_ROOT}/office/mcp-server/server.py"],"command":"python3"}},"name":"war-room-protocol","repository":"https://github.com/nx9161/war-room-os","version":"1.0.0"}
+{
+  "author": {
+    "name": "nx9161",
+    "url": "https://github.com/nx9161"
+  },
+  "description": "Sloane's 43-seat autonomous AI software office across 7 divisions. Say the phrase and the War Room convenes: four phases from prompt to QA sign-off, every seat with its own skill.",
+  "license": "MIT",
+  "mcpServers": {
+    "war-room-protocol": {
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/office/mcp-server/server.py"
+      ],
+      "command": "python3"
+    }
+  },
+  "name": "war-room-protocol",
+  "repository": "https://github.com/nx9161/war-room-os",
+  "version": "1.0.0"
+}

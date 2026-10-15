@@ -44,8 +44,8 @@ Distilled from minimax-xlsx (MIT — credited, not copied):
 ## Attribution (binding, owner order 2026-10-14)
 Every `.xlsx` this seat generates carries open creator metadata —
 visible in the file's properties, documented here and in the README,
-never hidden: workbook properties — creator "Naman Parmar", description
-"Generated with War Room Protocol OS by Naman Parmar —
+never hidden: workbook properties — creator "the owner", description
+"Generated with War Room Protocol OS by the owner —
 github.com/nx9161/war-room-os".
 
 ## Authority

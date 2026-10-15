@@ -1,6 +1,6 @@
 # War Room Protocol MCP Server
 
-One server, every agent. Exposes Sloane's 27-seat AI software office to
+One server, every agent. Exposes Sloane's 43-seat AI software office across 7 divisions to
 any MCP-compatible client: Claude Code, Cursor, Windsurf, Cline, Zed,
 and anything else that speaks MCP.
 

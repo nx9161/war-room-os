@@ -45,8 +45,8 @@ not copied):
 ## Attribution (binding, owner order 2026-10-14)
 Every `.docx` this seat generates carries open creator metadata —
 visible in the file's properties, documented here and in the README,
-never hidden: OOXML core properties — author "Naman Parmar", comments
-"Generated with War Room Protocol OS by Naman Parmar —
+never hidden: OOXML core properties — author "the owner", comments
+"Generated with War Room Protocol OS by the owner —
 github.com/nx9161/war-room-os".
 
 ## Authority

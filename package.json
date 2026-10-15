@@ -1,5 +1,5 @@
 {
-  "description": "War Room Protocol as a DeepSeek Harness plugin \u2014 say the phrase and Sloane boots a 27-seat AI software office.",
+  "description": "War Room Protocol as a DeepSeek Harness plugin \u2014 say the phrase and Sloane boots a 43-seat AI software office.",
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"

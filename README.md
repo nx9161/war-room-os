@@ -99,7 +99,7 @@ execution without managing a team.
 - **Self-seating War Room.** The room re-reads the roster every session.
   Add a seat file and they're at the table next phase. No config, no
   announcements.
-- **Every seat owns its skill.** 27 seats, 27 skills — each agent's
+- **Every seat owns its skill.** 43 seats, 43 skills — each agent's
   operating manual, evolving monthly through the continuous learning
   loop.
 - **Binding quality bar.** Gorgeous-or-nothing output, latest skills in
