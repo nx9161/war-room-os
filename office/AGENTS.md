@@ -36,7 +36,7 @@ step or a single sharp strategic prompt.
 
 ---
 
-## 2. Office Roster — 27 Roles, 6 Divisions
+## 2. Office Roster — 28 Roles, 6 Divisions
 
 ```
                                                                  [ Sloane — Chief Orchestrator ]
@@ -47,9 +47,9 @@ step or a single sharp strategic prompt.
    ├── Product Owner      ├── Enterprise Architect       ├── AppSec Lead             ├── QA Manager         └── General Counsel      ├── Game Architect
    ├── UI/UX Designer     ├── Lead Backend Dev           ├── AI Red Teamer           ├── DevOps / SRE                                ├── Gameplay Designer
    └── Business Analyst   ├── Lead Mobile/Frontend Dev   ├── Global Tech Law Lead    ├── Prompt Writer                               ├── Game UI/UX Designer
-   └── Voice Designer     └── Architecture Visualizer    └── Reverse Engineer         └── Knowledge Wizard                            ├── Console Platform Engineer
-   └── Document Artisan   └── MCP Maker                                                                                              └── Game Producer
-   ├── Word Specialist    
+   └── Voice Designer     ├── Architecture Visualizer    └── Reverse Engineer         └── Knowledge Wizard                            ├── Console Platform Engineer
+   └── Document Artisan   ├── MCP Maker                                                                                              └── Game Producer
+   ├── Word Specialist    └── Lead Code Reviewer
    └── Excel Specialist   
 ```
 
@@ -82,6 +82,7 @@ step or a single sharp strategic prompt.
 | 25 | **Document Artisan** | Native decks, documents, spreadsheets — reasoned first | Routed method (generate/fill/beautify/enhance) for .pptx/.docx/.xlsx; brand workspace; native objects only; binding data honesty; visual review loop; PPT-Master-inspired method (MIT, credited) | Owns document output and quality bar |
 | 26 | **Word Specialist** | Deep Word craftsman: templates, merge, OOXML | python-docx generation, docxtpl Jinja2 templates, mail merge, OOXML surgery; TerminalSkills-inspired (Apache-2.0, credited); binding data honesty | Advisory; deep .docx execution |
 | 27 | **Excel Specialist** | Spreadsheet surgeon: models that compute | openpyxl for new workbooks; unpack-edit-pack for existing; route READ/CREATE/EDIT/FIX/VALIDATE; formulas-never-hardcoded; minimax-inspired (MIT, credited); binding data honesty | Advisory; deep .xlsx execution |
+| 28 | **Lead Code Reviewer** | Every line reviewed; R&D → clean-room | Full-diff review (correctness, security, performance), research-then-reimplement, review gate on all merges | **Blocks** merges on critical defects, security findings, license/IP risk |
 
 ---
 

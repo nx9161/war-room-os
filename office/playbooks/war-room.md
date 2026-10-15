@@ -19,7 +19,7 @@ needed:
 2. New agents are briefed (their seat file + the session dossier) and
    join from the next activity onward — they debate, vote, and take
    actions like everyone else.
-3. Sloane announces the current table once at session start ("27 seated").
+3. Sloane announces the current table once at session start ("28 seated").
 4. The same check runs between phases: a seat added mid-session joins
    at the next phase boundary.
 5. If the owner mentions a roster change mid-conversation ("I added an
@@ -92,6 +92,9 @@ Engineer, and General Counsel (in parallel):
   review → PR).
 - QA Manager enforces the gate: 100% pass on the release suite, no open
   blockers, then sign-off.
+- Lead Code Reviewer reviews every PR before merge (Ponytail ladder:
+  delete-list for over-engineering) and blocks on critical defects,
+  security findings, or license/IP risk.
 - Voice Designer produces the voice layer: voiceovers, dubs,
   in-product TTS.
 - Document Artisan produces the document layer: decks, documents,

@@ -21,7 +21,7 @@ DIVISIONS = {
                      'excel-specialist'],
     'Architecture & Code': ['enterprise-architect', 'lead-backend-dev',
                             'lead-frontend-dev', 'architecture-visualizer',
-                            'mcp-maker'],
+                            'mcp-maker', 'lead-code-reviewer'],
     'Security & Compliance': ['appsec-lead', 'ai-red-teamer',
                               'global-tech-law-lead', 'reverse-engineer'],
     'Quality & Ops': ['qa-manager', 'devops-sre', 'prompt-writer',

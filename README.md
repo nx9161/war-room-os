@@ -121,12 +121,12 @@ runs the War Room, and reports back status, numbers, and decisions
 needed. One voice upward; zero fluff.
 
 <!-- ROSTER:START -->
-**The seats — 27 roles, 6 divisions.**
+**The seats — 28 roles, 6 divisions.**
 
 | Division | Seats |
 |---|---|
 | Product & UX | Product Owner, UI/UX Designer, Business Analyst, Voice Designer, Document Artisan, Word Specialist, Excel Specialist |
-| Architecture & Code | Enterprise Architect, Lead Backend Engineer, Lead Mobile/Frontend Engineer, Architecture Visualizer, MCP Maker |
+| Architecture & Code | Enterprise Architect, Lead Backend Engineer, Lead Mobile/Frontend Engineer, Architecture Visualizer, MCP Maker, Lead Code Reviewer |
 | Security & Compliance | AppSec Lead, AI Red Teamer, Global Tech Law Lead, Reverse Engineer |
 | Quality & Ops | QA Manager, DevOps / SRE, Prompt Writer, Knowledge Wizard |
 | Legal & Governance | General Counsel |
