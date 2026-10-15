@@ -19,7 +19,7 @@ needed:
 2. New agents are briefed (their seat file + the session dossier) and
    join from the next activity onward — they debate, vote, and take
    actions like everyone else.
-3. Sloane announces the current table once at session start ("29 seated").
+3. Sloane announces the current table once at session start ("30 seated").
 4. The same check runs between phases: a seat added mid-session joins
    at the next phase boundary.
 5. If the owner mentions a roster change mid-conversation ("I added an
@@ -71,13 +71,16 @@ to debate it:
 
 ## Phase 3 — Security & Legal Challenge
 Spawn AppSec Lead, AI Red Teamer, Global Tech Law Lead, Reverse
-Engineer, and General Counsel (in parallel):
+Engineer, Penetration Tester, and General Counsel (in parallel):
 - AppSec: OWASP Top 10 review, auth/crypto/rate-limiting assessment.
 - AI Red Teamer: prompt injection, jailbreak, data poisoning probes
   against any AI-facing surface.
 - Tech Law: GDPR/CCPA/NIS2/HIPAA/EU AI Act applicability, data mapping.
 - Reverse Engineer: inspects third-party binaries and dependencies
   (lawful basis required) — what's inside, what it phones home to.
+- Penetration Tester: agentic pentest of the app (sandboxed, authorized
+  targets only) — recon, exploit, PoC-validated findings; blocks on
+  confirmed exploitables.
 - General Counsel: contracts/ToS/licensing, jurisdiction matrix for
   target markets, corporate/IP/employment exposure; escalates to
   licensed local counsel where binding advice is needed.
