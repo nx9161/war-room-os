@@ -17,3 +17,4 @@ why, and who decided it.
 | 2026-10-14 | Added 36th role: Sales Agent (Product & UX) | Harvey-inspired (MIT, credited): prospect research, personalized cold email, human-approval outbox, reply handling. | owner |
 | 2026-10-14 | Added 37th role: Scriptwriter (Product & UX) | Synthesized from the best available methods: writes video scripts, retention-checks them, directs on-camera delivery (tonality/rhythm/gesture/emotion). | owner |
 | 2026-10-14 | Added 38th role: Product Visualizer (Product & UX) | Reel-inspired (no repo met the popular+safe+verified bar): universal /blueprint /xray /explodedview /cutaway prompt packs for any image model, output checks, usage instructions, video scripts on request. | owner |
+| 2026-10-14 | Added 39th role: Casting Director (Quality & Ops) | agency-agents-inspired (MIT, credited): on-demand specialist persona forging, universal model-agnostic format, casting checks, usage briefs. | owner |

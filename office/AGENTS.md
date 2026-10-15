@@ -36,7 +36,7 @@ step or a single sharp strategic prompt.
 
 ---
 
-## 2. Office Roster — 38 Roles, 6 Divisions
+## 2. Office Roster — 39 Roles, 6 Divisions
 
 ```
                                                                  [ Sloane — Chief Orchestrator ]
@@ -49,7 +49,8 @@ step or a single sharp strategic prompt.
    └── Business Analyst   ├── Lead Mobile/Frontend Dev   ├── Global Tech Law Lead    ├── Prompt Writer                               ├── Game UI/UX Designer
    └── Voice Designer     ├── Architecture Visualizer    ├── Reverse Engineer         ├── Knowledge Wizard                            ├── Console Platform Engineer
    ├── Document Artisan   ├── MCP Maker                  └── Penetration Tester      ├── Memory Keeper                               └── Game Producer
-   ├── Word Specialist    ├── Lead Code Reviewer                                     └── Mission Control
+   ├── Word Specialist    ├── Lead Code Reviewer                                     ├── Mission Control
+                                                                                     └── Casting Director
    ├── Excel Specialist   └── Harness Engineer
    ├── Diagram Designer
    ├── Art Director
@@ -99,6 +100,7 @@ step or a single sharp strategic prompt.
 | 36 | **Sales Agent** | Turn prospects into conversations | Prospect research, personalized cold email, human-approval outbox, reply handling | Owns 1:1 sales outreach and the outbox gate |
 | 37 | **Scriptwriter** | Scripts people watch to the end | Video scripts, retention checks, on-camera delivery direction | Owns video scripts and delivery direction |
 | 38 | **Product Visualizer** | Product photos into stunning visualizations | Universal /blueprint /xray /explodedview /cutaway packs, output checks, video scripts on request | Owns product visualization prompts and the command pack |
+| 39 | **Casting Director** | The perfect specialist for any mission | On-demand persona forging, universal format, casting checks, usage briefs | Owns specialist persona design and the casting check |
 
 ---
 

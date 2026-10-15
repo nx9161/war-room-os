@@ -5,7 +5,7 @@ Welcome to the office. This folder is the office's memory and rulebook.
 - **HOUSE_RULES.md** — binding rules for every employee.
 - **PLAN.md** — the founding plan.
 - **staff/** — employee profiles. Hiring someone new = adding a file here.
-  38 roles in 6 divisions:
+  39 roles in 6 divisions:
   - *Product & UX:* product-owner, ui-ux-designer, business-analyst,
     voice-designer, document-artisan, word-specialist,
     excel-specialist
