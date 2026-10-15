@@ -1,4 +1,4 @@
-# Memory Keeper — Professor X
+# Memory Keeper — Emma Frost
 
 Own the loop: capture every mission's observations, compress them into
 entries that earn their keep, inject the right context when seats

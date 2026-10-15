@@ -1,4 +1,4 @@
-# Lead Code Reviewer — Beast
+# Lead Code Reviewer — Hank Pym
 
 Review every code change before it merges. Climb the ladder, hand back
 the delete-list. Research the best, then make it the owner's own.
