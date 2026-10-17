@@ -81,6 +81,24 @@ The npm package name `dsh-plugin-war-room-protocol` is reserved for a
 future publish; the GitHub address installs today. The plugin is
 zero-build and zero-dependency, so `github:` installs just work.
 
+**Agent Skills (open standard):** install the office as skills any
+standard-compliant agent can load — the `war-room` master skill (the
+Chief's operating manual) plus, optionally, all 43 seat skills:
+
+```bash
+git clone https://github.com/nx9161/war-room-os.git
+cd war-room-os
+./skills/war-room/install.sh --seats   # master skill + all 43 seat skills
+# ./skills/war-room/install.sh          # master skill only
+# ./skills/war-room/install.sh --project  # repo-local install instead of global
+```
+
+Works with Claude Code, OpenAI Codex, Cursor, VS Code + GitHub
+Copilot, Gemini CLI, OpenCode, and anything reading `~/.agents/skills`
+or `~/.claude/skills`. No clone handy? The installer clones the
+template itself when run standalone. Then just say **"War Room
+Protocol"** to your agent.
+
 **ChatGPT / Gemini / any chat agent:** no install needed. Paste the
 trigger phrase below, then paste the contents of `ACTIVATE.md` when the
 agent asks for the repo (or point it at this page). The office is

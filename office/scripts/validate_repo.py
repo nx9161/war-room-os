@@ -7,6 +7,9 @@ Checks:
      the canonical docs (office/README.md, office/AGENTS.md, AGENTS.md).
   3. ACTIVATE.md carries the trigger phrase.
   4. No trailing whitespace in tracked markdown files.
+  5. Every SKILL.md under skills/*/ carries valid Agent Skills
+     frontmatter (name matches folder, description present and
+     <= 200 chars, license present).
 """
 import sys
 from pathlib import Path
@@ -53,6 +56,38 @@ for d in ["office/staff", "office/playbooks"]:
 act = (ROOT / "ACTIVATE.md").read_text(encoding="utf-8")
 if "github public repo" not in act.lower():
     errors.append("ACTIVATE.md missing the trigger phrase")
+
+# 5. Every SKILL.md under skills/*/ carries valid Agent Skills
+#    frontmatter: name matches its folder, description present and
+#    <= 200 chars, license present. (office/skills/*/ are covered by
+#    the seat-skill standardization pass; not gated here.)
+import re
+
+base = ROOT / "skills"
+if base.is_dir():
+    for skill_md in sorted(base.glob("*/SKILL.md")):
+        slug = skill_md.parent.name
+        text = skill_md.read_text(encoding="utf-8")
+        m = re.match(r"^---\n(.*?)\n---\n", text, re.S)
+        if not m:
+            errors.append(f"{skill_md.relative_to(ROOT)}: missing YAML frontmatter")
+            continue
+        fm = m.group(1)
+        name_m = re.search(r"^name:\s*(\S+)\s*$", fm, re.M)
+        desc_m = re.search(r"^description:\s*(.+?)\s*$", fm, re.M)
+        if not name_m or name_m.group(1).strip('"') != slug:
+            errors.append(
+                f"{skill_md.relative_to(ROOT)}: frontmatter name must match folder '{slug}'"
+            )
+        if not desc_m:
+            errors.append(f"{skill_md.relative_to(ROOT)}: frontmatter description missing")
+        elif len(desc_m.group(1)) > 200:
+            errors.append(
+                f"{skill_md.relative_to(ROOT)}: description > 200 chars "
+                f"({len(desc_m.group(1))})"
+            )
+        if not re.search(r"^license:\s*\S+", fm, re.M):
+            errors.append(f"{skill_md.relative_to(ROOT)}: frontmatter license missing")
 
 for md in sorted(ROOT.rglob("*.md")):
     if ".git/" in str(md):

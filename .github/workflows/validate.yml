@@ -16,3 +16,5 @@ jobs:
           python-version: "3.12"
       - name: Validate repo structure & hygiene
         run: python3 office/scripts/validate_repo.py
+      - name: Skill install test (hermetic, fake HOME)
+        run: bash skills/war-room/test/install.test.sh
