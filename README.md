@@ -341,3 +341,7 @@ credentials** in code, commits, issues, or logs — ever.
 - [Code of conduct](CODE_OF_CONDUCT.md)
 - [Changelog](CHANGELOG.md)
 - License: [MIT](LICENSE)
+
+---
+
+Built by **Naman Parmar** ([nx9161](https://github.com/nx9161)).
