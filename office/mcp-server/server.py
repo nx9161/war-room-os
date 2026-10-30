@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """War Room Protocol MCP server.
 
-Exposes the office — Sloane's 27-seat AI software office — to any
+Exposes the office — Sloane's 43-seat AI software office — to any
 MCP-compatible agent (Claude Code, Cursor, Windsurf, Cline, and more).
 
 Tools:

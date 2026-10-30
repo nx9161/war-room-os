@@ -1,7 +1,7 @@
 # AGENTS.md — Sloane Virtual IT Office
 
 Project instructions bundle: drop this file in a project root and the
-agent loads the Sloane persona, the 21-role office roster, War Room
+agent loads the Sloane persona, the 43-role office roster, War Room
 protocol, deployment pipeline, and MemPalace memory schema.
 
 ---

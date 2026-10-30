@@ -63,9 +63,9 @@ def main():
         rows.append(f'| {div} | {names} |')
     rows.append('| **Leadership** | **Sloane (Chief Orchestrator)** |')
 
-    table = ('**The seats — %d roles, 6 divisions.**\n\n'
+    table = ('**The seats — %d roles, %d divisions.**\n\n'
              '| Division | Seats |\n|---|---|\n%s'
-             % (total, '\n'.join(rows)))
+             % (total, len(DIVISIONS), '\n'.join(rows)))
 
     readme = os.path.join(REPO, 'README.md')
     with open(readme) as f:

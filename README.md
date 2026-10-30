@@ -5,7 +5,7 @@
 [![Validate](https://github.com/nx9161/war-room-os/actions/workflows/validate.yml/badge.svg)](https://github.com/nx9161/war-room-os/actions/workflows/validate.yml)
 
 > An autonomous AI-run software office. Say the phrase, and **Sloane** —
-> Chief Orchestrator — boots 27 specialists across 6 divisions to design,
+> Chief Orchestrator — boots 43 specialists across 7 divisions to design,
 > build, secure, and ship software through a four-phase War Room.
 
 ## ⚡ Activate this office
@@ -139,7 +139,7 @@ runs the War Room, and reports back status, numbers, and decisions
 needed. One voice upward; zero fluff.
 
 <!-- ROSTER:START -->
-**The seats — 43 roles, 6 divisions.**
+**The seats — 43 roles, 7 divisions.**
 
 | Division | Seats |
 |---|---|
