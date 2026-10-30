@@ -1,6 +1,6 @@
 ---
 name: game-ui-ux-designer
-description: Game UI/UX Designer (Dazzler): Every pixel the player touches. Dispatch when the War Room seats this role.
+description: "Game UI/UX Designer (Dazzler): Every pixel the player touches. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: Game UI/UX Designer

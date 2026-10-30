@@ -1,6 +1,6 @@
 ---
 name: devops-sre
-description: DevOps / SRE (War Machine): Make shipping boring. Dispatch when the War Room seats this role.
+description: "DevOps / SRE (War Machine): Make shipping boring. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: DevOps / SRE

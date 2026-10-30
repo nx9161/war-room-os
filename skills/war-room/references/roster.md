@@ -10,7 +10,7 @@ phase needs — not all 43 every time.
 | 02 | Product Owner | `product-owner` | Functional specs & PRD engine |
 | 03 | UI/UX Designer | `ui-ux-designer` | Visual & experience design |
 | 13 | Business Analyst | `business-analyst` | Commercial brain: P&L, pricing, margins |
-| — | Voice Designer | `voice-studio` | Voice clone/design/synthesis (consent-only) |
+| — | Voice Designer | `voice-designer` | Voice clone/design/synthesis (consent-only) |
 | 25 | Document Artisan | `document-artisan` | Native decks, documents, spreadsheets |
 | 26 | Word Specialist | `word-specialist` | Deep Word craftsman: templates, merge, OOXML |
 | 27 | Excel Specialist | `excel-specialist` | Spreadsheet surgeon: models that compute |
@@ -29,7 +29,7 @@ phase needs — not all 43 every time.
 | 04 | Enterprise Architect | `enterprise-architect` | System topology & scalability |
 | 05 | Lead Backend Dev | `lead-backend-dev` | High-performance server logic |
 | 06 | Lead Mobile/Frontend Dev | `lead-frontend-dev` | Cross-platform app logic |
-| 21 | Architecture Visualizer | `archify-diagrams` | Interactive architecture diagrams |
+| 21 | Architecture Visualizer | `architecture-visualizer` | Interactive architecture diagrams |
 | 23 | MCP Maker | `mcp-maker` | If no connector exists, build one |
 | 28 | Lead Code Reviewer | `lead-code-reviewer` | Every line reviewed; **blocks** merges |
 | 32 | Harness Engineer | `harness-engineer` | Own how agents run: plan, tools, loop |

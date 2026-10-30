@@ -1,6 +1,6 @@
 ---
 name: ui-ux-designer
-description: UI/UX Designer (Scarlet Witch): Interfaces people don't have to think about. Dispatch when the War Room seats this role.
+description: "UI/UX Designer (Scarlet Witch): Interfaces people don't have to think about. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: UI/UX Designer

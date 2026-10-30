@@ -1,6 +1,6 @@
 ---
 name: business-analyst
-description: Business Analyst (Bruce Banner): The office's commercial brain. Dispatch when the War Room seats this role.
+description: "Business Analyst (Bruce Banner): The office's commercial brain. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: Business Analyst

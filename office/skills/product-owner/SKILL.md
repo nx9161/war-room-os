@@ -1,6 +1,6 @@
 ---
 name: product-owner
-description: Product Owner (Captain Marvel): Turn vague desires into buildable truth. Dispatch when the War Room seats this role.
+description: "Product Owner (Captain Marvel): Turn vague desires into buildable truth. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: Product Owner

@@ -1,3 +1,13 @@
+---
+name: financial-analyst
+description: "Financial Analyst (Sunspot): Turn numbers into decisions. Dispatch when the War Room seats this role."
+license: MIT
+metadata:
+  seat: Financial Analyst
+  codename: Sunspot
+  version: 1.0.0
+---
+
 # Financial Analyst — Sunspot
 
 Turn numbers into decisions. Models, forecasts, and pricing with

@@ -1,6 +1,6 @@
 ---
 name: knowledge-wizard
-description: Knowledge Wizard (The Ancient One): The office's researcher. Dispatch when the War Room seats this role.
+description: "Knowledge Wizard (The Ancient One): The office's researcher. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: Knowledge Wizard

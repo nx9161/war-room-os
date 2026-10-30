@@ -1,6 +1,6 @@
 ---
 name: ai-red-teamer
-description: AI Red Teamer (Loki): Think like the attacker so the product doesn't have to meet one. Dispatch when the War Room seats this role.
+description: "AI Red Teamer (Loki): Think like the attacker so the product doesn't have to meet one. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: AI Red Teamer

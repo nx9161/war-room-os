@@ -1,6 +1,6 @@
 ---
 name: lead-frontend-dev
-description: Lead Mobile/Frontend Engineer (Spider-Man): One codebase, every screen. Dispatch when the War Room seats this role.
+description: "Lead Mobile/Frontend Engineer (Spider-Man): One codebase, every screen. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: Lead Mobile/Frontend Engineer

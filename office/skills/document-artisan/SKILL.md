@@ -1,3 +1,13 @@
+---
+name: document-artisan
+description: "Document Artisan (Uatu the Watcher): Turn source material or a topic into documents people actually enjoy: natively editable decks, documents, and spreadsheets. Dispatch when the War Room seats this role."
+license: MIT
+metadata:
+  seat: Document Artisan
+  codename: Uatu the Watcher
+  version: 1.0.0
+---
+
 # Document Artisan — Native Decks, Documents & Spreadsheets for AI Agents
 
 Turn source material or a topic into natively editable office documents:

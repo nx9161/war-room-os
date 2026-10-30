@@ -1,3 +1,13 @@
+---
+name: diagram-designer
+description: "Diagram Designer (Spectrum): Diagrams people actually want to look at. Dispatch when the War Room seats this role."
+license: MIT
+metadata:
+  seat: Diagram Designer
+  codename: Spectrum
+  version: 1.0.0
+---
+
 # Diagram Designer — Spectrum
 
 Editorial diagrams as self-contained HTML+SVG. Reason first, truth

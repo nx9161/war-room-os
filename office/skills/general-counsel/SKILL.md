@@ -1,6 +1,6 @@
 ---
 name: general-counsel
-description: General Counsel (She-Hulk (Jennifer Walters)): Worldwide legal coverage for the office — every jurisdiction, tech and Dispatch when the War Room seats this role.
+description: "General Counsel (She-Hulk (Jennifer Walters)): Worldwide legal coverage for the office — every jurisdiction, tech and non-tech. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: General Counsel

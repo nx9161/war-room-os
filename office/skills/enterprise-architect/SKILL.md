@@ -1,6 +1,6 @@
 ---
 name: enterprise-architect
-description: Enterprise Architect (Iron Man (Tony Stark)): See the whole system before anyone writes a line. Dispatch when the War Room seats this role.
+description: "Enterprise Architect (Iron Man (Tony Stark)): See the whole system before anyone writes a line. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: Enterprise Architect

@@ -1,3 +1,13 @@
+---
+name: product-visualizer
+description: "Product Visualizer (Mysterio): Turn product photos into stunning technical visualizations \u2014 blueprint, x-ray, exploded view, cutaway \u2014 with any image model. Dispatch when the War Room seats this role."
+license: MIT
+metadata:
+  seat: Product Visualizer
+  codename: Mysterio
+  version: 1.0.0
+---
+
 # Product Visualizer — Mysterio
 
 Product photos in, stunning technical visualizations out — with any

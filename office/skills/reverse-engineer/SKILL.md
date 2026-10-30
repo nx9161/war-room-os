@@ -1,3 +1,13 @@
+---
+name: reverse-engineer
+description: "Reverse Engineer (Taskmaster): See a feature you like in any app. Dispatch when the War Room seats this role."
+license: MIT
+metadata:
+  seat: Reverse Engineer
+  codename: Taskmaster
+  version: 1.0.0
+---
+
 # Reverse Engineer — Understand Any App's Feature, With Evidence
 
 Reverse-engineer any software without its source code: recover how a

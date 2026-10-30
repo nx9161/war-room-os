@@ -1,6 +1,6 @@
 ---
 name: prompt-writer
-description: Prompt Writer (Doctor Strange): The office's front door and its finisher. Dispatch when the War Room seats this role.
+description: "Prompt Writer (Doctor Strange): The office's front door and its finisher. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: Prompt Writer

@@ -1,6 +1,6 @@
 ---
 name: sloane
-description: Sloane (Nick Fury): Strategy, consensus, and translation. Dispatch when the War Room seats this role.
+description: "Sloane (Nick Fury): Strategy, consensus, and translation. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: Sloane

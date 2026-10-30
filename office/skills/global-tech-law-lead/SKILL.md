@@ -1,6 +1,6 @@
 ---
 name: global-tech-law-lead
-description: Global Tech Law Lead (Daredevil (Matt Murdock)): Keep the office on the right side of the law in every jurisdiction it Dispatch when the War Room seats this role.
+description: "Global Tech Law Lead (Daredevil (Matt Murdock)): Keep the office on the right side of the law in every jurisdiction it touches. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: Global Tech Law Lead

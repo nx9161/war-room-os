@@ -1,6 +1,6 @@
 ---
 name: qa-manager
-description: QA Manager (Black Panther): The office's immune system and final gate. Dispatch when the War Room seats this role.
+description: "QA Manager (Black Panther): The office's immune system and final gate. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: QA Manager

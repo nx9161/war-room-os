@@ -1,6 +1,6 @@
 ---
 name: gameplay-designer
-description: Gameplay Designer (Star-Lord): The fun engineer. Dispatch when the War Room seats this role.
+description: "Gameplay Designer (Star-Lord): The fun engineer. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: Gameplay Designer

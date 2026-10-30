@@ -1,6 +1,6 @@
 ---
 name: mcp-maker
-description: MCP Maker (Forge): If no connector exists, build one. Dispatch when the War Room seats this role.
+description: "MCP Maker (Forge): If no connector exists, build one. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: MCP Maker

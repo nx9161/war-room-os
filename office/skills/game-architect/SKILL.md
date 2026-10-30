@@ -1,6 +1,6 @@
 ---
 name: game-architect
-description: Game Architect (Mr. Fantastic (Reed Richards)): The game's structural brain. Dispatch when the War Room seats this role.
+description: "Game Architect (Mr. Fantastic (Reed Richards)): The game's structural brain. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: Game Architect

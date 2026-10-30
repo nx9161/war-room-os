@@ -1,6 +1,6 @@
 ---
 name: game-producer
-description: Game Producer (Pepper Potts): End-to-end delivery. Dispatch when the War Room seats this role.
+description: "Game Producer (Pepper Potts): End-to-end delivery. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: Game Producer

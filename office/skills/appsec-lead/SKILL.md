@@ -1,6 +1,6 @@
 ---
 name: appsec-lead
-description: AppSec Lead (Captain America): Assume breach. Dispatch when the War Room seats this role.
+description: "AppSec Lead (Captain America): Assume breach. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: AppSec Lead

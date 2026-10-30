@@ -1,3 +1,13 @@
+---
+name: penetration-tester
+description: "Penetration Tester (Black Widow): Find the holes before anyone else does \u2014 with proof, not vibes. Dispatch when the War Room seats this role."
+license: MIT
+metadata:
+  seat: Penetration Tester
+  codename: Black Widow
+  version: 1.0.0
+---
+
 # Penetration Tester — Black Widow
 
 Agentic pentesting with proof. Scope locked, sandbox first, every

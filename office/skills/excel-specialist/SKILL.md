@@ -1,6 +1,6 @@
 ---
 name: excel-specialist
-description: Excel Specialist (Shuri): The office's spreadsheet surgeon. Dispatch when the War Room seats this role.
+description: "Excel Specialist (Shuri): The office's spreadsheet surgeon. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: Excel Specialist

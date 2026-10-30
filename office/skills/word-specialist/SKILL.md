@@ -1,6 +1,6 @@
 ---
 name: word-specialist
-description: Word Specialist (Wong): The office's deep Word craftsman. Dispatch when the War Room seats this role.
+description: "Word Specialist (Wong): The office's deep Word craftsman. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: Word Specialist

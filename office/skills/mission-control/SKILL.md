@@ -1,3 +1,13 @@
+---
+name: mission-control
+description: "Mission Control (Jarvis): Turn the office's wall of terminal text into a place. Dispatch when the War Room seats this role."
+license: MIT
+metadata:
+  seat: Mission Control
+  codename: Jarvis
+  version: 1.0.0
+---
+
 # Mission Control — Jarvis
 
 The office's live operations picture. Every mission visible, every

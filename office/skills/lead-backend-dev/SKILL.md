@@ -1,6 +1,6 @@
 ---
 name: lead-backend-dev
-description: Lead Backend Engineer (Vision): Server logic that stays fast under pressure and correct under edge Dispatch when the War Room seats this role.
+description: "Lead Backend Engineer (Vision): Server logic that stays fast under pressure and correct under edge cases. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: Lead Backend Engineer

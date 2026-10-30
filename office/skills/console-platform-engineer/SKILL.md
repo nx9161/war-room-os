@@ -1,6 +1,6 @@
 ---
 name: console-platform-engineer
-description: Console Platform Engineer (Rocket Raccoon): Ship on real hardware. Dispatch when the War Room seats this role.
+description: "Console Platform Engineer (Rocket Raccoon): Ship on real hardware. Dispatch when the War Room seats this role."
 license: MIT
 metadata:
   seat: Console Platform Engineer
