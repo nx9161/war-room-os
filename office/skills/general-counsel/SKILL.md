@@ -46,3 +46,12 @@ standing law department.
 ## Outputs
 - Jurisdiction briefs, contract redlines, risk memos (severity +
   mitigation), "engage counsel" triggers.
+
+### Standing rules — learning review 2026-11-01
+
+- When vetting a vendored artifact, name the EXACT dist filename in
+  the verdict and record whether that file retains its license
+  header — minified dists often strip it, so "vendored verbatim" is
+  only license-clean if the verbatim file carries its notice. Also
+  record the real global the dist exposes (e.g. UMD versus ESM
+  entry) so downstream asserts match it.

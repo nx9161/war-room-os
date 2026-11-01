@@ -34,3 +34,24 @@ logic — Flutter/React Native plus web where it fits.
 ## Escalation
 API contract disagreements with backend, missing designs, store-review
 or compliance blockers → Sloane.
+
+### Standing rules — learning review 2026-11-01
+
+- Assert rendered state, never attributes or source values: visibility
+  and similar state are asserted as computed style (or capture). A
+  CSS author rule can silently defeat the `hidden` attribute.
+- Ship `[hidden] { display: none !important; }` in the base layer of
+  any project using JS-toggled `hidden`, from day one.
+- Composed behaviors are tested under each platform's event ordering,
+  not each behavior in isolation: two spec-compliant behaviors can
+  compose into a dead interaction (a tap's blur closing a panel
+  mid-gesture). A close-on-blur guard must ask what caused the blur
+  — a pointer gesture inside the widget answers differently than a
+  keyboard departure.
+- Verify focus and landing behavior with trusted (real) input, not
+  synthetic events: native fragment navigation resets focus to body
+  for non-focusable targets, and a tap's native focus assignment runs
+  after pointerdown handlers — both invisible to synthetic testing.
+- Check the probe before blaming the product: verify coordinate
+  spaces, struck targets, and probe reporting (e.g. viewport offsets
+  below mobile browser chrome) before judging a landing.

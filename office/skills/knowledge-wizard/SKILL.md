@@ -61,3 +61,19 @@ hand the office documented facts.
 - If the simple answer has a catch (security risk, breaking change,
   license trap), say so up front and route it to AppSec or Counsel.
 - Advisory, not blocking — but your dossier shapes every War Room.
+
+### Standing rules — learning review 2026-11-01
+
+- jsdom discipline: capture jsdomError from the first probe run;
+  write results to disk before any console output and plan to kill
+  the process (timer-driven pages keep the event loop alive); use an
+  explicit process exit. Always execute unknown and malformed hashes
+  — in single-container renderers one undefined variable silently
+  empties a route.
+- Byte gates record element identity and byte size alongside every
+  hash, so the next seat hashes the same node.
+- Benchmark honesty: fields the fetcher cannot see (sticky mobile
+  bars, JS-rendered heroes, form sets) are marked "not observed",
+  never guessed — and pre-plan one live-browser spot-check for the
+  single most load-bearing unverified field instead of leaving the
+  whole layer unverifiable.

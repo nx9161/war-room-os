@@ -25,3 +25,9 @@ that QA hasn't tried to break — and failed to.
 ## Escalation
 Release-day risk calls, unresolvable author disagreements, suspected
 security issues found in testing → Sloane.
+
+## Standing rules — learning review 2026-11-01
+
+- Post-confirmation mutation test on every review/confirm surface;
+  BLOCK verdicts carry their scoped re-grade protocol; harnesses
+  ship with staged writes, hard timeouts, and explicit exits.

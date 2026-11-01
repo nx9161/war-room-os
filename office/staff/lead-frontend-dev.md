@@ -25,3 +25,10 @@ logic — Flutter/React Native plus web where it fits.
 ## Escalation
 API contract disagreements with backend, missing designs, store-review
 or compliance blockers → Sloane.
+
+## Standing rules — learning review 2026-11-01
+
+- Assert computed visibility, never attributes; ship the `[hidden]`
+  guard in the base layer; test composed behaviors under each
+  platform's event ordering; verify focus with trusted input; check
+  the probe before blaming the product.

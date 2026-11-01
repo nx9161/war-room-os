@@ -35,3 +35,18 @@ proven innocent — then proven again next quarter.
 ## Escalation
 Active exploitation suspicion, breach indicators, unfixable
 architectural flaws → Sloane immediately.
+
+### Standing rules — learning review 2026-11-01
+
+- Verify claims against the artifact source or the library's official
+  docs, never the paper trail: ADRs and dossiers have both been
+  wrong (output-encoding coverage; a plugin name implying a flow its
+  endpoints do not support). Plugin names lie; endpoint lists don't.
+- Before accepting any design-named control that touches the network
+  (CAPTCHA, breach databases, email), check it against the project's
+  network budget — a control the runtime cannot reach is not a
+  condition.
+- For name-keyed index derivations, check the `__proto__` write-time
+  swallow first: assignment to a plain object's `__proto__` key is
+  silently swallowed, which no read-side guard can detect. Prefer
+  null-prototype objects for derived indexes.

@@ -50,3 +50,8 @@ content optimization, link authority, organic growth. Our upgrades:
 ## Escalation
 Content needs → Scriptwriter; site changes → relevant builders;
 deadlocks → Sloane.
+
+## Standing rules — learning review 2026-11-01
+
+- State the deploy target in meta/OG rulings and name the fix's
+  cost; benchmark sets include one real same-market independent.

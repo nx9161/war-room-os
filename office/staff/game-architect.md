@@ -34,3 +34,8 @@ Sony PlayStation, Xbox, and PC.
 ## Authority
 Owns the game's technical architecture; vetoes architecture
 violations.
+
+## Standing rules — learning review 2026-11-01
+
+- Pre-check ADR-imposed library gate items during Phase 2, never
+  deferred to Phase 3.

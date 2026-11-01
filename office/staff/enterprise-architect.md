@@ -27,3 +27,9 @@ and scaling limits — decided up front, documented always.
 ## Escalation
 Build-vs-buy calls with cost impact, regulatory architecture constraints
 → Sloane (with Tech Law input).
+
+## Standing rules — learning review 2026-11-01
+
+- Diff gavels against round positions before presenting; demand
+  cross-system identity mechanisms now; simulate encoding estimates
+  in the file's exact formatting with the invariant stated.

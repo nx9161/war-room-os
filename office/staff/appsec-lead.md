@@ -26,3 +26,9 @@ proven innocent — then proven again next quarter.
 ## Escalation
 Active exploitation suspicion, breach indicators, unfixable
 architectural flaws → Sloane immediately.
+
+## Standing rules — learning review 2026-11-01
+
+- Verify against source or official docs, never the paper trail;
+  check network-touching controls against the network budget; check
+  the `__proto__` write-time swallow for name-keyed indexes.

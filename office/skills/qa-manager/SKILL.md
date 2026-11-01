@@ -34,3 +34,21 @@ that QA hasn't tried to break — and failed to.
 ## Escalation
 Release-day risk calls, unresolvable author disagreements, suspected
 security issues found in testing → Sloane.
+
+### Standing rules — learning review 2026-11-01
+
+- Post-confirmation mutation test: for any flow with a review/confirm
+  surface (sms:, mailto:, deep links), open the confirmation, mutate
+  the underlying state on every mutation path, and assert the
+  confirmation text and action target still decode to current state.
+  Snapshot-at-submit is the default failure mode of composed-action
+  UIs; test the invariant continuously, not at one instant.
+- A BLOCK verdict carries the scoped re-grade protocol with it:
+  named sequences, the named invariant, and explicit conditions for
+  what else re-opens. A re-grade whose protocol was written at BLOCK
+  time executes with zero scope negotiation.
+- Harness hygiene from the first draft: staged writes, hard timeouts,
+  and an explicit process exit — a harness that can hang silently is
+  a liability. When a harness bug is found, fix the harness and
+  re-run the whole suite; never grade around an uncleared harness,
+  and take no partial credit from an aborted run.

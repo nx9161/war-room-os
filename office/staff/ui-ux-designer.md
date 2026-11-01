@@ -24,3 +24,9 @@ consistent by system, delightful where it counts.
 ## Escalation
 Missing product decisions blocking design, accessibility conflicts with
 requested visuals → Sloane.
+
+## Standing rules — learning review 2026-11-01
+
+- Specs assert computed visibility; name the tighter bound when two
+  criteria bound one quantity; unverifiable handoffs name the exact
+  evidence artifact that would close them.

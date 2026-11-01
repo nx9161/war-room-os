@@ -38,3 +38,12 @@ content, earned authority. White-hat only.
 - The audit: issues ranked by impact.
 - The plan: changes, in order, with expected outcomes.
 - The report: traffic, rankings, clicks — tied to actions taken.
+
+### Standing rules — learning review 2026-11-01
+
+- State the deploy target explicitly in every meta/OG ruling, and
+  name the cost of the proposed fix — preview-environment evidence
+  never overrides production-target requirements.
+- Benchmark sets include one real same-market independent alongside
+  the nationals — the local exemplar calibrates what "better" can
+  honestly mean and keeps the spec inside the fact boundary.

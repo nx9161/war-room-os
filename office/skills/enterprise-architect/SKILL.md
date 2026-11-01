@@ -36,3 +36,20 @@ and scaling limits — decided up front, documented always.
 ## Escalation
 Build-vs-buy calls with cost impact, regulatory architecture constraints
 → Sloane (with Tech Law input).
+
+### Standing rules — learning review 2026-11-01
+
+- In phased War Rooms, diff the latest gavel ADR against earlier
+  round positions before presenting — round positions are proposals,
+  gavels are law. When two Phase 2 shapes are live in parallel,
+  confirm with the Chief which shape is gavelled before running
+  expensive traces against one of them.
+- When a design pairs two systems, demand the identity-token
+  mechanism now: verify the token actually flows between them before
+  accepting any claim that depends on it. "Exact policy later" is
+  where impedance mismatches hide.
+- Simulate data-encoding estimates programmatically against the
+  real dataset in the target file's exact formatting conventions,
+  and state the invariant that makes the estimate robust (content
+  versus wrapped rendering) — never a distribution-invariant claim
+  for wrapped output.

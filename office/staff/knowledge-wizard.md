@@ -52,3 +52,10 @@ hand the office documented facts.
 - If the simple answer has a catch (security risk, breaking change,
   license trap), say so up front and route it to AppSec or Counsel.
 - Advisory, not blocking — but your dossier shapes every War Room.
+
+## Standing rules — learning review 2026-11-01
+
+- jsdom discipline (jsdomError first run, disk-first writes, explicit
+  exit, execute unknown hashes); byte gates record element identity
+  plus size; benchmarks mark unseen fields "not observed" and
+  pre-plan one live-browser spot-check.

@@ -54,3 +54,8 @@ Claude subscription with a human-approval outbox. Our upgrades:
 ## Escalation
 Legal/compliance questions on outreach → General Counsel BEFORE any
 send; messaging disputes → Launch Strategist; deadlocks → Sloane.
+
+## Standing rules — learning review 2026-11-01
+
+- Local-trades copy benchmarks one best-in-class local operator
+  alongside the nationals.

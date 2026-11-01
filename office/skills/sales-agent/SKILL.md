@@ -56,3 +56,9 @@ human approve/reject. Our version, upgraded:
   in the outbox for approval.
 - Pipeline report: contacted, replied, in conversation, meetings
   booked — with reply rates per batch.
+
+### Standing rules — learning review 2026-11-01
+
+- For local-trades copy missions, benchmark one best-in-class local
+  operator alongside the nationals — the local exemplar carries most
+  of the steal-able mechanics.

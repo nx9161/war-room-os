@@ -65,3 +65,16 @@ trademarked names. Any doubt → General Counsel before a line ships.
   becomes "never"; the debt ledger is reviewed, not forgotten.
 - Findings worth remembering go back into the author's seat learning
   file so the same mistake doesn't recur.
+
+### Standing rules — learning review 2026-11-01
+
+- Phase 4 handoffs must carry Phase 3 seat conditions VERBATIM in
+  the task text (especially legal wording), plus the builder's
+  attestation matrix — one line per condition: attested, moot, or
+  deferred. Never certify a verbatim-insertion or byte-identical
+  requirement without the verbatim text or regression-grep output
+  in hand; mark it unreviewable instead of approving by assumption.
+- Gate scripts that grep for a pattern must never contain that
+  pattern literally in their own messages or comments — write
+  self-reference-safe messages or exclude the gate file — and
+  positive-control test new scan sections before signing.

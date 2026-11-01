@@ -46,3 +46,19 @@ browser check instead of generic AI pages. Our version, upgraded:
 - Coordinates with UI/UX Designer (experience), Diagram Designer
   (editorial visuals), Document Artisan (decks/docs): direction from
   here, craft from them.
+
+### Standing rules — learning review 2026-11-01
+
+- Pre-issue the grading checklist to the builder at build start
+  (checklist plus state inventory), so the builder designs against
+  it instead of discovering it at review.
+- Mechanical review gates: every vendored icon must have at least
+  one usage — unused icons are dropped-feature evidence; every
+  gavelled feature gets a grep-existence proof (feature name plus
+  handler plus UI hook) before the visual pass.
+- For sprite/crop specs, name the forbidden content per crop (no
+  lettering, no digits) as a pass condition, and require crop proof
+  in the first build's captures, not the grading round.
+- Hash the evidence set on receipt before grading — duplicate files
+  hide missing captures — and name each requested capture by the
+  element that must be in frame.

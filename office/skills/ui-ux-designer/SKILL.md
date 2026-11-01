@@ -33,3 +33,15 @@ consistent by system, delightful where it counts.
 ## Escalation
 Missing product decisions blocking design, accessibility conflicts with
 requested visuals → Sloane.
+
+### Standing rules — learning review 2026-11-01
+
+- Interactivity specs assert computed visibility for every
+  state-toggled element, not attribute presence.
+- When two criteria bound the same quantity (a per-component cap
+  inside a global cap), the spec names which bound the build suite
+  must test — suites gravitate to the looser number.
+- An item this seat cannot verify (e.g. a live screen-reader run)
+  is handed downstream with the exact evidence artifact that would
+  close it — a scripted task list with expected announcements —
+  not just the item named.

@@ -43,3 +43,10 @@ Sony PlayStation, Xbox, and PC.
 ## Authority
 Owns the game's technical architecture; vetoes architecture
 violations.
+
+### Standing rules — learning review 2026-11-01
+
+- When recommending a library, pre-check the gate items the room's
+  ADRs impose (e.g. hasher algorithm, identifier model) during
+  Phase 2 instead of deferring them to Phase 3 — a deferred gate
+  item can fork the recommendation.

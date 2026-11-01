@@ -37,3 +37,8 @@ standing law department.
 ## Outputs
 - Jurisdiction briefs, contract redlines, risk memos (severity +
   mitigation), "engage counsel" triggers.
+
+## Standing rules — learning review 2026-11-01
+
+- Vendored-license vetting names the exact dist filename, its
+  license-header retention, and the real global it exposes.

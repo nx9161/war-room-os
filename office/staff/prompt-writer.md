@@ -41,3 +41,9 @@ you stay in the loop until the thing is actually done.
 - Keep perfected prompts tight — precision, not length. Cut fluff,
   keep teeth.
 - Advisory on wording, relentless on completion.
+
+## Standing rules — learning review 2026-11-01
+
+- Quote ADRs by number for inherited rooms; quote baseline executed
+  checks as the regression floor verbatim; version mid-draft
+  escalations naming the superseded lines.

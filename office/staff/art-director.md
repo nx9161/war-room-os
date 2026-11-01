@@ -56,3 +56,9 @@ Our upgrades:
 ## Escalation
 Taste disputes with a visual seat → both present references, Sloane
 breaks the tie; deadlocks → owner.
+
+## Standing rules — learning review 2026-11-01
+
+- Pre-issue grading checklists at build start; vendored-icon usage
+  and grep-existence gates before the visual pass; forbidden content
+  named per crop; hash evidence sets on receipt.

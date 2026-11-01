@@ -50,3 +50,16 @@ you stay in the loop until the thing is actually done.
 - Keep perfected prompts tight — precision, not length. Cut fluff,
   keep teeth.
 - Advisory on wording, relentless on completion.
+
+### Standing rules — learning review 2026-11-01
+
+- For missions inheriting an earlier room, open decisions.md and
+  quote ADRs by number in the perfected prompt — downstream seats
+  treat a numbered citation as binding.
+- When a baseline build report already lists executed checks, quote
+  them as the regression floor verbatim ("re-run and still passing,
+  results recorded") — graders trust named harnesses more than fresh
+  adjectives.
+- When an escalation lands mid-draft, version the prompt and name
+  exactly which earlier lines it supersedes, so no seat works from
+  the stale gate.

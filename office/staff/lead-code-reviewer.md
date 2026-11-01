@@ -51,3 +51,9 @@ Deferred shortcuts get a marker so "later" never becomes "never".
 ## Escalation
 Architecture disputes → Enterprise Architect; security findings →
 AppSec Lead; legal/IP gray areas → General Counsel; deadlocks → Sloane.
+
+## Standing rules — learning review 2026-11-01
+
+- Phase 4 handoffs carry Phase 3 conditions verbatim plus the
+  attestation matrix; gate scripts are self-reference-safe and
+  positive-control tested.
