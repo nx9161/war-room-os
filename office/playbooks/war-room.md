@@ -175,6 +175,21 @@ the original request *plus* every topic already discussed:
 information, the Chief says so plainly and recommends a decision
 instead of theater-debating.
 
+## Promotion Gate — binding on all self-modification
+
+An office that improves itself needs a gate between "changed" and
+"better." Every commit that modifies a seat charter, a playbook, a
+skill, or a routing rule must cite its evidence in the commit body:
+the eval run it passed (task set + score vs the standing baseline,
+zero critical misses), or — for process/documentation-only changes —
+the line `process-only: no seat behavior changed` plus the validator
+result. Behavior changes ship only if the affected seats' eval tasks
+hold or beat baseline; a drop benches the change. Every recorded
+mistake spawns a regression eval task within one review cycle, and
+new tasks are filed as **capability** (still being mastered) or
+**regression** (must stay ~100%). Before accepting any score change,
+read the failing transcripts, not just the numbers.
+
 ## Rules
 - Skipping the War Room for production changes requires Sloane's
   explicit waiver, recorded as an ADR.

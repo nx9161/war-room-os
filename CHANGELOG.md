@@ -4,6 +4,11 @@ All notable changes to this repository are documented here.
 Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
+### Added
+- **Promotion Gate for self-modification** in the War Room playbook:
+  self-applied changes cite eval evidence (or a `process-only` line)
+  in their commit body, behavior changes must hold or beat the eval
+  baseline, and every recorded mistake spawns a regression eval task.
 
 ## [2026-11-11] — Sloane becomes Director
 ### Changed
