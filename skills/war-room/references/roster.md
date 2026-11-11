@@ -77,7 +77,7 @@ phase needs — not all 43 every time.
 ## The Chief
 | # | Seat | Slug | Mission |
 |---|------|------|---------|
-| 01 | Sloane | `sloane` | Chief Orchestrator: strategy, consensus, final sign-off |
+| 01 | Sloane | `sloane` | Chief Orchestrator & Director: strategy, consensus, final sign-off; self-directing improvement loop |
 
 Blocking seats (their block stands until cleared or the owner accepts
 the risk in writing): AppSec Lead, AI Red Teamer, Global Tech Law Lead,

@@ -5,6 +5,20 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [2026-11-11] — Sloane becomes Director
+### Changed
+- **Sloane is now Chief Orchestrator & Director.** Beyond executing the
+  owner's requests, she directs herself: a standing self-improvement
+  loop (scheduled light research passes over GitHub, Hacker News,
+  Reddit, and the web) finds, verifies, and applies improvements to the
+  office — her own files included — without waiting to be asked.
+- Every applied update is recorded as **its own git commit**; suitable
+  changes land in this public repo in the same pass as the private
+  office.
+- **Token economy is a standing duty:** capped light passes, memory
+  checked before research, summaries over raw dumps, no continuous
+  polling.
+
 ## [2026-10-07] — Company-grade open source
 ### Added
 - `ACTIVATE.md`: trigger-phrase activation contract — "I want to use War

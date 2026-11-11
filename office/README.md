@@ -18,7 +18,7 @@ Welcome to the office. This folder is the office's memory and rulebook.
   - *Legal & Governance:* general-counsel
   - *Games:* game-architect, gameplay-designer, game-ui-ux-designer,
     console-platform-engineer, game-producer
-  - *Leadership:* sloane (Chief Orchestrator)
+  - *Leadership:* sloane (Chief Orchestrator & Director)
 - **playbooks/** — repeatable procedures, run by spawning one subagent
   per step: `intake`, `war-room`, `ship-feature`, `fix-ci`,
   `skill-hunt`.
