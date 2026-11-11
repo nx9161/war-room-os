@@ -19,6 +19,12 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
   self-applied changes cite eval evidence (or a `process-only` line)
   in their commit body, behavior changes must hold or beat the eval
   baseline, and every recorded mistake spawns a regression eval task.
+- **Cast Check gains shape and budget.** Every mission now declares
+  `shape: parallel | sequential | mixed` and `budget: seats × max
+  actions`; sequential missions default to one seat (Google Research
+  180-configuration study, 2026-09-24: fan-out on sequential work
+  costs 39–70%), and seating more than 7 seats must record why the
+  work is independent.
 
 ## [2026-11-11] — Sloane becomes Director
 ### Changed

@@ -87,7 +87,16 @@ check into the mission's boardroom record:
 3. Each named seat is either **seated** (spawn packet assembled) or
    **skipped with a written reason** (out of scope, genuine
    duplication, owner direction).
-4. No Phase 0 until the cast check exists. A cast check written
+4. **Declare the mission's shape and budget.** `shape: parallel |
+   sequential | mixed` — are the seats' steps independent, or does
+   each step depend on the previous one's output? `budget: <seats> ×
+   <max actions each>` (Anthropic's orchestrator-worker budgets).
+   **Sequential missions default to ONE seat** — fan-out on
+   sequential work costs 39–70% of performance (Google Research
+   180-configuration study, 2026-09-24); the Director may still
+   seat a domain reviewer at the end. Any mission seating more than
+   7 seats must record why the work is independent.
+5. No Phase 0 until the cast check exists. A cast check written
    after the work is a confession, not a check — it gets logged as
    an M-5 instance.
 
