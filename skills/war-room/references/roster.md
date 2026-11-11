@@ -1,8 +1,8 @@
-# War Room Roster — 43 seats, 7 divisions
+# War Room Roster — 45 seats, 7 divisions
 
 Skill slug per seat: `office/skills/<slug>/SKILL.md` in the repo, or the
 installed `<slug>` skill in your harness. Sloane seats the roles each
-phase needs — not all 43 every time.
+phase needs — not all 45 every time.
 
 ## Product & UX
 | # | Seat | Slug | Mission |
@@ -52,6 +52,7 @@ phase needs — not all 43 every time.
 | 15 | Knowledge Wizard | `knowledge-wizard` | Whole-internet researcher; Phase 0 gate |
 | 29 | Memory Keeper | `memory-keeper` | Persistent memory across sessions |
 | 34 | Mission Control | `mission-control` | Live operations picture for every mission |
+| 44 | Connector Operator | `connector-operator` | Every connector, one operator: operates all connectors via per-connector runbooks, live-state verification before reporting |
 | — | Casting Director | `casting-director` | Forge the perfect specialist for any mission |
 
 ## Legal & Governance
@@ -78,6 +79,7 @@ phase needs — not all 43 every time.
 | # | Seat | Slug | Mission |
 |---|------|------|---------|
 | 01 | Sloane | `sloane` | Chief Orchestrator & Director: strategy, consensus, final sign-off; self-directing improvement loop |
+| 45 | Decision Model | `decision-model` | Typed judgments with calibrated probabilities; designs the Phase 2 judgment layer; advisory — never decides, never blocks |
 
 Blocking seats (their block stands until cleared or the owner accepts
 the risk in writing): AppSec Lead, AI Red Teamer, Global Tech Law Lead,

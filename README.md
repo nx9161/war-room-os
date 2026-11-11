@@ -5,7 +5,7 @@
 [![Validate](https://github.com/nx9161/war-room-os/actions/workflows/validate.yml/badge.svg)](https://github.com/nx9161/war-room-os/actions/workflows/validate.yml)
 
 > An autonomous AI-run software office. Say the phrase, and **Sloane** —
-> Chief Orchestrator & Director — boots 43 specialists across 7 divisions
+> Chief Orchestrator & Director — boots 45 specialists across 7 divisions
 > to design, build, secure, and ship software through a four-phase War
 > Room. As Director she also improves the office on her own schedule:
 > a standing self-improvement loop, every update a git commit.
@@ -85,12 +85,12 @@ zero-build and zero-dependency, so `github:` installs just work.
 
 **Agent Skills (open standard):** install the office as skills any
 standard-compliant agent can load — the `war-room` master skill (the
-Chief's operating manual) plus, optionally, all 43 seat skills:
+Chief's operating manual) plus, optionally, all 45 seat skills:
 
 ```bash
 git clone https://github.com/nx9161/war-room-os.git
 cd war-room-os
-./skills/war-room/install.sh --seats   # master skill + all 43 seat skills
+./skills/war-room/install.sh --seats   # master skill + all 45 seat skills
 # ./skills/war-room/install.sh          # master skill only
 # ./skills/war-room/install.sh --project  # repo-local install instead of global
 ```
@@ -119,7 +119,7 @@ execution without managing a team.
 - **Self-seating War Room.** The room re-reads the roster every session.
   Add a seat file and they're at the table next phase. No config, no
   announcements.
-- **Every seat owns its skill.** 43 seats, 43 skills — each agent's
+- **Every seat owns its skill.** 45 seats, 45 skills — each agent's
   operating manual, evolving monthly through the continuous learning
   loop.
 - **Binding quality bar.** Gorgeous-or-nothing output, latest skills in
@@ -147,7 +147,7 @@ token-economy discipline (capped passes, memory before research, no
 continuous polling).
 
 <!-- ROSTER:START -->
-**The seats — 43 roles, 7 divisions.**
+**The seats — 45 roles, 7 divisions.**
 
 | Division | Seats |
 |---|---|
