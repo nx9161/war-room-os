@@ -19,13 +19,77 @@ needed:
 2. New agents are briefed (their seat file + the session dossier) and
    join from the next activity onward — they debate, vote, and take
    actions like everyone else.
-3. Sloane announces the current table once at session start ("43 seated").
+3. Sloane announces the current table once at session start ("44 seated").
 4. The same check runs between phases: a seat added mid-session joins
    at the next phase boundary.
 5. If the owner mentions a roster change mid-conversation ("I added an
    agent", "I updated the file"), Sloane re-reads the roster immediately
    and confirms the new lineup — then the next War Room activity
    includes them.
+
+## Spawn packet (mandatory — Intelligence Upgrade Layer 3)
+
+No seat is spawned from memory of its role. Before a seat speaks, its
+packet is assembled by `office/scripts/spawn-packet.py <slug>` (add
+`--wing memory/wings/projects/<project>` for mission context): model
+routing header, the seat's skill, staff file, learnings, personal
+board and decision log, in that priority order. The host pastes the
+packet (or the file paths it contains, where the harness reads files
+directly) into the seat's briefing. `spawn-packet.py --check-all`
+must pass 45/45 before a War Room convenes — a seat that cannot
+assemble a packet does not sit.
+
+## Seat routing (standing — owner order, 2026-10-30)
+
+Born from a real miss: a game project shipped extensive game UI work
+without ever seating the Game UI/UX Designer, because the coordinator
+routed to familiar seats and framed her domain as someone else's
+checklist. These rules bind the coordinator, not the seats.
+
+1. **Domain trigger.** Each seat's charter Mission defines its
+   domain. When a mission touches a seat's domain, that seat is
+   seated by default — with a full spawn packet, never simulated
+   from the coordinator's memory of the role. The per-seat triggers
+   live in `office/playbooks/seat-routing-table.md` (generated from
+   the charters; regenerate it whenever a charter Mission changes).
+2. **Familiarity is not a criterion.** A seat's track record, the
+   coordinator's habits, or an empty learnings file never decide
+   routing. A cold seat is seated precisely to end its cold start;
+   skipping it for being untested is the self-fulfilling bench this
+   rule exists to break.
+3. **Skips are recorded.** Leaving a domain seat out requires a
+   reason on the mission's boardroom record (out of scope, genuine
+   duplication, owner direction). Silence is not a reason.
+4. **Write-back closes the mission.** A mission is not closed until
+   every seated seat has a dated learnings entry — or an explicit
+   "no learning" line. Work a seat did that never reached its file
+   is a coordinator defect and is reported as one.
+5. **Utilization is reviewed.** The monthly learning review reports
+   seat utilization from the experience log; a seat with zero live
+   seatings across a quarter gets a verification drill or a cut
+   recommendation — it does not get another quarter of ornament.
+
+## Model routing (standing)
+
+Every seat carries a model tier in its agent frontmatter
+(`metadata.model_tier`): frontier / standard / fast. Spawn each seat on
+the strongest model its tier calls for on the host harness — never
+downgrade a blocking seat. Full rules: `office/MODEL-ROUTING.md`.
+
+## Cast Check (mandatory, before Phase 0 — M-5 countermeasure)
+
+Before any mission work starts, the coordinator writes the cast
+check into the mission's boardroom record:
+
+1. List the domains the mission touches (game UI, payments,
+   contracts, data, deployment, …).
+2. For each domain, name its seat(s) from the roster.
+3. Each named seat is either **seated** (spawn packet assembled) or
+   **skipped with a written reason** (out of scope, genuine
+   duplication, owner direction).
+4. No Phase 0 until the cast check exists. A cast check written
+   after the work is a confession, not a check — it gets logged as
+   an M-5 instance.
 
 ## Phase 0 — Prompt Perfection & Wizard Briefing (mandatory gate)
 1. **Prompt Writer** forges the raw request into the perfected prompt —
@@ -40,6 +104,9 @@ needed:
    perfected prompt plus documented facts, never from memory or vibes.
 4. **MCP Maker** is dispatched when the plan needs a tool with no
    connector: it builds the integration (CLI + connector doc + skill)
+- **Connector Operator** confirms live state and limits for
+  every connector the plan touches (readiness check against
+  `office/runbooks/connectors/<connector>.md`).
    so the seats can drive the tool.
 
 ## Phase 1 — Intake & PRD
@@ -65,6 +132,11 @@ to debate it:
 - Output: agreed topology + ADRs. Unresolved disputes go to Sloane.
 - Architecture Visualizer renders the agreed topology as an interactive
   diagram (no architecture leaves Phase 2 without its diagram).
+- Decision Model designs the judgment layer: every classify / route /
+  score / extract / verify step in the design becomes typed questions
+  (Choice, Noul, Score, Box) plus a truth table in code — judgments
+  from the model, decisions in code. No prompt-and-parse step ships
+  where a typed question fits.
 - **Game projects:** Game Architect presents the game architecture
   (engine, ECS, netcode, platform budgets) and Console Platform
   Engineer brings platform constraints (PS5/Xbox/PC targets).
@@ -175,20 +247,41 @@ the original request *plus* every topic already discussed:
 information, the Chief says so plainly and recommends a decision
 instead of theater-debating.
 
-## Promotion Gate — binding on all self-modification
+## Promotion Gate — binding on all self-modification (Director rule, 2026-11-11)
 
-An office that improves itself needs a gate between "changed" and
-"better." Every commit that modifies a seat charter, a playbook, a
-skill, or a routing rule must cite its evidence in the commit body:
-the eval run it passed (task set + score vs the standing baseline,
-zero critical misses), or — for process/documentation-only changes —
-the line `process-only: no seat behavior changed` plus the validator
-result. Behavior changes ship only if the affected seats' eval tasks
-hold or beat baseline; a drop benches the change. Every recorded
-mistake spawns a regression eval task within one review cycle, and
-new tasks are filed as **capability** (still being mastered) or
-**regression** (must stay ~100%). Before accepting any score change,
-read the failing transcripts, not just the numbers.
+The office now modifies itself continuously (Director mandate), so
+self-modification gets the same discipline as production work. This
+gate extends the 2026-10-30 evals regression rule to every
+self-applied change, and it binds the Director's loop explicitly:
+
+1. **Cite the evidence in the commit.** Every commit that changes a
+   seat charter, a playbook, a skill, a routing rule, or the
+   Director's own files names its evidence in the commit body: the
+   eval run it passed (task set, score vs the standing baselines —
+   v1 **59/60**, v2 **437/440**, zero critical misses), or, for
+   process/documentation-only changes that alter no seat behavior,
+   the line `process-only: no seat behavior changed` plus the
+   validator result. A change with neither does not land.
+2. **Behavior changes hold the bar.** A change that alters how any
+   seat behaves ships only if the affected seats' eval tasks hold or
+   beat baseline with zero critical misses — re-run at the next
+   monthly learning review at the latest, and immediately when the
+   change is large. A drop benches the change (revert + wing note),
+   never gets argued past.
+3. **Mistakes become tests.** Every Mistake Register entry spawns at
+   least one regression task in `office/evals/` within one review
+   cycle, sourced from the real failure. New eval tasks are filed as
+   **capability** (target <100%, still being mastered) or
+   **regression** (target ~100%; a drop blocks) — mastered capability
+   tasks graduate to regression.
+4. **Read the failures.** Before accepting any score change, the
+   Director reads the failing transcripts, not just the numbers
+   (the step practitioners skip, per Anthropic's eval guidance).
+
+Source: Director research pass 1 (2026-11-11) — Anthropic,
+*Demystifying evals for AI agents* (2026-01-09); The AI Runtime,
+*Self-Improving Agents in 2026*; full report in the office wing
+entry of the same date.
 
 ## Rules
 - Skipping the War Room for production changes requires Sloane's
