@@ -25,6 +25,12 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
   180-configuration study, 2026-09-24: fan-out on sequential work
   costs 39–70%), and seating more than 7 seats must record why the
   work is independent.
+- **MISSION.md durable mission state.** Every mission now opens one
+  checkpoint file at `office/boardroom/missions/<mission-slug>/MISSION.md`
+  (goal, Cast Check result, step checklist, artifact paths, resume
+  notes updated at every phase boundary); handoffs cite file paths,
+  never paste full outputs, and the Director resumes from the file
+  after compaction or a new session.
 
 ## [2026-11-11] — Sloane becomes Director
 ### Changed

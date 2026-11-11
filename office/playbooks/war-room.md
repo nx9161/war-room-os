@@ -79,7 +79,7 @@ downgrade a blocking seat. Full rules: `office/MODEL-ROUTING.md`.
 ## Cast Check (mandatory, before Phase 0 — M-5 countermeasure)
 
 Before any mission work starts, the coordinator writes the cast
-check into the mission's boardroom record:
+check into the mission's MISSION.md (see below):
 
 1. List the domains the mission touches (game UI, payments,
    contracts, data, deployment, …).
@@ -99,6 +99,39 @@ check into the mission's boardroom record:
 5. No Phase 0 until the cast check exists. A cast check written
    after the work is a confession, not a check — it gets logged as
    an M-5 instance.
+
+## Mission state file (MISSION.md — mandatory, from the Cast Check on)
+
+The plan lives in a file, not in the Director's context. Every mission
+opens one checkpoint file at
+`office/boardroom/missions/<mission-slug>/MISSION.md` — the Cast Check
+is written into it, not into the shared board. It holds:
+
+1. **Goal** — one line, taken from the perfected prompt.
+2. **Cast Check result** — shape, budget, seated seats, skipped seats
+   with reasons.
+3. **Step checklist** — every step with a state:
+   `pending | active | done | blocked`.
+4. **Artifact paths** — dossier, PRD, ADRs, deliverables. Paths only,
+   never pasted content.
+5. **Resume notes** — a dated tail the Director updates at **every
+   phase boundary**: where the mission stands, what happens next, what
+   is blocked.
+
+Rules:
+
+- **Update at every phase boundary.** A MISSION.md that lags the
+  mission misleads the next session — worse than none at all.
+- **Handoffs cite paths, never paste outputs.** Subagent results are
+  referenced by file path; full outputs are never pasted into the
+  coordinator thread.
+- **Resume from the file.** After context compaction, a crash, or a
+  new session, the Director re-reads MISSION.md before resuming —
+  the plan is never reconstructed from memory. (LangGraph's
+  durable-state pattern, 2026; Anthropic's Research system saves the
+  lead's plan against context truncation — Director research pass 1,
+  2026-11-11.)
+- Template: `office/boardroom/missions/_template/MISSION.md`.
 
 ## Phase 0 — Prompt Perfection & Wizard Briefing (mandatory gate)
 1. **Prompt Writer** forges the raw request into the perfected prompt —
