@@ -5,6 +5,16 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Full freshness sync with the private office (2026-11-11).** The
+  roster is complete at **45 seats**: the Connector Operator and
+  Decision Model seats (charters + skills) are in, and every count in
+  the repo now says 45. The agent bundle, office handbook, and War
+  Room playbook are the current editions; the House Rules are
+  complete through **§11 (No invented blockers)** — including §9
+  (owner orders execute) and §10 (the Director mandate), which this
+  snapshot had never carried. New system docs: `ROSTER-TIERS.md`,
+  `MODEL-ROUTING.md`, `TOOL-GRANTS.md`, `BRAIN-DESIGN.md`. The
+  validator drift (two unreferenced staff files) is fixed.
 - **Promotion Gate for self-modification** in the War Room playbook:
   self-applied changes cite eval evidence (or a `process-only` line)
   in their commit body, behavior changes must hold or beat the eval
