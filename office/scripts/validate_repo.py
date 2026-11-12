@@ -10,6 +10,14 @@ Checks:
   5. Every SKILL.md under skills/*/ carries valid Agent Skills
      frontmatter (name matches folder, description present and
      <= 200 chars, license present).
+  6. Every seat slug is backed by an agent: office/skills/<slug>/SKILL.md
+     exists and carries frontmatter (name matches the slug, description
+     present); tool skills under office/skills/*/ are gated the same
+     way. Regex-based, stdlib-only — the private validator's equivalent
+     gate parses strict YAML.
+  7. Every staff charter carrying a `## Deliverable schema` section has
+     all four fields (Deliverable, Format, Required sections,
+     Acceptance); pilot coverage is reported, not enforced.
 """
 import sys
 from pathlib import Path
@@ -100,6 +108,67 @@ for md in sorted(ROOT.rglob("*.md")):
                 f"trailing whitespace: {md.relative_to(ROOT)}:{i}"
             )
             break
+
+# 6. Every seat slug is backed by an agent under office/skills/, with
+#    frontmatter whose name matches the slug and a description present.
+#    Tool skills (office/skills/*/ without a staff file) are gated the
+#    same way. Regex-based, matching this validator's check 5 style and
+#    keeping the public template stdlib-only. Known limit, same as
+#    check 5: a folded/block-scalar description (e.g. `description: >`)
+#    reads as its indicator, so this gate guarantees frontmatter
+#    presence, not YAML validity — the strict YAML gate stays private.
+def check_office_skill_frontmatter(slug, skill, label):
+    text = skill.read_text(encoding="utf-8")
+    m = re.match(r"^---\n(.*?)\n---\n", text, re.S)
+    if not m:
+        errors.append(f"{label} has no frontmatter: {slug}")
+        return
+    fm = m.group(1)
+    name_m = re.search(r"^name:\s*(\S+)\s*$", fm, re.M)
+    desc_m = re.search(r"^description:\s*(.+?)\s*$", fm, re.M)
+    if not name_m or name_m.group(1).strip('"') != slug:
+        errors.append(f"{label} name mismatch: {slug}")
+    elif not desc_m:
+        errors.append(f"{label} description missing: {slug}")
+
+
+for staff in sorted((ROOT / "office/staff").glob("*.md")):
+    slug = staff.stem
+    skill = ROOT / "office/skills" / slug / "SKILL.md"
+    if not skill.exists():
+        errors.append(f"seat without agent: {slug}")
+        continue
+    check_office_skill_frontmatter(slug, skill, "agent")
+staff_slugs = {s.stem for s in (ROOT / "office/staff").glob("*.md")}
+for skill in sorted((ROOT / "office/skills").glob("*/SKILL.md")):
+    slug = skill.parent.name
+    if slug not in staff_slugs:
+        check_office_skill_frontmatter(slug, skill, "tool skill")
+
+# 7. Every staff charter carrying a `## Deliverable schema` section has
+#    all four fields; pilot coverage is reported, not enforced.
+SCHEMA_FIELDS = [
+    "- **Deliverable:**",
+    "- **Format:**",
+    "- **Required sections:**",
+    "- **Acceptance:**",
+]
+schema_covered = 0
+for staff in sorted((ROOT / "office/staff").glob("*.md")):
+    text = staff.read_text(encoding="utf-8")
+    marker = "## Deliverable schema"
+    if marker not in text:
+        continue
+    schema_covered += 1
+    section = text.split(marker, 1)[1]
+    section = section.split("\n## ", 1)[0]
+    for field in SCHEMA_FIELDS:
+        if field not in section:
+            errors.append(
+                f"deliverable schema missing {field} "
+                f"in {staff.relative_to(ROOT)}"
+            )
+print(f"deliverable schemas: {schema_covered}/45 charters (pilot)")
 
 if errors:
     print("validate_repo.py FAILED:")

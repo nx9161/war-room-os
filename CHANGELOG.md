@@ -73,6 +73,18 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
   routing. Both now carry a standard `name` + trigger-style
   `description` (mirror of the private office; the private validator
   now gates tool-skill frontmatter too).
+- **Validator now gates seat agents and deliverable schemas.** The
+  public `validate_repo.py` gains the two checks the private validator
+  has carried since Director passes 5 and 16: every seat slug must
+  have an `office/skills/<slug>/SKILL.md` agent with matching
+  frontmatter (`name` + `description`), tool skills included, and
+  every charter carrying a `## Deliverable schema` section must have
+  all four fields. Ported in this validator's own regex style so the
+  template stays stdlib-only — the private gate parses strict YAML,
+  so the ported check guarantees frontmatter presence, not YAML
+  validity (a folded `description: >` reads as its indicator). The
+  snapshot already passed both gates when measured (45/45 agents,
+  3/45 schemas); the public validator simply never ran them.
 
 ## [2026-11-11] — Sloane becomes Director
 ### Changed
