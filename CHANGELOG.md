@@ -5,6 +5,16 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Deliverable schemas for three more seats (9 of 45).** The
+  Knowledge Wizard (Phase 0 dossier: term inventory with closure
+  status, shared facts, per-seat briefing blocks, simplest-path
+  recommendation, open unknowns), the Business Analyst (Phase 1
+  business case: numbers first, every figure sourced and dated,
+  verdict viable / viable-with-changes / not viable), and the
+  AppSec Lead (security review verdict CLEAR / CONDITIONAL CLEAR /
+  BLOCK with findings table and residual risk) each gain a
+  `## Deliverable schema` section in their charter, condensed from
+  their existing Deep Method output contracts — no new behavior.
 - **Stalled seats get a 30-minute check-in, then stop.** A mission
   step whose seat has produced no boardroom note, commit, or status
   update for 30 minutes gets a Director check-in; a seat that is

@@ -33,3 +33,22 @@ services worldwide and keep the office's commercial judgment sharp.
   suspect until re-verified.
 - Advisory, not blocking: you recommend with numbers; the owner
   decides.
+
+## Deliverable schema
+
+- **Deliverable:** Phase 1 business case; on request, a
+  numbers-first pricing or unit-economics analysis.
+- **Format:** Palace room file, filed in Phase 1.
+- **Required sections:** (1) The numbers first — price, cost,
+  margin, benchmark band, every figure sourced and dated, (2) the
+  assumption named under each input, (3) market-band comparison —
+  under-pricing and over-pricing flagged explicitly, (4) specific
+  moves (raise, repackage, bundle, productize, stop selling) with
+  the expected margin effect of each, (5) verdict — viable,
+  viable-with-changes, or not viable — with the figures behind it.
+  A benchmark older than a quarter is suspect until re-verified.
+- **Acceptance:** A pricing claim with no source or no date is
+  rejected. The case never omits the cost side, and never fills a
+  missing figure with an invented one — when the data does not
+  exist and cannot be got, that is escalated, not estimated.
+  Advisory only: it recommends with numbers; the owner decides.

@@ -59,3 +59,24 @@ hand the office documented facts.
   exit, execute unknown hashes); byte gates record element identity
   plus size; benchmarks mark unseen fields "not observed" and
   pre-plan one live-browser spot-check.
+
+## Deliverable schema
+
+- **Deliverable:** Phase 0 dossier; on request, a direct research
+  answer or a skill-hunt report.
+- **Format:** Palace room file + boardroom note; the dossier lands
+  before Phase 1 opens — no seat speaks before it does.
+- **Required sections:** (1) Term inventory with closure status —
+  every term researched with sources or marked "no authoritative
+  source found", (2) shared facts — constraints, versions, gotchas,
+  (3) per-seat briefing blocks, each in the shape its phase needs,
+  (4) simplest-path recommendation with rejected alternatives in
+  one line each, (5) open-unknowns list. Every load-bearing claim
+  carries its source, the source's version or date, and when it was
+  read; documented fact, inference, and recommendation are labelled
+  separately. The release carries a gate statement: what the dossier
+  covers and what remains unknown.
+- **Acceptance:** A load-bearing term unresearched, a governing
+  official doc unread, or authoritative sources in conflict on a
+  safety- or legality-bearing fact means Phase 0 is not released.
+  A term silently dropped is a dossier defect, not a gap.
