@@ -214,6 +214,13 @@ Engineer, Penetration Tester, and General Counsel (in parallel):
 - Lead Code Reviewer reviews every PR before merge (Ponytail ladder:
   delete-list for over-engineering) and blocks on critical defects,
   security findings, or license/IP risk.
+- **Objective verification (WR-OBJECTIVE):** before Sloane authorizes
+  the release, she re-reads the mission's stated objective — the Goal
+  line in `MISSION.md`, taken from the perfected prompt — and verifies
+  each deliverable against it, not only against the decomposed
+  acceptance criteria. A deliverable that passes its tests but does not
+  serve the objective fails this check and loops back under Phase
+  regression; the check and its result are recorded in `MISSION.md`.
 - Voice Designer produces the voice layer: voiceovers, dubs,
   in-product TTS.
 - Document Artisan produces the document layer: decks, documents,

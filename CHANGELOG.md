@@ -5,7 +5,17 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
-- **GATES.md — stable index of every office gate.** The 23 gates
+- **Objective verification at mission close (`WR-OBJECTIVE`).** Before
+  Sloane authorizes a release, she re-reads the mission's stated
+  objective (the `MISSION.md` Goal, from the perfected prompt) and
+  verifies each deliverable against it — not only against the decomposed
+  acceptance criteria. A deliverable that passes its tests but misses
+  the objective loops back under Phase regression; the check is recorded
+  in `MISSION.md`. Grounded in Cemri et al., *Why Do Multi-Agent LLM
+  Systems Fail?* (UC Berkeley, NeurIPS 2025): adding a high-level
+  task-objective verification step yielded +15.6% task success in their
+  intervention study; task-verification failures were 23.5% of the
+  1,642 annotated traces.
   buried in the War Room playbook and House Rules now carry stable
   IDs (`WR-ROSTER` … `WR-ESCALATE`), each with its source section
   and who blocks / what clears it. The playbook and House Rules stay

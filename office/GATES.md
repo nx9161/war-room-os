@@ -47,6 +47,7 @@ Rules of the index:
 | WR-QA | Phase 4: QA Manager enforces 100% pass on the release suite, no open blockers, then sign-off. | `war-room.md` §Phase 4 | QA Manager; green suite + zero open blockers. |
 | WR-REVIEW | Lead Code Reviewer reviews every PR before merge; blocks on critical defects, security findings, or license/IP risk. | `war-room.md` §Phase 4 | Lead Code Reviewer; review on the PR. |
 | WR-PRODGATE | Game projects: Game Producer runs the production gate — milestones green, perf budgets met, cert timeline on track. | `war-room.md` §Phase 4 | Game Producer; gate record on the mission. |
+| WR-OBJECTIVE | Phase 4 close-out: before Sloane authorizes the release, she re-reads the `MISSION.md` Goal and verifies each deliverable against the original objective, not only against the decomposed acceptance criteria; a deliverable that passes its tests but misses the objective loops back under Phase regression; the check and its result are recorded in `MISSION.md`. | `war-room.md` §Phase 4 | Sloane; the recorded check on the mission file. |
 
 ## Loop controls
 

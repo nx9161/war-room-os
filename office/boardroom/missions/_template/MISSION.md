@@ -20,6 +20,10 @@
 - PRD: <path>
 - ADRs: <path>
 
+## Close-out
+<!-- Objective verification (WR-OBJECTIVE): before release authorization. -->
+- Objective verification: <date — each deliverable checked against the Goal above; result, or loop-back if any>
+
 ## Resume notes
 <!-- Director updates at every phase boundary. Newest entry on top. -->
 - <date> — <where we are, what's next, what's blocked>
