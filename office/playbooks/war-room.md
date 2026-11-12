@@ -98,7 +98,17 @@ check into the mission's MISSION.md (see below):
    180-configuration study, 2026-09-24); the Director may still
    seat a domain reviewer at the end. Any mission seating more than
    7 seats must record why the work is independent.
-5. No Phase 0 until the cast check exists. A cast check written
+5. **Map the write surface before parallel work.** When `shape` is
+   `parallel` or `mixed`, list for each seated writer the files,
+   modules, or tables it will write — not just its feature. Two
+   seats writing the same file, module, or table never run at the
+   same time: they run sequentially, or the work is re-split until
+   their write surfaces are disjoint. Read-only seats (research,
+   audit, review) may run in parallel freely. Tickets split by
+   feature still collide when the code underneath is shared — the
+   exact failure that wrecked an 18-subagent sprint (Wasim, "I Had
+   a Perfect Sprint Board", 2026-11-12).
+6. No Phase 0 until the cast check exists. A cast check written
    after the work is a confession, not a check — it gets logged as
    an M-5 instance.
 
@@ -111,7 +121,7 @@ is written into it, not into the shared board. It holds:
 
 1. **Goal** — one line, taken from the perfected prompt.
 2. **Cast Check result** — shape, budget, seated seats, skipped seats
-   with reasons.
+   with reasons, write-surface map (parallel/mixed only).
 3. **Step checklist** — every step with a state:
    `pending | active | done | blocked`.
 4. **Artifact paths** — dossier, PRD, ADRs, deliverables. Paths only,

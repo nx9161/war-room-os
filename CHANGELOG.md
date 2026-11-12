@@ -5,6 +5,16 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Write-surface map in the Cast Check.** Before parallel or mixed
+  work starts, each seated writer lists the files, modules, or tables
+  it will write — not just its feature. Two seats writing the same
+  surface never run at the same time; they run sequentially, or the
+  work is re-split until their write surfaces are disjoint. Read-only
+  seats run in parallel freely. Grounded in a fresh field report:
+  Wasim, "I Had a Perfect Sprint Board. 18 AI Subagents Still Wrecked
+  the Repo." (2026-11-12) — 18 subagents on separate tickets overwrote
+  each other's work because the tickets shared files underneath
+  ("Plan by files, not just features").
 - **Deliverable schemas (pilot, 3 of 45 seats).** A seat's charter now
   carries a `## Deliverable schema` section — the machine-checkable
   shape of what the seat must produce (Deliverable / Format / Required

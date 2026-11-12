@@ -8,6 +8,7 @@
 - budget: <seats> × <max actions each>
 - Seated: <seat slugs>
 - Skipped (with reason): <seat — reason>
+- Write surface (parallel/mixed only): <seat — files/modules/tables it writes; shared surfaces run sequentially>
 
 ## Steps
 <!-- State per step: pending | active | done | blocked. -->
