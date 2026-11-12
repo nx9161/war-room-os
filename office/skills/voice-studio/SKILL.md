@@ -1,3 +1,14 @@
+---
+name: voice-studio
+description: >
+  Clone voices, design original ones, synthesize speech, and dub videos,
+  running locally with no keys, credits, or subscription. Use when a
+  mission needs a voice clone (only with the voice owner's explicit
+  consent), an original designed voice, TTS narration, or video dubbing.
+  Consent boundary is binding: never impersonate a real person without
+  consent.
+---
+
 # Voice Studio — Local Voice Cloning, Design & Dubbing for AI Agents
 
 Clone voices, design original ones, synthesize speech, and dub videos —

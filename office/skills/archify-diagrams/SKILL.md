@@ -1,3 +1,13 @@
+---
+name: archify-diagrams
+description: >
+  Turn any idea, plan, or codebase into an interactive HTML diagram.
+  Use when visualizing system or infrastructure architecture, API call
+  chains, workflows and runbooks, data pipelines, state machines,
+  database schemas, class contracts, module trees, incident timelines,
+  or request waterfalls. Not for numeric charts or dashboards.
+---
+
 # Archify Diagrams — Interactive Architecture Visuals for AI Agents
 
 Turn any idea, plan, or codebase into a beautiful interactive HTML diagram.

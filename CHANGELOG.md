@@ -31,6 +31,12 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
   notes updated at every phase boundary); handoffs cite file paths,
   never paste full outputs, and the Director resumes from the file
   after compaction or a new session.
+- **Frontmatter hygiene for two tool skills.** `archify-diagrams` and
+  `voice-studio` — both granted to all 45 seats — previously carried no
+  YAML frontmatter at all, so they were invisible to description-based
+  routing. Both now carry a standard `name` + trigger-style
+  `description` (mirror of the private office; the private validator
+  now gates tool-skill frontmatter too).
 
 ## [2026-11-11] — Sloane becomes Director
 ### Changed
