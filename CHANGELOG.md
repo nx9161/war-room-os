@@ -5,6 +5,16 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Deliverable schemas (pilot, 3 of 45 seats).** A seat's charter now
+  carries a `## Deliverable schema` section — the machine-checkable
+  shape of what the seat must produce (Deliverable / Format / Required
+  sections / Acceptance) — so the receiving seat, and Sloane at
+  close-out (`WR-OBJECTIVE`), can verify a delivery without re-reading
+  the seat's whole method. Piloted on the three outputs every mission
+  consumes: the Enterprise Architect's Phase 2 proposal, the Prompt
+  Writer's perfected prompt, and the QA Manager's gate verdict. Each
+  schema condenses that seat's existing Deep Method output contract;
+  no new behavior. Rollout continues a few seats per pass.
 - **Objective verification at mission close (`WR-OBJECTIVE`).** Before
   Sloane authorizes a release, she re-reads the mission's stated
   objective (the `MISSION.md` Goal, from the perfected prompt) and

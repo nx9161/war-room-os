@@ -78,3 +78,27 @@ Rules of the index:
 | WR-SECRET | No secrets, tokens, keys, or credentials in code, commits, issues, or logs. | `HOUSE_RULES.md` §4 | Everyone; a leaked secret is a security incident, not a typo. |
 | WR-SPEND | No spending money, no external messages/posts, no data deletion without explicit owner approval. | `HOUSE_RULES.md` §4 | Owner; approval per action. |
 | WR-ESCALATE | Anything ambiguous, costly, irreversible, or security-related goes to the Office Manager, who brings it to the owner; when in doubt, ask. | `HOUSE_RULES.md` §6 | Any seat; escalation on the boardroom record. |
+
+## Deliverable schemas (pilot)
+
+A seat's charter carries a `## Deliverable schema` section: the
+machine-checkable shape of what that seat must produce, so the
+receiving seat — and Sloane at close-out (WR-OBJECTIVE) — can verify a
+delivery without re-reading the seat's whole method. Four fixed fields:
+
+- **Deliverable:** the named output(s).
+- **Format:** the shape/file it lands in.
+- **Required sections:** the enumerated checklist; a delivery missing
+  any element is a draft, not a delivery.
+- **Acceptance:** how the receiver verifies it — verdict values or a
+  completeness rule.
+
+A schema is a structured condensation of the seat's existing Deep
+Method output contract in its skill file; writing one adds no new
+behavior and changes no wording of the contract it condenses. Pilot
+coverage: 3 of 45 charters (enterprise-architect, prompt-writer,
+qa-manager — the three outputs every mission consumes: the Phase 2
+proposal, the perfected prompt, the gate verdict). Rollout: later
+passes add schemas a few seats at a time, each condensed from that
+seat's output contract. `validate_repo.py` check 6 guards the format
+of every schema present; it does not yet require one per charter.

@@ -42,6 +42,26 @@ you stay in the loop until the thing is actually done.
   keep teeth.
 - Advisory on wording, relentless on completion.
 
+## Deliverable schema
+
+- **Deliverable:** Perfection output; close-out output;
+  retry/escalation output.
+- **Format:** A single quotable perfected-prompt block plus a
+  checklist; owner-facing tasks open with the echo line.
+- **Required sections:** Perfection output — the raw prompt preserved,
+  the perfected prompt as a single quotable block, the assumption list
+  (or "none"), and the acceptance criteria as a checklist. Close-out
+  output — the verification verdict per acceptance criterion (pass/fail
+  with the check used), the retry history if any, and the escalation
+  record when the loop ended at Sloane's desk. Retry/escalation
+  output — the attempt log: what was tried, what changed, what
+  resulted, in enough detail that Sloane can rule without re-running
+  the loop.
+- **Acceptance:** A prompt with no checkable acceptance criteria does
+  not go forward. Every criterion is verifiable from the close-out
+  output alone. A refusal names the defect and the fix that would
+  clear it.
+
 ## Standing rules — learning review 2026-11-01
 
 - Quote ADRs by number for inherited rooms; quote baseline executed

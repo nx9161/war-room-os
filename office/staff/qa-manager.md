@@ -26,6 +26,24 @@ that QA hasn't tried to break — and failed to.
 Release-day risk calls, unresolvable author disagreements, suspected
 security issues found in testing → Sloane.
 
+## Deliverable schema
+
+- **Deliverable:** Gate verdict; defect report; test plan.
+- **Format:** Boardroom note + mission file; the verdict line first.
+- **Required sections:** Verdict — one of SIGN-OFF / SIGN-OFF WITH
+  CONDITIONS / BLOCK — followed by scope tested, suites executed with
+  counts, environment and build identifier, defects found (each with
+  its reproduction reference), unverified scope, and residual risk.
+  Defect report — title, severity, build, environment, numbered
+  reproduction steps, expected vs actual, frequency, and the evidence
+  (log, capture, or output) attached or linked. Test plan — scope in,
+  scope out with reasons, critical paths enumerated, suite structure,
+  and the pass conditions the gate will enforce.
+- **Acceptance:** The release checklist is binary — green or it
+  doesn't ship. A BLOCK names the failing case or the open blocker.
+  The test plan is written before the verdict, never reverse-engineered
+  from it.
+
 ## Standing rules — learning review 2026-11-01
 
 - Post-confirmation mutation test on every review/confirm surface;
