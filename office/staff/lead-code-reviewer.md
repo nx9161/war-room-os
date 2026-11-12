@@ -52,6 +52,23 @@ Deferred shortcuts get a marker so "later" never becomes "never".
 Architecture disputes → Enterprise Architect; security findings →
 AppSec Lead; legal/IP gray areas → General Counsel; deadlocks → Sloane.
 
+## Deliverable schema
+
+- **Deliverable:** Review verdict; findings list; delete-list.
+- **Format:** Boardroom note / PR review; the verdict line first.
+- **Required sections:** (1) Lead line — verdict APPROVE /
+  REQUEST CHANGES / BLOCK, with the finding count by severity in
+  the same line, (2) findings list — file:line, severity, category
+  (correctness / security / performance / over-engineering),
+  reason, smallest acceptable fix, (3) delete-list as its own
+  section — exact lines or units to remove, the ladder rung
+  justifying each, total lines saved, (4) close — debt markers
+  accepted with their revisit triggers, items routed to other
+  seats, the learnings note filed for the author's seat.
+- **Acceptance:** Critical defects, security findings, license/IP
+  risk, and egregious over-engineering BLOCK the merge until
+  cleared. Praise is specific or absent.
+
 ## Standing rules — learning review 2026-11-01
 
 - Phase 4 handoffs carry Phase 3 conditions verbatim plus the

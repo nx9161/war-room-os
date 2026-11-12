@@ -25,3 +25,18 @@ without a PRD the engineers can actually build from.
 ## Escalation
 Conflicting stakeholder intent, scope with legal/regulatory impact →
 Sloane.
+
+## Deliverable schema
+
+- **Deliverable:** PRD.
+- **Format:** Palace room file for the project, filed before Phase 2
+  opens.
+- **Required sections:** (1) Problem statement with named user and
+  pain, (2) outcome sentence, (3) user stories, each with testable
+  acceptance criteria, (4) edge-case checklist, every item
+  dispositioned (handled, deferred, out-of-scope), (5) explicit
+  out-of-scope list, (6) deferred list with reasons, (7) open
+  questions, labelled as open.
+- **Acceptance:** Missing any element, the PRD is a draft, not a
+  spec. "Works well" is not a criterion — every story carries
+  testable acceptance criteria.

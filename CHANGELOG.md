@@ -5,6 +5,14 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Deliverable schemas — rollout to 6 of 45 seats.** Product Owner
+  (the Phase 1 PRD, 7 required elements, filed before Phase 2
+  opens), Lead Code Reviewer (merge-review verdict, findings list,
+  delete-list), and DevOps / SRE (pipeline or infrastructure change
+  plus deploy report, clean-run evidence quoted from a fresh clone)
+  join the pilot three. Each schema condenses that seat's existing
+  Deep Method output contract; no new behavior. Rollout continues a
+  few seats per pass.
 - **Write-surface map in the Cast Check.** Before parallel or mixed
   work starts, each seated writer lists the files, modules, or tables
   it will write — not just its feature. Two seats writing the same
