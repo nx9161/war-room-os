@@ -15,7 +15,7 @@
 Phase 0 — <current step>
 
 ## Steps
-<!-- State per step: pending | active | done | blocked. -->
+<!-- State per step: pending | active | done | blocked. On resume, verify each done step's listed artifacts exist at their paths before trusting the checkpoint — a step whose artifacts are missing is demoted to active (or blocked, if the loss is unexplained) and re-run, never carried forward as done from the file alone. -->
 - [ ] pending — <step>
 - [ ] pending — <step>
 

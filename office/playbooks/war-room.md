@@ -152,6 +152,15 @@ Rules:
   Anchor, 2026-11-09; LangGraph's durable-state pattern, 2026;
   Anthropic's Research system saves the lead's plan against context
   truncation — Director research pass 1, 2026-11-11.)
+- **Verify the checkpoint before trusting it.** A checkpoint is a
+  regenerable cache, never a source of truth (Axocoatl architecture
+  note, 2026-06; Microsoft Agent Framework node-boundary checkpoints,
+  2026-08-22). On resume, the agent checks each `done` step's listed
+  artifacts actually exist at their paths before proceeding — a step
+  whose artifacts are missing is demoted to `active` (or `blocked`,
+  if the loss is unexplained) and re-run, never carried forward as
+  done from the file alone. (M-2: state is verified at the
+  destination, never inherited from a record.)
 - **Record failures, not just progress.** A reopened step's next
   attempt names the failed approach it avoids — the next agent reads
   the Failed approaches section first and does not retry the same

@@ -5,6 +5,16 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Verify the checkpoint before trusting it on resume.** A
+  checkpoint is a regenerable cache, never a source of truth
+  (Axocoatl architecture note, 2026-06; Microsoft Agent Framework
+  node-boundary checkpoints, 2026-08-22). On resume, the agent
+  checks each `done` step's listed artifacts actually exist at
+  their paths before proceeding — a step whose artifacts are
+  missing is demoted to `active` (or `blocked`, if the loss is
+  unexplained) and re-run, never carried forward as done from the
+  file alone. The MISSION.md template carries the same rule in its
+  Steps comment.
 - **Deliverable schemas for three more seats (9 of 45).** The
   Knowledge Wizard (Phase 0 dossier: term inventory with closure
   status, shared facts, per-seat briefing blocks, simplest-path
