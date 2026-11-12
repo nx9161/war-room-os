@@ -158,6 +158,14 @@ Rules:
   approach blind. (lean-collab, HN 2026-02-12: failed strategies are
   written to shared memory so a new agent picking up an expired claim
   sees everything already tried; first-verified-wins.)
+- **Silence gets a check-in, not a wait.** A step whose seat has
+  produced no boardroom note, commit, or status update for 30 minutes
+  gets a Director check-in. A seat that is stalled — no progress and
+  no block reported — is stopped and its step re-seated or re-scoped,
+  never left running idle. (ripXG, "Coordinating AI agent teams",
+  2026-02-08: the coordinator "checks in after 30 minutes if there's
+  no update"; Wasim, "I Had a Perfect Sprint Board", 2026-11-12,
+  rule 7: "Stop idle agents".)
 - Template: `office/boardroom/missions/_template/MISSION.md`.
 
 ## Phase 0 — Prompt Perfection & Wizard Briefing (mandatory gate)

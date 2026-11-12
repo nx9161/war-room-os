@@ -5,6 +5,13 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Stalled seats get a 30-minute check-in, then stop.** A mission
+  step whose seat has produced no boardroom note, commit, or status
+  update for 30 minutes gets a Director check-in; a seat that is
+  stalled — no progress and no block reported — is stopped and its
+  step re-seated or re-scoped, never left running idle. Grounded in
+  ripXG, "Coordinating AI agent teams" (2026-02-08), and Wasim's
+  "I Had a Perfect Sprint Board" (DEV, 2026-11-12), rule 7.
 - **Failed approaches section in MISSION.md.** The mission state
   file now records every tried-and-abandoned approach — newest on
   top, what was tried, why it failed, what it rules out — the moment
