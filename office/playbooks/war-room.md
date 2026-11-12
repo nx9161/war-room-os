@@ -10,6 +10,8 @@ in the palace (`memory/wings/<wing>/`).
 
 Naming: the War Room is the office's standing process — never rename it
 per project. Refer to sessions as "War Room Phase N — Project: X".
+Gate index: `office/GATES.md` — every gate in this playbook carries a
+stable WR- ID there, with its source and what clears it.
 
 ## Roster check (automatic, every session)
 The room seats itself fresh every time it convenes — no announcement

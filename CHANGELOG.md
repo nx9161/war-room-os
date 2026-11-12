@@ -5,6 +5,12 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **GATES.md — stable index of every office gate.** The 23 gates
+  buried in the War Room playbook and House Rules now carry stable
+  IDs (`WR-ROSTER` … `WR-ESCALATE`), each with its source section
+  and who blocks / what clears it. The playbook and House Rules stay
+  authoritative; the index states that and the §9 scope (gates never
+  stand in front of the owner's own direct order).
 - **Full freshness sync with the private office (2026-11-11).** The
   roster is complete at **45 seats**: the Connector Operator and
   Decision Model seats (charters + skills) are in, and every count in

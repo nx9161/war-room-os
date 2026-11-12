@@ -3,6 +3,8 @@
 Welcome to the office. This folder is the office's memory and rulebook.
 
 - **HOUSE_RULES.md** — binding rules for every employee.
+- **GATES.md** — stable index of every office gate (WR- IDs), with
+  source and what clears each one.
 - **PLAN.md** — the founding plan.
 - **staff/** — employee profiles. Hiring someone new = adding a file here.
   45 roles in 7 divisions:
