@@ -10,6 +10,10 @@
 - Skipped (with reason): <seat — reason>
 - Write surface (parallel/mixed only): <seat — files/modules/tables it writes; shared surfaces run sequentially>
 
+## Active phase
+<!-- One line, updated at every phase boundary. The first thing any resuming agent reads. -->
+Phase 0 — <current step>
+
 ## Steps
 <!-- State per step: pending | active | done | blocked. -->
 - [ ] pending — <step>

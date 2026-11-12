@@ -5,6 +5,14 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Explicit `Active phase` line in MISSION.md.** The mission state
+  file now names the current phase and step on one line, updated at
+  every phase boundary, and the resume rule binds every agent —
+  Director or seat: after compaction, a crash, or a new session,
+  re-read MISSION.md and resume from that line, never reconstruct
+  from memory. Grounded in BIOME's Elephant State Anchor
+  (asteria-core/biome, 2026-11-09) — a deterministic state file
+  reloaded by a post-compaction recovery protocol.
 - **Deliverable schemas — rollout to 6 of 45 seats.** Product Owner
   (the Phase 1 PRD, 7 required elements, filed before Phase 2
   opens), Lead Code Reviewer (merge-review verdict, findings list,

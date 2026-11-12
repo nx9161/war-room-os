@@ -124,25 +124,31 @@ is written into it, not into the shared board. It holds:
    with reasons, write-surface map (parallel/mixed only).
 3. **Step checklist** — every step with a state:
    `pending | active | done | blocked`.
-4. **Artifact paths** — dossier, PRD, ADRs, deliverables. Paths only,
+4. **Active phase** — one line naming the current phase and step
+   (e.g. `Phase 2 — Enterprise Architect presents topology`), updated
+   at every phase boundary. The single lookup a resuming agent reads
+   first — the active step is never left implicit in the checklist.
+5. **Artifact paths** — dossier, PRD, ADRs, deliverables. Paths only,
    never pasted content.
-5. **Resume notes** — a dated tail the Director updates at **every
+6. **Resume notes** — a dated tail the Director updates at **every
    phase boundary**: where the mission stands, what happens next, what
    is blocked.
 
 Rules:
 
 - **Update at every phase boundary.** A MISSION.md that lags the
-  mission misleads the next session — worse than none at all.
+  mission misleads the next session — worse than none at all. The
+  **Active phase** line moves whenever the mission does.
 - **Handoffs cite paths, never paste outputs.** Subagent results are
   referenced by file path; full outputs are never pasted into the
   coordinator thread.
 - **Resume from the file.** After context compaction, a crash, or a
-  new session, the Director re-reads MISSION.md before resuming —
-  the plan is never reconstructed from memory. (LangGraph's
-  durable-state pattern, 2026; Anthropic's Research system saves the
-  lead's plan against context truncation — Director research pass 1,
-  2026-11-11.)
+  new session, **any** agent — Director or seat — re-reads MISSION.md
+  before resuming and picks up from its **Active phase** line — the
+  plan is never reconstructed from memory. (BIOME's Elephant State
+  Anchor, 2026-11-09; LangGraph's durable-state pattern, 2026;
+  Anthropic's Research system saves the lead's plan against context
+  truncation — Director research pass 1, 2026-11-11.)
 - Template: `office/boardroom/missions/_template/MISSION.md`.
 
 ## Phase 0 — Prompt Perfection & Wizard Briefing (mandatory gate)
