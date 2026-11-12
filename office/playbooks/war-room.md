@@ -133,6 +133,9 @@ is written into it, not into the shared board. It holds:
 6. **Resume notes** — a dated tail the Director updates at **every
    phase boundary**: where the mission stands, what happens next, what
    is blocked.
+7. **Failed approaches** — every tried-and-abandoned approach, newest
+   on top: what was tried, why it failed, what it rules out. Recorded
+   the moment an approach fails, a phase regresses, or a step reopens.
 
 Rules:
 
@@ -149,6 +152,12 @@ Rules:
   Anchor, 2026-11-09; LangGraph's durable-state pattern, 2026;
   Anthropic's Research system saves the lead's plan against context
   truncation — Director research pass 1, 2026-11-11.)
+- **Record failures, not just progress.** A reopened step's next
+  attempt names the failed approach it avoids — the next agent reads
+  the Failed approaches section first and does not retry the same
+  approach blind. (lean-collab, HN 2026-02-12: failed strategies are
+  written to shared memory so a new agent picking up an expired claim
+  sees everything already tried; first-verified-wins.)
 - Template: `office/boardroom/missions/_template/MISSION.md`.
 
 ## Phase 0 — Prompt Perfection & Wizard Briefing (mandatory gate)

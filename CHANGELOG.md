@@ -5,6 +5,15 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Failed approaches section in MISSION.md.** The mission state
+  file now records every tried-and-abandoned approach — newest on
+  top, what was tried, why it failed, what it rules out — the moment
+  an approach fails, a phase regresses, or a step reopens. A reopened
+  step's next attempt names the failed approach it avoids, so the
+  next agent does not retry it blind. Grounded in lean-collab
+  (mutable-state-inc/lean-collab, HN 2026-02-12): failed strategies
+  are written to shared memory so a new agent picking up an expired
+  claim sees everything already tried.
 - **Explicit `Active phase` line in MISSION.md.** The mission state
   file now names the current phase and step on one line, updated at
   every phase boundary, and the resume rule binds every agent —

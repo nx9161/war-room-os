@@ -19,6 +19,10 @@ Phase 0 — <current step>
 - [ ] pending — <step>
 - [ ] pending — <step>
 
+## Failed approaches
+<!-- Tried-and-abandoned approaches, newest on top. Recorded the moment an approach fails, a phase regresses, or a step reopens — so the next agent assigned to that step sees what was already tried and why, and does not retry it blind. -->
+- <date> — <what was tried> — <why it failed / what it rules out>
+
 ## Artifacts
 <!-- Paths only, never pasted content. -->
 - Dossier: <path>
