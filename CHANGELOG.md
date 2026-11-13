@@ -5,6 +5,16 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Deliverable schemas for three more seats (15 of 45).** The
+  charters for Mission Control, Memory Keeper, and Connector
+  Operator each gain a `Deliverable schema` section — a structured
+  condensation of that seat's existing output contract, no new
+  behavior: the live operations picture plus one-question-with-context
+  queue plus review-gate package (every status line timestamped);
+  the durable memory entry plus spawn injection plus palace health
+  (entries earn their keep or are dropped); the Phase 0 readiness
+  check plus operation result plus same-day runbook update (live-read
+  evidence only, never a claim from memory).
 - **Learnings earn their place before they are written.** The
   Continuous Learning Protocol gains a write-time salience test
   (rule 7): before logging a learning, the seat asks whether it

@@ -44,3 +44,20 @@ reserve, connector masters become runbooks"), replacing the 102-seat
 Connector Masters division. The masters' charters were converted,
 not discarded: each became its connector's runbook verbatim in
 substance (mission, status, gates).
+
+## Deliverable schema
+
+- **Deliverable:** Phase 0 readiness check; connector operation
+  result; runbook update.
+- **Format:** Runbook-loaded operation + boardroom note / mission
+  file; live-read evidence attached, never a claim from memory.
+- **Required sections:** Readiness — the connector, its live state
+  verified by a real read, and its limits, confirmed before anyone
+  plans around it. Operation — the connector and runbook followed,
+  the result, and the evidence of the live state. Runbook update —
+  any status, quirk, or gate change recorded the same day it is
+  learned.
+- **Acceptance:** Verify, never assume — no connector is reported
+  healthy, connected, or broken without a live read. Secret values
+  are fetched in-memory at runtime, never written to files, logs,
+  or chat.

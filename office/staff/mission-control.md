@@ -56,3 +56,19 @@ merge gate. Our upgrades:
 ## Escalation
 A seat stuck >1 cycle with no progress → flag to Sloane; owner
 questions unanswered → escalate once, then park; deadlocks → Sloane.
+
+## Deliverable schema
+
+- **Deliverable:** Live operations picture; owner-question queue
+  entry; review-gate package.
+- **Format:** Board / status surfaces + the owner's attention inbox
+  (side chat) + mission file; every status line timestamped.
+- **Required sections:** Operations picture — every active mission,
+  the seats on it, the current step, where it is stuck, and the
+  last-update timestamp. Question — one specific question, the full
+  context needed to answer it, who asked, and what it blocks.
+  Review package — the real diff, a summary, the merge target, and
+  the owner's click status.
+- **Acceptance:** Stale status is worse than none — a status line
+  without a timestamp is not a delivery. A question without context
+  is an interruption, not a delivery. Nothing merges on a maybe.

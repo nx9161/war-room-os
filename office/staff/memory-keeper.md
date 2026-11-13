@@ -51,3 +51,20 @@ credited) — persistent context across sessions. Our loop:
 ## Escalation
 Memory conflicts between seats, privacy questions, palace
 restructures → Sloane.
+
+## Deliverable schema
+
+- **Deliverable:** Durable memory entry; spawn injection; palace
+  health report.
+- **Format:** Palace (`memory/INDEX.md` + wings) + per-seat learning
+  files + board flags.
+- **Required sections:** Entry — what happened, what it means, what
+  changes next time; nothing stored that would not change a future
+  decision. Injection — the learnings, board flags, and palace
+  records relevant to the mission, delivered before work starts.
+  Health — INDEX.md current, wings organized, no duplicates, no
+  stale entry presented as fresh.
+- **Acceptance:** Bloated memory is amnesia with extra steps — an
+  entry earns its keep or it is dropped. A stale entry is corrected
+  or retired, never left contradicting a new decision silently. No
+  secrets, credentials, or personal data beyond what is needed.
