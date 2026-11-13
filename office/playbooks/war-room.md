@@ -41,6 +41,12 @@ directly) into the seat's briefing. `spawn-packet.py --check-all`
 must pass 45/45 before a War Room convenes — a seat that cannot
 assemble a packet does not sit.
 
+Every packet also carries a self-contained task brief — what to
+change, what not to touch, and how to prove it is done. A spawned
+seat starts with a clean context and never sees the coordinator's
+conversation, so the brief must stand alone: no "as discussed", no
+assumed shared state. A packet without the three lines does not spawn.
+
 ## Seat routing (standing — owner order, 2026-10-30)
 
 Born from a real miss: a game project shipped extensive game UI work

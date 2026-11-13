@@ -5,6 +5,13 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Spawn packets carry a self-contained task brief.** Every packet
+  now states what to change, what not to touch, and how to prove it
+  is done — because a spawned seat starts with a clean context and
+  never sees the coordinator's conversation, so the brief must stand
+  alone (Henrique Silva, "Why I Stopped Letting One AI Agent Do
+  Everything", Medium, 2026-10-22). A packet without the three lines
+  does not spawn.
 - **Cast Check names every repo the mission touches.** New Cast Check
   step 6: list each repo (name + path or URL) and, per seated seat,
   which repos outside the office repo it must read or write; the
