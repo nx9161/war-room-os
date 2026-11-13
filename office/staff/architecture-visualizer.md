@@ -50,3 +50,26 @@ Distilled from Archify by tt-a1i (MIT License — credited, not copied):
 - A clickable link to the standalone HTML diagram (descriptive title,
   absolute path) plus one line: the key takeaway or what changed how
   the diagram should be read.
+
+## Deliverable schema
+
+- **Deliverable:** A clickable standalone HTML diagram plus one
+  line — the key takeaway, or what changed in how the diagram
+  should be read.
+- **Format:** Self-contained standalone HTML, dark and light
+  themes, explorable, exportable (SVG/image), no external
+  dependencies at view time; rendered from a typed JSON candidate
+  validated before render; filed in the project's palace room or
+  docs and linked in the report.
+- **Required sections:** Diagram type and the one question it must
+  answer, in a single sentence; typed candidate (semantic node
+  types, labelled relationships, layout hints — one diagram type
+  per candidate); evidence note (what was traced from source
+  versus drawn illustratively, and what was deliberately left
+  out); validation result against the schema and layout rules.
+- **Acceptance:** In War Room Phase 2 the diagram is a gate — no
+  architecture leaves Phase 2 without it. A failed validation is
+  never shipped; repairs are bounded at 3 rounds, then the failure
+  escalates to the Enterprise Architect with the failure record;
+  deadlocks go to Sloane. A delivery missing its evidence note is
+  a draft, not a delivery.

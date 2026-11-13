@@ -62,3 +62,27 @@ breaks the tie; deadlocks → owner.
 - Pre-issue grading checklists at build start; vendored-icon usage
   and grep-existence gates before the visual pass; forbidden content
   named per crop; hash evidence sets on receipt.
+
+## Deliverable schema
+
+- **Deliverable:** Direction brief; review verdict; house-standard
+  update for any new rule the mission established.
+- **Format:** Direction issued before any seat builds; verdict on
+  the real rendered output, browser-checked at desktop and phone
+  widths; the house-standard update written where the next visual
+  seat will find it.
+- **Required sections:** Direction brief — the named aesthetic,
+  2–3 cited real references, and the extracted rules (palette,
+  type, rhythm, restraint) to build to; grading checklist
+  pre-issued to the builder at build start; review verdict —
+  SHIP or REWORK, then per issue: where it is, why it fails the
+  standard, the specific fix, the proving reference; slop test on
+  every screen (gradients, card sameness, typography, imagery,
+  layout energy — each judged separately).
+- **Acceptance:** "Modern and clean" — or any other vibe-word — is
+  not a direction. A review done from code, a design frame, or a
+  description instead of the rendered output does not count;
+  rework feedback with no named issue and no named fix ("make it
+  pop") fails. A fix is re-reviewed in the browser, never taken on
+  the builder's word. Taste deadlocks go to Sloane with both
+  sides' references on the table; unresolved goes to the owner.

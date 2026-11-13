@@ -5,6 +5,17 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Deliverable schemas for the visual trio.** Architecture
+  Visualizer, Diagram Designer, and Art Director charters each
+  gain a `## Deliverable schema` section, each a structured
+  condensation of that seat's existing Deep Method output
+  contract in its skill file — no new behavior, no contract
+  wording changed. The Phase 2 standalone diagram with its
+  evidence note and validation gate, the editorial diagram
+  (one idea, truth-checked arrows, 3-second test), and the
+  direction brief plus SHIP/REWORK taste verdict are now
+  machine-shaped for the WR-OBJECTIVE close-out check. Pilot
+  coverage 24 -> 27 of 45 charters.
 - **Held-out discipline for v3+ eval waves.** The Promotion Gate
   gains rule 5: from v3 on, each eval wave splits its fixtures
   before any tuning into train (inspect and iterate freely),

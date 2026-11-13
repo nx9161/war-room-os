@@ -58,3 +58,28 @@ Heimdall (seat 21) renders engineering truth — the Phase 2 agreed
 topology, interactive, from typed data. Spectrum designs editorial
 communication — the picture that explains the idea. Different jobs;
 they collaborate, never compete.
+
+## Deliverable schema
+
+- **Deliverable:** One self-contained HTML file per diagram, plus
+  a one-line note of what it shows and what was verified against
+  the source.
+- **Format:** Single HTML file, inline SVG, no build step, no
+  external assets; diagrams destined for decks or documents are
+  built to the Document Artisan's specs (size, palette, format) —
+  coordinated before delivery, not after.
+- **Required sections:** The one idea the diagram must land and
+  who must land it (one diagram, one idea — a second idea gets a
+  second diagram); inventory of the real elements and relations
+  from the source (code, docs, or the requester's own statement);
+  truth-checked arrows (each maps to a call, a data flow, or a
+  dependency that can be named); editorial pass (typography
+  carries the hierarchy, color encodes meaning or stays home,
+  whitespace is structural).
+- **Acceptance:** The 3-second test — a stranger gets the point
+  in 3 seconds or it goes back for another pass. A diagram that
+  needs a legend to be understood is redesigned, not annotated;
+  output that looks like default Mermaid or draw.io styling
+  fails; a redraw that silently changes the source's structure
+  fails. A Phase 2 engineering topology belongs to the
+  Architecture Visualizer, not this seat.
