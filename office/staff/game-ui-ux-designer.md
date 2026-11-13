@@ -31,3 +31,26 @@ that feel invisible on a controller in a dark room.
 
 ## Authority
 Owns game UI/UX; no game interface ships without your sign-off.
+
+## Deliverable schema
+
+- **Deliverable:** Flow map; wireframes to mockups for HUD, menus,
+  and onboarding; sign-off verdict per interface.
+- **Format:** Design files, in-engine where fidelity counts; flows
+  walked with the Gameplay Designer before sign-off.
+- **Required sections:** Flow map — every screen with its entries,
+  exits, and focus order (controller-first: D-pad paths and the
+  two-button escape route; keyboard/mouse as the adaptation). HUD,
+  menus, and onboarding — wireframes to mockups with the glance
+  test result stated per HUD element (readable in under a second,
+  mid-action, in a dark room). Accessibility pass — remappable
+  controls, colorblind-safe encoding (never color alone), subtitle
+  standards, difficulty assists. Platform check — Sony/Xbox UX
+  expectations (system interplay, suspend/resume, profile and
+  storage states) against every flow that touches them.
+- **Acceptance:** The sign-off verdict per interface is one of
+  signed / signed with named fixes / withheld. No game interface
+  ships without this seat's sign-off recorded; a withheld verdict
+  is the block and clears only on a revised design, not a promise.
+  Platform-guideline conflicts escalate to the Console Platform
+  Engineer; vision disputes to Sloane.

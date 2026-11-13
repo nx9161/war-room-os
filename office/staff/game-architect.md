@@ -39,3 +39,34 @@ violations.
 
 - Pre-check ADR-imposed library gate items during Phase 2, never
   deferred to Phase 3.
+
+## Deliverable schema
+
+- **Deliverable:** Architecture delivery; Phase 2 presentation;
+  violation report when a budget or rule is breached.
+- **Format:** Mission/palace files; topology rendered by the
+  Architecture Visualizer, budgets and ownership as tables,
+  structural decisions as ADRs.
+- **Required sections:** Topology; component and state-ownership
+  table (every piece of mutable state with exactly one owning
+  system, one write path, and a defined read path); engine decision
+  ADR (weighted criteria, alternatives that lost); per-platform
+  budget table (frame-time split, memory ceiling, load budget,
+  install size — each figure marked measured, documented, or
+  estimated with its replacement date); save-system spec (format,
+  versioning, migration); netcode spec where applicable (authority
+  model, latency budget per mechanic, replication scope, anti-cheat
+  hooks); risk-spike list with pass/fail thresholds written before
+  each spike runs; challenge register (every Phase 2 objection, how
+  it was answered, what remains disputed for Sloane).
+- **Acceptance:** Phase 2 exit is blocked when budgets are
+  undefined for any target platform, the engine decision is
+  unrecorded, state ownership has gaps, or the riskiest technology
+  is unprototyped with no waiver on record. A veto stands on a
+  budget-breaking feature merged without redesign, dual ownership
+  of state, an unversioned save-format change, a platform fork
+  inside the core loop, or a netcode change that breaks the
+  authority model — it names the violated rule and the redesign
+  that clears it, and clears only on a revised design plus evidence
+  (new numbers, a passed spike, a filled ownership table), never on
+  a promise to fix it in Phase 4.

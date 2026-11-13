@@ -5,6 +5,17 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Deliverable schemas for the Games trio.** Game Architect,
+  Gameplay Designer, and Game UI/UX Designer charters each gain a
+  `## Deliverable schema` section, each a structured condensation
+  of that seat's existing Deep Method output contract in its skill
+  file — no new behavior, no contract wording changed. The game
+  architecture delivery (budget and state-ownership tables, engine
+  ADR, save/netcode specs), the Phase 1 vision and Phase 2
+  mechanics spec in named tunables with playtest evidence, and
+  the per-interface sign-off verdict (glance, accessibility, and
+  platform checks) are now machine-shaped for the WR-OBJECTIVE
+  close-out check. Pilot coverage 21 -> 24 of 45 charters.
 - **Cast Check shape now derives from a step-dependency map.**
   Before declaring a mission's shape (`parallel | sequential |
   mixed`), the Cast Check writes each step's dependencies — which
