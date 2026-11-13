@@ -178,6 +178,22 @@ Rules:
 - **Handoffs cite paths, never paste outputs.** Subagent results are
   referenced by file path; full outputs are never pasted into the
   coordinator thread.
+- **Validate the handoff before building on it.** A seat that receives
+  work from another seat — a spawn packet, a boardroom handoff, a
+  Phase output — checks what it was handed before it builds on it:
+  the cited artifacts exist at their paths, the data is fresh enough
+  for the decision (read dates on the World baseline), and the
+  numbers/claims make sense against the brief. A guess handed over as
+  a fact is the failure mode: if the check fails, the seat bounces
+  the handoff back to the sender (or to Sloane) with what failed, and
+  does not build on it. The check is the receiving seat's job, not
+  the sender's — the sender cannot see how its output will be used.
+  (Kadharmoideen Fadurudeen, "Building a Multi-Agent System: 3
+  Patterns, Explained Simply", kadhar.dev, 2026-11-05; HN 106 pts /
+  45 comments, thread 50380658: "Bad data travels, and arrives
+  looking like fact... agent B can't tell agent A's guess from a
+  fact. Check data at every handoff, in plain code." Stormwise, 117
+  real NWS-alert cases: test alerts taken in as real warnings.)
 - **Name the repos before spawning.** The Cast Check lists every repo
   the mission touches and, per seat, which of them it reads or writes;
   the spawn packet for a seat working outside the office repo names

@@ -5,6 +5,17 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Validate the handoff before building on it.** A seat that
+  receives work from another seat checks what it was handed first:
+  cited artifacts exist at their paths, the data is fresh enough for
+  the decision, and the claims make sense against the brief. A failed
+  check bounces back to the sender (or Sloane) instead of being built
+  on. Evidence: Kadharmoideen Fadurudeen, "Building a Multi-Agent
+  System: 3 Patterns, Explained Simply" (kadhar.dev, 2026-11-05; HN
+  106 pts / 45 comments) — "Bad data travels, and arrives looking
+  like fact... agent B can't tell agent A's guess from a fact. Check
+  data at every handoff, in plain code." Stormwise, 117 real
+  NWS-alert cases: test alerts taken in as real warnings.
 - **Resume checks the world, not just the checkpoint.** MISSION.md
   now records a World baseline at mission open — the HEAD commit of
   every repo touched plus the read dates of the dossier's key external
