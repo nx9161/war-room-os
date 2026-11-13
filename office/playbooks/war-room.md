@@ -175,6 +175,17 @@ Rules:
   2026-02-08: the coordinator "checks in after 30 minutes if there's
   no update"; Wasim, "I Had a Perfect Sprint Board", 2026-11-12,
   rule 7: "Stop idle agents".)
+- **Announce intent before acting.** In a `parallel` or `mixed`
+  mission, a seat posts a short boardroom note naming the step and the
+  files it is about to write *before* starting the work — not after.
+  A one-line "I'm working on X" gives the other seated writers a
+  chance to object when a dependency or a shared surface the Cast
+  Check missed shows up. The Cast Check maps write surfaces at plan
+  time; this is its runtime counterpart. (ClawdBytes, "Your AI Agents
+  Are Not a Team Yet", 2026-08-28, Lesson 3: "Agents need structured
+  ways to announce intentions before taking action... enables other
+  agents to object if there's a dependency or conflict they need to
+  know about".)
 - Template: `office/boardroom/missions/_template/MISSION.md`.
 
 ## Phase 0 — Prompt Perfection & Wizard Briefing (mandatory gate)

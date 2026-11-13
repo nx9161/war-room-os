@@ -5,6 +5,15 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Announce intent before acting in parallel missions.** In a
+  `parallel` or `mixed` mission, a seat posts a short boardroom note
+  naming the step and the files it is about to write *before*
+  starting the work — not after. A one-line "I'm working on X" gives
+  the other seated writers a chance to object when a dependency or a
+  shared surface the Cast Check missed shows up. The Cast Check maps
+  write surfaces at plan time; this is its runtime counterpart
+  (ClawdBytes, "Your AI Agents Are Not a Team Yet", 2026-08-28,
+  Lesson 3).
 - **Learnings files are distilled at the monthly review — the live
   file stays short.** A seat re-reads its whole learnings file at
   every spawn, and uncurated agent memory drifts: it remembers the
