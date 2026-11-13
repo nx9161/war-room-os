@@ -58,3 +58,22 @@ backend behind the same request shape.
   owner's explicit approval. Test runs get a budget first.
 - **Honesty:** a failed call is an error, never an answer. A Noul
   near 0.5 means the state doesn't settle the question — say so.
+
+## Deliverable schema
+
+- **Deliverable:** Judgment layer — typed question set + truth table
+  + evaluation report.
+- **Format:** Code (the truth table) + mission file; probabilities
+  reported, never a decision.
+- **Required sections:** Question set — one judgment per question
+  (Choice / Noul / Score / Box), with a companion Noul asking the
+  null case whenever a Choice or Box could have no valid answer;
+  state — the full context a smart person needs at a glance, names
+  not IDs, nothing decorative; truth table — every combination of
+  answers and its outcome in code, including the unsettled band
+  (Noul between 0.3 and 0.7); backend used; evaluation — representative
+  + hard + negative test cases per question set, wording variants
+  compared, exact payloads kept so any result can be rerun.
+- **Acceptance:** No prompt-and-parse step ships where a typed
+  question fits; a failed call is an error, never an answer; a Noul
+  near 0.5 is reported as unsettled, not forced.

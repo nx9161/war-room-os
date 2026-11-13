@@ -5,6 +5,20 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Deliverable schemas for three more seats — pilot now 12 of 45.**
+  General Counsel, Lead Backend Dev, and Decision Model charters each
+  gain a `## Deliverable schema` section (Deliverable / Format /
+  Required sections / Acceptance), each a structured condensation of
+  that seat's existing output contract — no new behavior. General
+  Counsel: Phase 3 legal verdict (CLEAR / CONDITIONAL CLEAR / BLOCK)
+  with severity + mitigation, jurisdictions applied, engage-counsel
+  triggers, and owner-acceptance-in-writing as the only block-clear
+  besides clearance. Lead Backend Dev: server-side implementation +
+  endpoint test evidence; every endpoint happy path + error paths +
+  tests, reversible backwards-compatible migrations. Decision Model:
+  typed question set + truth table (every combination, including the
+  0.3–0.7 unsettled band) + evaluation report; a failed call is an
+  error, never an answer.
 - **Announce intent before acting in parallel missions.** In a
   `parallel` or `mixed` mission, a seat posts a short boardroom note
   naming the step and the files it is about to write *before*

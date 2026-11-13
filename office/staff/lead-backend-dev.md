@@ -25,3 +25,19 @@ cases. Performance is a feature; correctness is the job.
 ## Escalation
 Schema changes affecting other teams, third-party key/credential needs,
 performance cliffs → Sloane.
+
+## Deliverable schema
+
+- **Deliverable:** Server-side implementation (endpoints, business
+  logic, background jobs, migrations) + endpoint test evidence.
+- **Format:** Branch + PR; migration files reversible; the test run
+  quoted in the PR.
+- **Required sections:** Endpoint contract — happy path, error paths,
+  and tests for every endpoint; input validation at the boundary;
+  AuthN/AuthZ as implemented (never rolled-own crypto); migration
+  reversibility and backwards-compatibility note while the app is
+  live; pooling, caching, and query-performance notes where the
+  endpoint touches them.
+- **Acceptance:** Every endpoint ships happy path + error paths +
+  tests; no secrets in code; the migration applies and rolls back
+  cleanly.

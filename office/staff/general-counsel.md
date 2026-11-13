@@ -42,3 +42,18 @@ standing law department.
 
 - Vendored-license vetting names the exact dist filename, its
   license-header retention, and the real global it exposes.
+
+## Deliverable schema
+
+- **Deliverable:** Legal review verdict; risk memo; contract redline
+  or jurisdiction brief, as the matter calls for.
+- **Format:** Boardroom note + mission file; the verdict line first.
+- **Required sections:** Verdict — one of CLEAR / CONDITIONAL CLEAR
+  (conditions numbered) / BLOCK — followed by the issues found (each
+  with severity + mitigation), the jurisdiction(s) applied, what is
+  agent issue-spotting and drafting support versus what needs
+  licensed local counsel ("engage counsel" triggers named), and
+  residual risk: what was not reviewed and what was assumed.
+- **Acceptance:** BLOCK on any unresolved legal ground. A block
+  clears only when cleared or the owner accepts the risk in writing;
+  agent analysis is never presented as binding legal advice.
