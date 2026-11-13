@@ -9,6 +9,7 @@
 - Seated: <seat slugs>
 - Skipped (with reason): <seat — reason>
 - Write surface (parallel/mixed only): <seat — files/modules/tables it writes; shared surfaces run sequentially>
+- Saturation (parallel only): <each seated writer occupied with a full step? — a seat waiting on the Director/owner is unblocked before another writer is added>
 - Repos: <each repo the mission touches — name + path/URL — and which seats read/write each>
 
 ## Active phase

@@ -5,6 +5,19 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Cast Check gains a saturate-before-scaling step.** Before adding
+  a parallel writer beyond the first, the Director confirms the
+  already-seated writers are occupied with a full step each — a seat
+  waiting on the Director or the owner is unblocked, or handed its
+  next step, before another writer is added. The reverse test: if
+  parallel seats keep producing work the Director rejects despite
+  reasonable plans, the workload is not parallelizable, so the
+  mission collapses to sequential until the Director re-justifies
+  the parallel shape. Evidence: 0xandrewshu, "From 1 to 3 Parallel
+  Claude Code Agents" (DEV, 2026-03-17) — utilization 16% to 50%+
+  only after the first agent was fully occupied and each added agent
+  got an isolated, right-sized task. A matching Saturation line joins
+  the MISSION.md template.
 - **Deliverable schemas for three more seats (18 of 45).** The
   charters for UI/UX Designer, Lead Mobile/Frontend Engineer, and
   Document Artisan each gain a `Deliverable schema` section — a

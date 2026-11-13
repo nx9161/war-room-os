@@ -124,7 +124,19 @@ check into the mission's MISSION.md (see below):
    flags on HN (Ask HN, 2026-06-26): orchestration tools "assume an
    agent lives in one worktree of one git repo... the repo boundary is
    often just not the task boundary."
-7. No Phase 0 until the cast check exists. A cast check written
+7. **Saturate before scaling.** Before adding a parallel writer
+   beyond the first, confirm the already-seated writers are occupied
+   with a full step each — a seat waiting on the Director or the
+   owner is unblocked, or handed its next step, before another writer
+   is added. One busy seat beats three idle ones (0xandrewshu, "From
+   1 to 3 Parallel Claude Code Agents", DEV, 2026-03-17: utilization
+   16% → 50%+ only after the first agent was fully occupied and each
+   added agent got an isolated, right-sized task). The reverse test:
+   if parallel seats keep producing work the Director rejects despite
+   reasonable plans, the workload is not parallelizable — collapse the
+   mission to sequential until the Director re-justifies the parallel
+   shape.
+8. No Phase 0 until the cast check exists. A cast check written
    after the work is a confession, not a check — it gets logged as
    an M-5 instance.
 
