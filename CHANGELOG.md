@@ -5,6 +5,17 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Learnings earn their place before they are written.** The
+  Continuous Learning Protocol gains a write-time salience test
+  (rule 7): before logging a learning, the seat asks whether it
+  generalizes beyond this mission, whether it is already in the
+  charter, skill, or file, and whether forgetting it would repeat a
+  real mistake — a candidate failing any of the three stays in the
+  mission's own record, never the learnings file. Judgment stays
+  with the seat, not a fixed filter (Anthropic, "The Components of
+  Agent Memory", 2026-11-07: indiscriminate writing sank the run —
+  413 memory files, one badge — while nine files plus one dashboard
+  earned four; HN 189 pts / 105 comments).
 - **Spawn packets carry a self-contained task brief.** Every packet
   now states what to change, what not to touch, and how to prove it
   is done — because a spawned seat starts with a clean context and
