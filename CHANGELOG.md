@@ -5,6 +5,18 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Resume checks the world, not just the checkpoint.** MISSION.md
+  now records a World baseline at mission open — the HEAD commit of
+  every repo touched plus the read dates of the dossier's key external
+  inputs — and the resume rule compares against it: a moved repo HEAD
+  demotes done steps in that repo to active for re-verification, and
+  a stale changeable input (prices, live pages, availability) is
+  re-read before any done step depending on it is trusted. Artifacts
+  existing proves the checkpoint survived, not that the world stood
+  still. Evidence: rmehan, "Reliable Agent Workflows: Code, Contracts,
+  and Judgment" (2026-11-13) — if the repository head, policy, or
+  source data changed, invalidate the affected stages rather than
+  continuing from stale assumptions.
 - **Cast Check gains a saturate-before-scaling step.** Before adding
   a parallel writer beyond the first, the Director confirms the
   already-seated writers are occupied with a full step each — a seat

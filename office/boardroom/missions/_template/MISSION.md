@@ -12,6 +12,11 @@
 - Saturation (parallel only): <each seated writer occupied with a full step? — a seat waiting on the Director/owner is unblocked before another writer is added>
 - Repos: <each repo the mission touches — name + path/URL — and which seats read/write each>
 
+## World baseline
+<!-- The world as it stood at mission open. On resume, compare against now: a moved repo HEAD demotes done steps in that repo to active for re-verification; a stale key external input is re-read before any done step depending on it is trusted. -->
+- Repos at open: <repo — HEAD commit SHA>
+- Key external inputs: <input — read date>
+
 ## Active phase
 <!-- One line, updated at every phase boundary. The first thing any resuming agent reads. -->
 Phase 0 — <current step>

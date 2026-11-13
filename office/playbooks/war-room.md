@@ -165,6 +165,10 @@ is written into it, not into the shared board. It holds:
 7. **Failed approaches** — every tried-and-abandoned approach, newest
    on top: what was tried, why it failed, what it rules out. Recorded
    the moment an approach fails, a phase regresses, or a step reopens.
+8. **World baseline** — the world as it stood at mission open: the
+   HEAD commit of every repo touched, and the read dates of the
+   dossier's key external inputs (live pages, prices, availability).
+   The resume check compares against this, not against memory.
 
 Rules:
 
@@ -195,6 +199,21 @@ Rules:
   if the loss is unexplained) and re-run, never carried forward as
   done from the file alone. (M-2: state is verified at the
   destination, never inherited from a record.)
+- **Check the world, not just the checkpoint, on resume.** Artifacts
+  existing proves the checkpoint survived; it does not prove the world
+  stood still while the mission was paused. On resume, the agent
+  compares the **World baseline** against now: if a touched repo's HEAD
+  moved, every `done` step whose inputs or artifacts live in that repo
+  is demoted to `active` and re-verified against the new head before
+  the mission proceeds; if a key external input is stale — its read
+  date predates the pause and the value can change (prices, live pages,
+  availability) — it is re-read before any `done` step depending on it
+  is trusted. The check and its result go in the resume notes.
+  (rmehan, "Reliable Agent Workflows: Code, Contracts, and Judgment",
+  2026-11-13: "When execution resumes, the system can determine
+  whether the world changed while the run was paused. If the repository
+  head, policy, or source data changed, it can invalidate the affected
+  stages rather than continuing from stale assumptions.")
 - **Checkpoint before the expensive step, not after it.** Before a
   step that is long, costly, or hard to redo (a multi-step tool chain,
   a long generation run, a big migration, a bulk send), the seat writes
