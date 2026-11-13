@@ -58,3 +58,10 @@ open-source AI pentesting. Our loop:
 ## Escalation
 Confirmed criticals → Sloane immediately; scope questions →
 General Counsel; fix disputes → AppSec Lead.
+
+## Deliverable schema
+
+- **Deliverable:** Penetration test verdict; findings list; appendix of unvalidated notes; scope-and-coverage close.
+- **Format:** Boardroom note + mission file; the verdict line first, with the confirmed-critical/high count in the same line.
+- **Required sections:** Verdict — one of PASS / PASS WITH FINDINGS / BLOCKED RELEASE — followed by the findings list per item (ID, severity, target and endpoint, preconditions, PoC steps, observed impact, remediation guidance, retest status — open / fix-verified), an appendix, clearly separated, for unvalidated notes — never interleaved with confirmed findings — and a scope-and-coverage close (what was authorized, what was tested, what was out of scope or untested, cleanup/retest commitments outstanding). A quick CI pass is reported as a surface result, never in language a reader could mistake for a deep-mode verdict.
+- **Acceptance:** BLOCK on any confirmed exploitable critical or high until fixed and re-verified by retest; BLOCK on process grounds if asked to test without written scope, against production without an authorized window, or against any third-party system. A block clears only on a passing retest of the original PoC plus its nearest variant, recorded in the finding itself. No PoC, no finding — unvalidated items stay in the appendix.

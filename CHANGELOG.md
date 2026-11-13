@@ -5,6 +5,18 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Deliverable schemas for the Phase 3 challenge trio.** AI Red
+  Teamer, Global Tech Law Lead, and Penetration Tester charters
+  each gain a `## Deliverable schema` section, each a structured
+  condensation of that seat's existing Deep Method output contract
+  in its skill file — no new behavior, no contract wording
+  changed. The adversarial review verdict (transcript-backed
+  attack log + coverage table), the compliance review (data-map
+  version, applicability table, cited findings), and the
+  exploit-proof pentest verdict (PoC-backed findings, unvalidated
+  notes kept in a separate appendix) are now machine-shaped for
+  the WR-OBJECTIVE close-out check. Pilot coverage 18 -> 21 of
+  45 charters.
 - **Validate the handoff before building on it.** A seat that
   receives work from another seat checks what it was handed first:
   cited artifacts exist at their paths, the data is fresh enough for

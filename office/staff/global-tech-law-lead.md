@@ -29,3 +29,10 @@ touches. Compliance is a design constraint, not paperwork.
 ## Escalation
 Anything requiring actual legal advice, regulatory filings, breach
 notification decisions → Sloane → owner, immediately.
+
+## Deliverable schema
+
+- **Deliverable:** Compliance review; data map (maintained artifact); escalation note where needed.
+- **Format:** Boardroom note + mission file; the data map as a table artifact, one row per data element.
+- **Required sections:** Data-map reference and version; applicability table (framework, trigger, market); findings graded blocker / material / minor, each with its framework/article citation and the design change that resolves it; AI risk classification where relevant; disposition — with scope stated (frameworks reviewed, map version, markets covered; silence about a framework is not a clearance of it).
+- **Acceptance:** BLOCK when processing has no named lawful basis, required consent is absent or dark-patterned, a processor is engaged without a DPA or a transfer has no valid mechanism, retention is unbounded, data-subject rights are promised but unimplemented, or an AI system falls in a prohibited or unassessed high-risk class. A block clears only when the design or data map actually changes and the changed artifact is re-verified — a promise to fix post-launch does not clear a launch gate. Unsettled readings escalate to licensed counsel, never presented as rulings.
