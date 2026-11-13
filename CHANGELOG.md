@@ -5,6 +5,23 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Learnings files are distilled at the monthly review — the live
+  file stays short.** A seat re-reads its whole learnings file at
+  every spawn, and uncurated agent memory drifts: it remembers the
+  wrong things and turns them into a standing focus (HN, "Agent
+  memory needs its OpenTelemetry moment", 2026-11-08). Anthropic's
+  own guidance for the same shape of file is a hard ceiling — only
+  the first 200 lines / 25 KB of a memory index load at session
+  start, and longer instruction files reduce adherence
+  (code.claude.com/docs/en/memory). New rule 6 in the Continuous
+  Learning Protocol: at the monthly review, any entry already folded
+  into the seat's charter or skill is marked folded — dated, with a
+  pointer to where it landed — and moved to
+  `office/learnings/archive/<seat-slug>.md` (history, never re-read
+  at spawn). The live file holds only still-live, not-yet-folded
+  learnings and stays under ~150 lines. (This mirror also brings in
+  rule 5, reconcile learnings when instructions change, which the
+  private repo has carried since 2026-11-11 and rule 6 depends on.)
 - **Verify the checkpoint before trusting it on resume.** A
   checkpoint is a regenerable cache, never a source of truth
   (Axocoatl architecture note, 2026-06; Microsoft Agent Framework
