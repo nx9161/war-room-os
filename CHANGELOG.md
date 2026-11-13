@@ -5,6 +5,18 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Cast Check shape now derives from a step-dependency map.**
+  Before declaring a mission's shape (`parallel | sequential |
+  mixed`), the Cast Check writes each step's dependencies — which
+  prior steps' outputs it needs — into the MISSION.md Cast Check
+  result. `mixed` is now the written partition: independent steps
+  grouped to run in parallel, the groups ordered in sequence —
+  never the bare word with no structure. A step placed in a
+  parallel group whose inputs include a step in the same group is
+  a shape error in the Cast Check. Evidence: AdaptOrch (arXiv
+  2602.16873, Feb 2026) — routing the execution topology from the
+  task dependency graph beat static single-topology baselines by
+  12–23% on SWE-bench, GPQA, and RAG tasks with identical models.
 - **Deliverable schemas for the Phase 3 challenge trio.** AI Red
   Teamer, Global Tech Law Lead, and Penetration Tester charters
   each gain a `## Deliverable schema` section, each a structured

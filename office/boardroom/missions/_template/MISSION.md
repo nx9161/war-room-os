@@ -6,6 +6,7 @@
 ## Cast Check
 - shape: parallel | sequential | mixed
 - budget: <seats> × <max actions each>
+- Dependencies: <each step — the prior steps whose outputs it needs; mixed: the parallel groups in sequence order>
 - Seated: <seat slugs>
 - Skipped (with reason): <seat — reason>
 - Write surface (parallel/mixed only): <seat — files/modules/tables it writes; shared surfaces run sequentially>

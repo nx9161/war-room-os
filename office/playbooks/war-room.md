@@ -104,6 +104,20 @@ check into the mission's MISSION.md (see below):
    180-configuration study, 2026-09-24); the Director may still
    seat a domain reviewer at the end. Any mission seating more than
    7 seats must record why the work is independent.
+   **Map the step dependencies before declaring the shape.** The
+   shape follows the dependency structure, not a gut call: list
+   each step's inputs — which prior steps' outputs it needs — in
+   the MISSION.md Cast Check result. All steps independent →
+   `parallel`. A single chain → `sequential`. A mix → `mixed`,
+   and the map is written as the partition: independent steps
+   grouped to run in parallel, the groups ordered in sequence —
+   never the bare word `mixed` with no structure. A step placed
+   in a parallel group whose inputs include a step in the same
+   group is a shape error: the Cast Check is wrong, not the plan
+   (AdaptOrch, arXiv 2602.16873, Feb 2026: routing the execution
+   topology from the task dependency graph beat static
+   single-topology baselines by 12–23% on SWE-bench, GPQA, and
+   RAG tasks with identical models).
 5. **Map the write surface before parallel work.** When `shape` is
    `parallel` or `mixed`, list for each seated writer the files,
    modules, or tables it will write — not just its feature. Two
@@ -148,9 +162,10 @@ opens one checkpoint file at
 is written into it, not into the shared board. It holds:
 
 1. **Goal** — one line, taken from the perfected prompt.
-2. **Cast Check result** — shape, budget, seated seats, skipped seats
-   with reasons, write-surface map (parallel/mixed only), repos
-   touched.
+2. **Cast Check result** — shape, budget, step-dependency map
+   (mixed: the parallel groups in sequence order), seated seats,
+   skipped seats with reasons, write-surface map (parallel/mixed
+   only), repos touched.
 3. **Step checklist** — every step with a state:
    `pending | active | done | blocked`.
 4. **Active phase** — one line naming the current phase and step
