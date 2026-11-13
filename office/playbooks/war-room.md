@@ -108,7 +108,17 @@ check into the mission's MISSION.md (see below):
    feature still collide when the code underneath is shared — the
    exact failure that wrecked an 18-subagent sprint (Wasim, "I Had
    a Perfect Sprint Board", 2026-11-12).
-6. No Phase 0 until the cast check exists. A cast check written
+6. **Name every repo the mission touches.** The office repo holds the
+   mission file, but the work often lives elsewhere too — the public
+   snapshot, a project repo, a second repo holding the code under
+   review. List each repo (name + path or URL) and, per seated seat,
+   which repos outside the office repo it must read or write. A seat
+   spawned into a single worktree with no map of the neighbouring repos
+   is blind to context that lives next door — the exact failure yaskou
+   flags on HN (Ask HN, 2026-06-26): orchestration tools "assume an
+   agent lives in one worktree of one git repo... the repo boundary is
+   often just not the task boundary."
+7. No Phase 0 until the cast check exists. A cast check written
    after the work is a confession, not a check — it gets logged as
    an M-5 instance.
 
@@ -121,7 +131,8 @@ is written into it, not into the shared board. It holds:
 
 1. **Goal** — one line, taken from the perfected prompt.
 2. **Cast Check result** — shape, budget, seated seats, skipped seats
-   with reasons, write-surface map (parallel/mixed only).
+   with reasons, write-surface map (parallel/mixed only), repos
+   touched.
 3. **Step checklist** — every step with a state:
    `pending | active | done | blocked`.
 4. **Active phase** — one line naming the current phase and step
@@ -145,6 +156,11 @@ Rules:
 - **Handoffs cite paths, never paste outputs.** Subagent results are
   referenced by file path; full outputs are never pasted into the
   coordinator thread.
+- **Name the repos before spawning.** The Cast Check lists every repo
+  the mission touches and, per seat, which of them it reads or writes;
+  the spawn packet for a seat working outside the office repo names
+  those repos and their paths explicitly. A mission that spans repos
+  never leaves a seat to discover the second repo on its own.
 - **Resume from the file.** After context compaction, a crash, or a
   new session, **any** agent — Director or seat — re-reads MISSION.md
   before resuming and picks up from its **Active phase** line — the

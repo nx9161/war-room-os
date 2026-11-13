@@ -9,6 +9,7 @@
 - Seated: <seat slugs>
 - Skipped (with reason): <seat — reason>
 - Write surface (parallel/mixed only): <seat — files/modules/tables it writes; shared surfaces run sequentially>
+- Repos: <each repo the mission touches — name + path/URL — and which seats read/write each>
 
 ## Active phase
 <!-- One line, updated at every phase boundary. The first thing any resuming agent reads. -->

@@ -5,6 +5,16 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Cast Check names every repo the mission touches.** New Cast Check
+  step 6: list each repo (name + path or URL) and, per seated seat,
+  which repos outside the office repo it must read or write; the
+  Mission state file section carries the repos in the Cast Check
+  result and a "Name the repos before spawning" rule, and the
+  MISSION.md template gains a Repos line. A seat spawned into a
+  single worktree with no map of the neighbouring repos is blind to
+  context that lives next door (Ask HN, 2026-06-26: orchestration
+  tools "assume an agent lives in one worktree of one git repo...
+  the repo boundary is often just not the task boundary").
 - **Checkpoint before the expensive step, not after it.** Before a
   step that is long, costly, or hard to redo, the seat writes a
   provisional checkpoint first: the step goes `active` in MISSION.md
