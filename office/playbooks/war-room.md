@@ -329,13 +329,25 @@ materially changes the output of an earlier Phase M:
    later phases pauses.
 2. Sloane decides: loop back to Phase M (re-running M→N with the new
    finding as input), or rule the finding immaterial and continue.
-3. Every loop-back is recorded: iteration number, trigger, what
-   changed. Bounded — max 3 regressions per request. On the 4th
-   trigger, Sloane must choose: escalate to the owner with options,
-   or terminate the request.
+3. Every loop-back is recorded: iteration number, trigger,
+   classification (step 5), what changed. Bounded — max 3 regressions
+   per request. On the 4th trigger, Sloane must choose: escalate to
+   the owner with options, or terminate the request.
 4. A re-run phase re-issues its outputs (updated PRD, revised specs).
    Downstream phases always work from the latest version, never stale
    output.
+5. Classify the trigger before re-running. **Transient** (tool fault,
+   flaky check, missing artifact): a same-approach re-run may repair
+   it. **Latent** (wrong decomposition, wrong seat, ambiguous
+   brief/delegation, wrong objective reading): retry reproduces the
+   fault — the re-run must change something structural (re-decompose
+   the step, re-seat it, or rewrite the brief). A same-approach re-run
+   of a latent trigger is not a regression, it is a stall: Sloane
+   stops it rather than burning a regression on it. (OrchestraBench,
+   arXiv:2608.05263, 2026-08: tool faults recovered 1.0, ambiguous
+   delegation 0.30, three latent/semantic modes 0.0 — "retry does not
+   repair the latent modes — it reproduces the fault and only
+   lengthens time-to-detection.")
 
 ## Live discussion (the room talks)
 Seats don't just report — they discuss with each other, live. The

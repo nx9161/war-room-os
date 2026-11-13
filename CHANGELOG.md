@@ -5,6 +5,22 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Phase regression classifies the trigger before re-running.**
+  Before a loop-back re-run, Sloane classifies the trigger as
+  transient (tool fault, flaky check, missing artifact — a
+  same-approach re-run may repair it) or latent (wrong decomposition,
+  wrong seat, ambiguous brief/delegation, wrong objective reading —
+  the re-run must change something structural: re-decompose the step,
+  re-seat it, or rewrite the brief). A same-approach re-run of a
+  latent trigger is a stall, not a regression, and Sloane stops it
+  rather than burning one of the three bounded regressions on it.
+  Evidence: OrchestraBench (arXiv:2608.05263, 2026-08) — across five
+  MAST failure modes, tool faults recovered 1.0, ambiguous delegation
+  0.30, and three latent/semantic modes never recovered (0.0); "retry
+  does not repair the latent modes — it reproduces the fault and only
+  lengthens time-to-detection." The WR-REGRESS gate row in GATES.md
+  carries the same rule; loop-back records now include the
+  classification.
 - **Deliverable schemas for three more seats (15 of 45).** The
   charters for Mission Control, Memory Keeper, and Connector
   Operator each gain a `Deliverable schema` section — a structured

@@ -53,7 +53,7 @@ Rules of the index:
 
 | ID | Gate | Source | Blocked by / cleared by |
 |----|------|--------|-------------------------|
-| WR-REGRESS | A finding that invalidates earlier-phase output loops the mission back; max 3 regressions per request — the 4th trigger forces escalate-to-owner or terminate. | `war-room.md` §Phase regression | Sloane; loop-backs recorded with iteration number and trigger. |
+| WR-REGRESS | A finding that invalidates earlier-phase output loops the mission back; max 3 regressions per request — the 4th trigger forces escalate-to-owner or terminate. Before re-running, Sloane classifies the trigger: transient (tool fault, flaky check, missing artifact — a same-approach re-run may repair it) vs latent (wrong decomposition, wrong seat, ambiguous brief/delegation, wrong objective reading — the re-run must change the decomposition, the seat, or the brief; a same-approach retry of a latent trigger is a stall, not a regression). | `war-room.md` §Phase regression | Sloane; loop-backs recorded with iteration number, trigger, and classification. |
 | WR-DEBATE | Max 3 discussion rounds per question, then the Chief decides (or escalates). No filibusters. | `war-room.md` §Live discussion | Sloane; verdict recorded in the ADR. |
 
 ## Self-modification
