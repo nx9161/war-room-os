@@ -5,6 +5,15 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Checkpoint before the expensive step, not after it.** Before a
+  step that is long, costly, or hard to redo, the seat writes a
+  provisional checkpoint first: the step goes `active` in MISSION.md
+  with its expected artifacts named (the announce-intent boardroom
+  note doubles as that checkpoint in `parallel`/`mixed` missions).
+  A crash mid-step re-runs from that provisional state — and the
+  re-run is idempotent: it checks whether the effect already landed
+  before re-applying it, never double-applies (Rivet actor model,
+  DEV 2026-11-08).
 - **Deliverable schemas for three more seats — pilot now 12 of 45.**
   General Counsel, Lead Backend Dev, and Decision Model charters each
   gain a `## Deliverable schema` section (Deliverable / Format /

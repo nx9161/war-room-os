@@ -161,6 +161,21 @@ Rules:
   if the loss is unexplained) and re-run, never carried forward as
   done from the file alone. (M-2: state is verified at the
   destination, never inherited from a record.)
+- **Checkpoint before the expensive step, not after it.** Before a
+  step that is long, costly, or hard to redo (a multi-step tool chain,
+  a long generation run, a big migration, a bulk send), the seat writes
+  a provisional checkpoint first: the step goes `active` in MISSION.md
+  with its expected artifacts named, and in a `parallel`/`mixed`
+  mission the announce-intent boardroom note doubles as that
+  checkpoint. If the seat crashes mid-step, the resuming agent re-runs
+  from that provisional state — and the re-run is idempotent: it checks
+  whether the effect already landed (commit exists, message sent, file
+  written) before re-applying it, never double-applies. (Rivet actor
+  model, DEV 2026-11-08: "Write a provisional checkpoint before
+  executing expensive operations... If the actor crashes, the next
+  invocation can resume from the provisional state"; a mid-turn crash
+  retry "requires idempotency in tool calls or explicit turn IDs to
+  detect duplicates".)
 - **Record failures, not just progress.** A reopened step's next
   attempt names the failed approach it avoids — the next agent reads
   the Failed approaches section first and does not retry the same
