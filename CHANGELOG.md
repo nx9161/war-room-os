@@ -5,6 +5,17 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Held-out discipline for v3+ eval waves.** The Promotion Gate
+  gains rule 5: from v3 on, each eval wave splits its fixtures
+  before any tuning into train (inspect and iterate freely),
+  validation (decides promotion), and held-out (never read during
+  tuning; scored once at wave close — that score is the number
+  reported). A fixture set used to tune a change is never that
+  change's promotion evidence, and v1/v2 are honestly labelled
+  regression baselines, never held-out evidence. Evidence: Kiln AI
+  Harness Tuner (Show HN 2026-11-13) — train/val/test enforced in
+  code, test never read, so the reported number is one the tuning
+  never optimized against.
 - **Deliverable schemas for the Games trio.** Game Architect,
   Gameplay Designer, and Game UI/UX Designer charters each gain a
   `## Deliverable schema` section, each a structured condensation

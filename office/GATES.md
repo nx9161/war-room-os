@@ -60,7 +60,7 @@ Rules of the index:
 
 | ID | Gate | Source | Blocked by / cleared by |
 |----|------|--------|-------------------------|
-| WR-PROMO | Every self-modification commit cites its eval evidence (baselines v1 59/60, v2 437/440, zero critical misses) or `process-only: no seat behavior changed` + validator result; behavior changes hold-or-beat the bar or are benched; every Mistake Register entry spawns a regression eval task within one review cycle; the Director reads failing transcripts, not just numbers. | `war-room.md` §Promotion Gate | Director + QA; a change with neither citation does not land. |
+| WR-PROMO | Every self-modification commit cites its eval evidence (baselines v1 59/60, v2 437/440, zero critical misses) or `process-only: no seat behavior changed` + validator result; behavior changes hold-or-beat the bar or are benched; every Mistake Register entry spawns a regression eval task within one review cycle; the Director reads failing transcripts, not just numbers; from v3, fixtures split train / validation / held-out before tuning — a set used to tune a change is never that change's promotion evidence, and the held-out score, scored once at wave close, is the reported number; v1/v2 stay regression baselines, never held-out evidence. | `war-room.md` §Promotion Gate | Director + QA; a change with neither citation does not land. |
 
 ## Scope and waiver
 

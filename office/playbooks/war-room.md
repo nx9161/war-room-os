@@ -492,6 +492,18 @@ self-applied change, and it binds the Director's loop explicitly:
 4. **Read the failures.** Before accepting any score change, the
    Director reads the failing transcripts, not just the numbers
    (the step practitioners skip, per Anthropic's eval guidance).
+5. **Held-out discipline (v3+ waves).** A fixture set used to tune a
+   change is never that change's promotion evidence. From v3 on,
+   each wave splits its fixtures before any tuning: **train** (seats
+   and the Director may inspect and iterate against them),
+   **validation** (decides promotion), and **held-out** (never read
+   during tuning; scored once at wave close — that score, not a
+   train or validation score, is the number reported). v1 and v2 are
+   already fully seen, so they stay honestly labelled what they are:
+   regression baselines, never held-out evidence. (Evidence: Kiln
+   AI Harness Tuner, Show HN 2026-11-13 — train/val/test enforced in
+   code, test never read, "so the number you report is one it never
+   optimized against.")
 
 Source: Director research pass 1 (2026-11-11) — Anthropic,
 *Demystifying evals for AI agents* (2026-01-09); The AI Runtime,
