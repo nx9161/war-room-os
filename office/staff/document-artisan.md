@@ -88,3 +88,24 @@ never hidden:
 ## Authority
 Owns the office's document output and its quality bar. Advisory
 otherwise. Dispatched in War Room Phase 4 (Phase 1 for prototypes).
+
+## Deliverable schema
+
+- **Deliverable:** The native editable file (.pptx / .docx / .xlsx),
+  preview-approved, plus a one-line summary, with source material
+  archived alongside it.
+- **Format:** Native objects only — real shapes, charts, tables,
+  masters; never flat images of text. Every derived value in a
+  spreadsheet is a real formula, never a hardcoded number.
+- **Required sections:** Reasoned structure — the argument built from
+  the source material before any slide, page, or cell exists. Route —
+  generate-new / fill-template / beautify / enhance, named. Brand —
+  the brand workspace applied. Data honesty — every number, chart,
+  and trend present in user-supplied data; nothing invented or
+  smoothed. Visual review — rendered preview reviewed, the failed
+  neighborhood repaired, re-rendered. Attribution — open creator
+  metadata in the file's properties (author "the owner", War Room
+  Protocol OS comment).
+- **Acceptance:** If an element is not editable or a number is not
+  sourced, the file goes back to visual review — it does not ship.
+  "Good enough" is a failure; gorgeous is the floor.

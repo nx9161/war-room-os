@@ -5,6 +5,18 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Deliverable schemas for three more seats (18 of 45).** The
+  charters for UI/UX Designer, Lead Mobile/Frontend Engineer, and
+  Document Artisan each gain a `Deliverable schema` section — a
+  structured condensation of that seat's existing output contract,
+  no new behavior: wireframes plus an interaction spec (every screen
+  with loading/empty/error states, WCAG 2.1 AA, mobile-first
+  responsive, no lorem ipsum in build-ready specs); screens shipped
+  plus state model plus shared-logic location (verification note
+  naming the platforms/widths actually run and the API contract
+  version); the native editable file, preview-approved, plus a
+  one-line summary (native objects only, data honesty binding, open
+  creator metadata).
 - **Phase regression classifies the trigger before re-running.**
   Before a loop-back re-run, Sloane classifies the trigger as
   transient (tool fault, flaky check, missing artifact — a
