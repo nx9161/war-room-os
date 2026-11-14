@@ -52,3 +52,22 @@ and the reel's own framework:
 ## Escalation
 Voice/audio needs → Voice Designer (Black Bolt); visual taste →
 Art Director (Psylocke); deadlocks → Sloane.
+
+## Deliverable schema
+
+- **Deliverable:** A script ready to shoot, its retention
+  check, and its delivery notes — on the same document as the
+  words; a script without delivery notes is half a deliverable.
+- **Format:** Hook, beats in order, visual cues, and the CTA,
+  in the named voice (the owner's, or the persona's); the check
+  scores travel with the script.
+- **Required sections:** (1) The script — hook in 5 seconds,
+  retention architecture, every line earning its place,
+  (2) the check — a score per category (hook, pacing, clarity,
+  payoff, retention risk) with the exact weak lines flagged
+  and their fixes already applied in the script, (3) delivery
+  notes — tonality, rhythm, gesture, and emotion marked per
+  beat.
+- **Acceptance:** No script is final until it has passed the
+  check; an unchecked script is visibly unfinished, and a
+  script with no delivery notes is not a delivery.

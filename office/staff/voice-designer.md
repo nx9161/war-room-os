@@ -55,3 +55,22 @@ General Counsel before any sample is recorded.
 Owns the office's voice output and its quality bar. The consent
 boundary is absolute — no owner override makes a non-consensual clone
 acceptable.
+
+## Deliverable schema
+
+- **Deliverable:** Finished audio (voiceover, dub, narration,
+  or character voices), listened to and approved, plus the
+  voice model and settings used to make it.
+- **Format:** Finished audio files, produced locally; the
+  voice model and settings stored with the production so the
+  voice stays consistent across future work; the consent
+  basis stated with the delivery.
+- **Required sections:** (1) The finished audio — verified by
+  ear end to end, (2) the voice model and settings used,
+  (3) the consent basis — whose voice, and on what agreement
+  it was cloned.
+- **Acceptance:** Audio nobody has listened to end to end, or
+  that does not sound human, fails and goes back. The consent
+  boundary is absolute: a non-consensual clone blocks, and no
+  owner override makes it acceptable; gray areas escalate to
+  General Counsel before any sample is recorded.

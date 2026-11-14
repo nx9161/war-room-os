@@ -5,6 +5,17 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Deliverable schemas for the words-and-voice trio.**
+  Scriptwriter, Voice Designer, and Word Specialist charters
+  each gain a `## Deliverable schema` section, each a structured
+  condensation of that seat's existing Deep Method output
+  contract in its skill file — no new behavior, no contract
+  wording changed. The shoot-ready script with its retention
+  check and per-beat delivery direction, the finished audio
+  verified by ear under its absolute consent boundary, and the
+  native .docx execution standard are now machine-shaped for
+  the WR-OBJECTIVE close-out check. Pilot coverage 36 -> 39
+  of 45 charters.
 - **Deliverable schemas for the go-to-market trio.** Launch
   Strategist, Sales Agent, and Social Media Strategist charters
   each gain a `## Deliverable schema` section, each a structured

@@ -52,3 +52,24 @@ github.com/nx9161/war-room-os".
 ## Authority
 Advisory; executes document missions. Lane: deep `.docx` execution —
 the Document Artisan owns the brand workspace and the quality bar.
+
+## Deliverable schema
+
+- **Deliverable:** The native `.docx`, opening clean, with
+  structure, styles, and creator metadata verified.
+- **Format:** A native `.docx` — python-docx for new documents,
+  docxtpl for template fills, direct OOXML work for surgery —
+  carrying the binding creator metadata (author "the owner",
+  the War Room Protocol OS comment).
+- **Required sections:** (1) The document — structure first
+  (headings, TOC placeholder, sections, page setup), styled
+  tables, images, headers/footers with page numbers, one
+  typography system throughout, (2) for template and merge
+  jobs, a report: template used, records merged, and any
+  record skipped or failed, by name, (3) the stamped creator
+  metadata.
+- **Acceptance:** The document opens clean with structure
+  intact, headings and numbering correct, and no corrupted
+  parts. Invented content fails — data honesty is binding;
+  the Document Artisan owns the brand workspace and quality
+  bar this delivery is handed back through.
