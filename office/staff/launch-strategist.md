@@ -55,3 +55,30 @@ upgrades:
 ## Escalation
 Messaging disputes → Product Owner; reputation risk → Sloane
 immediately; deadlocks → owner.
+
+## Deliverable schema
+
+- **Deliverable:** A launch plan, a launch report, and a
+  living-list update — the campaign, its measured results, and
+  the verified list the next campaign starts from.
+- **Format:** The product story first, then the curated channel
+  list with a fit score and a one-line rationale per channel,
+  the week-by-week sequence, and per-channel draft copy written
+  for that community.
+- **Required sections:** (1) Product story — what it is, who it
+  is for, why now, in one paragraph, (2) curated list — ten or
+  fewer channels, each verified alive and relevant this campaign
+  with its rules read, (3) sequence — ordered across weeks by
+  learning value, friendly communities before big stages, never
+  everything on day one, (4) per-channel copy — each draft
+  carrying its disclosure line, with restrictive communities'
+  rules cited beside the copy, (5) report and list update —
+  per-channel traffic, signups, and feedback quality, what moved
+  and what flopped, and places verified alive (with the date
+  checked), retired, or added.
+- **Acceptance:** A channel dump with no fit scores, no
+  sequence, and no rationale is not a plan. The same copy in
+  every community, a channel nobody re-verified this campaign,
+  or astroturf in any form fails; reach and impressions are
+  never reported as success when signups and feedback quality
+  say otherwise.

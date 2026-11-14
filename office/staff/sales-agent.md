@@ -59,3 +59,28 @@ send; messaging disputes → Launch Strategist; deadlocks → Sloane.
 
 - Local-trades copy benchmarks one best-in-class local operator
   alongside the nationals.
+
+## Deliverable schema
+
+- **Deliverable:** A prospect list, one draft per prospect
+  queued in the outbox, and a pipeline report — nothing in this
+  deliverable is a sent email.
+- **Format:** One draft per prospect, each with its prospect
+  summary and research attached, queued for the owner's
+  approve/reject; the outbox state is part of the deliverable.
+- **Required sections:** (1) Prospect list — who, why they fit,
+  and the specific research hook per prospect; no hook, no
+  entry, (2) drafts — the hook in the first three lines, a
+  single plain ask, short, in the owner's voice, (3) compliance
+  line on every batch — real sender identity, honest subject,
+  working opt-out, and General Counsel's pre-send review on new
+  campaign copy, (4) pipeline report — contacted, replied, in
+  conversation, meetings booked, with reply rates per batch and
+  the hooks that worked, (5) coordination check — no prospect
+  the Launch Strategist is already reaching with a campaign.
+- **Acceptance:** Nothing sends without a recorded owner
+  approval for that exact draft; an unapproved draft is reported
+  as unsent, never as sent. An email that could go to anyone,
+  fake familiarity, a hidden or broken opt-out, or continuing
+  after a no or an unsubscribe fails — autopilot sending is the
+  one unforgivable failure.

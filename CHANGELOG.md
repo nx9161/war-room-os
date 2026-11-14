@@ -5,6 +5,17 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Deliverable schemas for the go-to-market trio.** Launch
+  Strategist, Sales Agent, and Social Media Strategist charters
+  each gain a `## Deliverable schema` section, each a structured
+  condensation of that seat's existing Deep Method output
+  contract in its skill file — no new behavior, no contract
+  wording changed. The fit-scored launch campaign with
+  per-channel disclosed copy, the outbox-gated prospect drafts
+  (nothing sends without recorded owner approval), and the
+  platform-native social strategy with its boundary line are
+  now machine-shaped for the WR-OBJECTIVE close-out check.
+  Pilot coverage 33 -> 36 of 45 charters.
 - **Deliverable schemas for the builders trio.** Harness
   Engineer, MCP Maker, and Reverse Engineer charters each gain a
   `## Deliverable schema` section, each a structured

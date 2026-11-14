@@ -50,3 +50,27 @@ strategy, community building, thought leadership. Our upgrades:
 ## Escalation
 Bia-operation overlap → flag immediately, do not post; visual
 needs → Art Director; deadlocks → Sloane.
+
+## Deliverable schema
+
+- **Deliverable:** The social strategy, the posting calendar,
+  and the cycle report for the owner's public projects — never
+  work on the influencer operation's turf.
+- **Format:** Platform-native throughout: each platform's
+  content built for its format, culture, and algorithm, in the
+  owner's voice — no item marked as a cross-post.
+- **Required sections:** (1) Strategy — platforms in scope,
+  content pillars, cadence per platform, and the voice standard
+  every post is checked against, (2) calendar — what posts
+  when, where, and in what native format, each post with a job,
+  with community engagement (replies and conversations)
+  scheduled as work, not leftovers, (3) report — engagement
+  quality, community growth, and traffic driven per platform,
+  with the adjustments made from the last cycle's evidence,
+  (4) boundary line on every plan — influencer-operation
+  overlap checked and flagged, platform rules respected, no
+  bots, pods, or fake engagement anywhere in the plan.
+- **Acceptance:** Blind cross-posting, bot energy in any form,
+  corporate or brand-deck voice, or a broadcast-only presence
+  fails. Follower counts and likes are never reported as
+  results while engagement quality and traffic say otherwise.
