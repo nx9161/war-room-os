@@ -377,6 +377,23 @@ Rules:
   decisions based on my previous guidance where it can, and curates
   an inbox of decisions that need me" — manager nodes "handle
   decisions not worth escalating to root".)
+- **Review with the whole board; mission state has one writer.**
+  MISSION.md is written only by the coordinator (Director /
+  Mission Control): seated seats return results and post boardroom
+  notes, and the coordinator stores them — a seat never rewrites
+  the shared mission file wholesale, because whole-file replace
+  under a shared identity is silent last-writer-wins. In a
+  `parallel`/`mixed` mission, a reviewer or QA packet carries
+  every parallel step's write surface and allowed operations from
+  the Cast Check, not only the step under review; a finding that
+  work allowed under another step's surface is a violation is a
+  false positive, and adjudication stays with the Director.
+  (yuhaixia, "I Coordinate a Team of AI Agents. Here's What
+  Actually Breaks", DEV, 2026-10-24, read in full this pass: a
+  sub-agent overwrote the shared progress board under the
+  orchestrator's ID, and reviewers scoped to only their own card
+  flagged every legitimate parallel card as a permission
+  violation — "reviewers need the whole board".)
 - Template: `office/boardroom/missions/_template/MISSION.md`.
 
 ## Phase 0 — Prompt Perfection & Wizard Briefing (mandatory gate)
