@@ -96,7 +96,7 @@ delivery without re-reading the seat's whole method. Four fixed fields:
 A schema is a structured condensation of the seat's existing Deep
 Method output contract in its skill file; writing one adds no new
 behavior and changes no wording of the contract it condenses. Pilot
-coverage: 30 of 45 charters (enterprise-architect, prompt-writer,
+coverage: 33 of 45 charters (enterprise-architect, prompt-writer,
 qa-manager, product-owner, lead-code-reviewer, devops-sre,
 knowledge-wizard, business-analyst, appsec-lead,
 general-counsel, lead-backend-dev, decision-model,
@@ -105,7 +105,8 @@ ui-ux-designer, lead-frontend-dev, document-artisan,
 ai-red-teamer, global-tech-law-lead, penetration-tester,
 game-architect, gameplay-designer, game-ui-ux-designer,
 architecture-visualizer, diagram-designer, art-director,
-financial-analyst, tax-strategist, excel-specialist — the
+financial-analyst, tax-strategist, excel-specialist,
+harness-engineer, mcp-maker, reverse-engineer — the
 outputs every mission consumes plus the gates every change
 passes through: the Phase 0 dossier, the Phase 1 PRD and business
 case, the merge review, the pipeline, the Phase 3 security,

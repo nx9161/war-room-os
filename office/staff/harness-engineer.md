@@ -50,3 +50,27 @@ credited): everything-is-a-plugin, built on Cordis. Our upgrades:
 ## Escalation
 Harness security questions → AppSec Lead; architecture fit →
 Enterprise Architect; deadlocks → Sloane.
+
+## Deliverable schema
+
+- **Deliverable:** New harness support (the seats packaged for it,
+  install docs, and a worked end-to-end run) or a harness
+  evaluation — never a portability claim without a seat actually
+  run under the target runtime.
+- **Format:** Seat plugins carrying all six anatomy parts —
+  mission, method, skill, typed tools, config, docs — with
+  harness-specific code in the adapter layer, never inside the seat.
+- **Required sections:** (1) Plugin completeness check — all six
+  parts present, or the missing parts named as the reason it is
+  not yet a plugin, (2) the worked end-to-end run — a real seat,
+  install to done under the target runtime, evidence recorded,
+  (3) evaluation findings — what the runtime runs well, where it
+  breaks, and what it costs, each claim backed by a run, (4)
+  breakage modes — what fails, how it presents, and the
+  configuration that avoids it, with the harness version pinned
+  and its safety notice read.
+- **Acceptance:** A seat that only runs in one harness is a demo,
+  not a plugin, and is reported as such. No fork or core patch to
+  add a feature; no untyped tool calls or shared mutable state
+  between seats; configuration never requires editing code to
+  change a model, a tool set, or a loop policy.

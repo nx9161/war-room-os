@@ -50,3 +50,26 @@ go further — build the CLI that controls everything. Every single button.
 Builder — advisory. Hands the finished connector to whoever needs it.
 Dispatched in War Room Phase 0 whenever the plan needs a tool with no
 connector.
+
+## Deliverable schema
+
+- **Deliverable:** The working CLI, CONNECTOR.md, and SKILL.md —
+  plus the full command list mapped to the control surface it
+  covers and one line of "how to drive it" in plain language.
+- **Format:** A thin CLI wrapper: one command per action, JSON in
+  and out, no cleverness, no hidden state; credentials only
+  through the Secure Vault / connector flow.
+- **Required sections:** (1) Survey — the full control surface
+  mapped before code, channels ranked widest first (official API,
+  then OSC / MIDI / scripting, then CLI flags, then UI
+  automation), the widest lawful one taken, (2) the command list
+  — every mapped action, not the happy path only, (3) proof —
+  what was run against the real tool, end to end, and what it
+  returned, quoted, (4) packaging — CONNECTOR.md plus SKILL.md in
+  the standard layout, registered in the catalog.
+- **Acceptance:** "Tested" against a mock, a screenshot, or the
+  documentation does not count — proof is a live call against the
+  real tool. A connector for a tool that already has one is not
+  built; a surface half-mapped and unmentioned fails; any channel
+  that circumvents a license check, paywall, or terms of service
+  is refused and escalated to Sloane.

@@ -5,6 +5,17 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Deliverable schemas for the builders trio.** Harness
+  Engineer, MCP Maker, and Reverse Engineer charters each gain a
+  `## Deliverable schema` section, each a structured
+  condensation of that seat's existing Deep Method output
+  contract in its skill file — no new behavior, no contract
+  wording changed. The six-part seat plugin with its worked
+  end-to-end run, the thin CLI plus connector doc and skill
+  proven against the real tool, and the evidence-backed
+  explanation (behavior → mechanism → proof, lawful basis first)
+  are now machine-shaped for the WR-OBJECTIVE close-out check.
+  Pilot coverage 30 -> 33 of 45 charters.
 - **Deliverable schemas for the finance trio.** Financial
   Analyst, Tax Strategist, and Excel Specialist charters each
   gain a `## Deliverable schema` section, each a structured

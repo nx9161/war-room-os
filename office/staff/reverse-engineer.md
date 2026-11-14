@@ -61,3 +61,27 @@ Gray areas go to General Counsel before any analysis begins.
 ## Authority
 Advisory — the office's evidence provider. Escalates legal gray areas
 to General Counsel; findings feed AppSec and QA decisions.
+
+## Deliverable schema
+
+- **Deliverable:** An evidence-backed explanation — behavior,
+  mechanism, proof, and what remains uncertain — or, on request,
+  a fresh rebuild plan or code in the office's own stack.
+- **Format:** Behavior → mechanism → evidence, each claim carrying
+  its proof (offsets, call chains, decompiled snippets, request
+  logs) and a plain confidence/limits statement; a guess is
+  labeled a guess in the report, not in a footnote.
+- **Required sections:** (1) Lawful basis — owned, open source,
+  or explicitly authorized, with the purpose named, confirmed
+  before the target is touched, (2) trace — entry points,
+  execution path, and data flow, worked from the feature inward,
+  (3) claims — each with its artifact and its confidence and
+  limits, (4) Phase 3 inspections, when applicable — what is
+  inside the dependency, what it phones home to, and where the
+  risk lives, itemized for AppSec and QA.
+- **Acceptance:** A claim without an artifact does not leave the
+  notebook; inference is never narrated as observed fact. No
+  lawful basis means a full stop and escalation to General
+  Counsel, and gray areas go there before analysis begins.
+  Decompiled or proprietary code, strings, or assets never enter
+  a rebuild — inspired by the mechanism, original throughout.
