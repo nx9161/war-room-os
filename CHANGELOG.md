@@ -5,6 +5,11 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Sloane's first learnings entry.** The Director's learnings file
+  was still "(none yet)" after 66 self-improvement passes, so the
+  seat-coverage counter counted her cold — it reads the learnings
+  file, not the wing history. The entry records the lesson: evidence
+  must land in the file the measurement actually reads.
 - **Spawn packets restate the non-negotiables.** Every spawn packet
   now carries the standing hard lines in the packet itself — no
   deletes, publishing, spend, production deploy, or irreversible
