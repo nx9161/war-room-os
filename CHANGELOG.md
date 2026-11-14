@@ -5,6 +5,7 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **First learned skill admitted: metric-evidence-audit.** Through the admission gate, a procedure distilled from the office's own learnings — audit a metric against the exact files its reader scans, classify reader bug vs evidence misplacement vs genuine absence, fix the smallest side, and re-run before reporting. Demonstrated twice before admission (seat-coverage corrections in Director passes 62 and 67).
 - **Sloane's first learnings entry.** The Director's learnings file
   was still "(none yet)" after 66 self-improvement passes, so the
   seat-coverage counter counted her cold — it reads the learnings

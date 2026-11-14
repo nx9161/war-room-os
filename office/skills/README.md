@@ -7,7 +7,7 @@ license, installed date) plus the original license file.
 
 | Skill | Source | License | Installed | Tools wired |
 |-------|--------|---------|-----------|-------------|
-| _none yet_ | | | | |
+| metric-evidence-audit | **Learned skill (first admission, Director pass 68)** — office learnings, Sloane 2026-11-14; demonstrated in Director passes 62 + 67 | MIT | 2026-11-14 | all 45 seats (universal grant pattern); custodian: sloane |
 
 ## Learned skills — admission gate
 
