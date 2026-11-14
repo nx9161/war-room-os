@@ -580,7 +580,15 @@ self-applied change, and it binds the Director's loop explicitly:
    cycle, sourced from the real failure. New eval tasks are filed as
    **capability** (target <100%, still being mastered) or
    **regression** (target ~100%; a drop blocks) — mastered capability
-   tasks graduate to regression.
+   tasks graduate to regression. Countermeasures are ranked:
+   a structural mechanism first (a generator, a validator gate, a
+   script check, the trap fixture itself), a process rule ("always
+   do X before Y") only when no mechanism fits — with the reason
+   recorded in the register entry, because text rules alone persist
+   unreliably (Calx field study, HN 47596925, 2026-04-01: of 237
+   transferred correction rules, process corrections recurred at
+   ~50% while architectural corrections did not recur; N=1, weighed
+   accordingly).
 4. **Read the failures.** Before accepting any score change, the
    Director reads the failing transcripts, not just the numbers
    (the step practitioners skip, per Anthropic's eval guidance).
