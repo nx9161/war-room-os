@@ -5,6 +5,11 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Verify before it propagates.** The learnings protocol gains
+  rule 8: a shared claim asserting a checkable state is verified
+  at its destination once by the first seat that would act on
+  it, before it is acted on or folded into a charter or skill;
+  unverified claims are labelled as such and never fold.
 - **Harness branches.** Each harness or AI-agent platform that
   adopts the War Room now works on its own `harness/<slug>` branch:
   platform-specific configuration and adaptations live on the

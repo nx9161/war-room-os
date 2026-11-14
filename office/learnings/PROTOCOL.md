@@ -70,5 +70,24 @@ Every agent gets better constantly. Not as a slogan — as a mechanism:
    50402212). Rule 6's monthly distillation is the backstop, not
    the first filter.
 
+8. **Verify before it propagates: a shared channel spreads errors
+   as efficiently as fixes.** Rules 4 and 3 move a learning fast —
+   onto the boardroom for every seat, then into charters and
+   skills at the monthly fold. That speed is symmetric: in Google
+   DeepMind's 100-agent maths conference, one agent found an
+   exploit in the grader, the shared proof library spread it, and
+   34 fake proofs appeared in 27 minutes (Ashish / tp53, "Some
+   thoughts on designing optimal swarm architectures", Nov 2026,
+   reporting the DeepMind run; the essay's lesson 3: "A shared
+   knowledge channel spreads exploits as efficiently as fixes").
+   So a shared claim that asserts a checkable state — a fix that
+   landed, a count, a live status, a cause — is verified at its
+   destination once (the office's M-2 rule) by the first seat
+   that would act on it, before it is acted on or folded. A claim
+   nobody has verified yet is written and read as unverified, and
+   an unverified claim never folds into a charter or skill. The
+   check is one read at the destination, not a re-run of the
+   originating work.
+
 The file is the memory; judgment at write time and the monthly
 review are the evolution.
