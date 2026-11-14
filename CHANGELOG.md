@@ -5,6 +5,13 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Skill-description collision check.** New report-only script
+  `office/scripts/skill-collision.py` computes TF-IDF similarity
+  over every skill description and lists nearest rivals, so a new
+  or edited description that collides with a sibling — the
+  "sibling hijacking" routing failure — is caught before it
+  ships. It always exits 0: similarity prompts a sharper
+  description, never blocks.
 - **Admission gate for learned skills.** The Skill Registry now
   gates skills authored from the office's own experience: a
   learned skill is admitted only with cited provenance passing

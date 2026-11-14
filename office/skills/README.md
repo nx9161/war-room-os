@@ -43,6 +43,12 @@ A candidate failing any of the five stays a learning or a written
 proposal. Admission is one commit: the skill directory plus its
 registry row together.
 
+Before admission, run `office/scripts/skill-collision.py` — the
+report-only TF-IDF check over every skill description. A new
+description landing at/above the report's threshold against an
+existing skill is a collision to sharpen away before the admission
+commit, because routers choose from the description alone.
+
 ## Format
 Every skill directory follows the same shape the agent's own skill
 system uses, so skills stay portable:
