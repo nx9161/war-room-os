@@ -5,6 +5,13 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Harness branches.** Each harness or AI-agent platform that
+  adopts the War Room now works on its own `harness/<slug>` branch:
+  platform-specific configuration and adaptations live on the
+  branch, the branch merges `main` in regularly, and
+  platform-independent improvements flow back to `main` by
+  proposal or PR — harness branches never merge into `main`
+  themselves.
 - **Recovery ledger closes every resume.** The Mission state
   file rules now end a resume with a five-line ledger in the
   resume notes — what arrived during the pause, open promises,

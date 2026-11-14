@@ -84,6 +84,41 @@ Every seat carries a model tier in its agent frontmatter
 the strongest model its tier calls for on the host harness — never
 downgrade a blocking seat. Full rules: `office/MODEL-ROUTING.md`.
 
+## Harness branches (standing — owner order, 2026-11-14)
+
+`main` is the canonical office: charters, playbooks, house rules, and
+the palace live there, and every adoption starts from it. When a new
+harness or AI-agent platform adopts the War Room (a different agent
+runtime, a desktop app, another vendor's CLI), the adopting
+installation does not work on `main` directly:
+
+- It creates its own branch, `harness/<slug>` (e.g. `harness/hermes`,
+  `harness/claude-code`), branched from current `main`, and pushes it.
+  One branch per harness installation; the slug names the platform,
+  not the machine or the person.
+- Everything platform-specific lives on that branch only: harness
+  configuration, tool and permission wiring, spawn mechanics, model
+  ids, file layouts the platform requires, and adaptations of office
+  files to the platform's own format. The office's substance —
+  charters, playbook rules, house rules, roster — is not forked in
+  spirit: when the branch must restate it in a platform format, the
+  branch copy names its `main` source.
+- The branch pulls `main` in regularly — at minimum before each new
+  mission on that harness, and whenever the Director lands a playbook
+  or charter change — resolving conflicts on the branch, never by
+  rewriting `main`. A harness branch that has drifted far from `main`
+  is a stale office: re-sync before trusting its state.
+- Improvements discovered on a harness branch that are
+  platform-independent flow back to `main` the normal way — proposal
+  or PR, coordinator review, merge — never by merging the whole
+  harness branch into `main`. Platform-specific commits never land on
+  `main`.
+- A harness branch never force-pushes, never merges into `main`
+  itself, and never carries credentials (Doppler / Secure Vault only,
+  as everywhere). Retiring a harness: its branch is archived (tag or
+  keep the branch read-only), and anything worth keeping is proposed
+  back to `main` first.
+
 ## Cast Check (mandatory, before Phase 0 — M-5 countermeasure)
 
 Before any mission work starts, the coordinator writes the cast
