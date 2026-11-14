@@ -5,6 +5,14 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Admission gate for learned skills.** The Skill Registry now
+  gates skills authored from the office's own experience: a
+  learned skill is admitted only with cited provenance passing
+  the learnings salience test, destination-verified claims, one
+  recorded demonstration run, Promotion Gate evidence in its
+  admission commit, and a named custodian with no new paid or
+  credential dependency. Candidates failing any part stay
+  learnings or proposals.
 - **Verify before it propagates.** The learnings protocol gains
   rule 8: a shared claim asserting a checkable state is verified
   at its destination once by the first seat that would act on
