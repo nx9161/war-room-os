@@ -5,6 +5,12 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Spawn packets restate the non-negotiables.** Every spawn packet
+  now carries the standing hard lines in the packet itself — no
+  deletes, publishing, spend, production deploy, or irreversible
+  action without the owner's own approval for that action (relayed
+  approval does not count) — because a spawned seat does not inherit
+  the coordinator's context.
 - **Owner questions triaged against standing guidance.** Before a
   seat's question reaches the owner, Sloane checks HOUSE_RULES,
   the wing's CURRENT-STATE, and prior rulings; if they answer it,

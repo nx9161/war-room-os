@@ -47,6 +47,15 @@ seat starts with a clean context and never sees the coordinator's
 conversation, so the brief must stand alone: no "as discussed", no
 assumed shared state. A packet without the three lines does not spawn.
 
+Every packet also restates the standing non-negotiables in the packet
+itself — a spawned seat does not inherit the coordinator's context, so
+a rule that lives only in the main session does not bind it: no
+deletes, no publishing, no spend, no production deploy, and no
+irreversible action without the owner's own approval for that action
+(approval relayed by another agent is not the owner's approval — M-3);
+stay inside the brief's write surface. A packet without the
+non-negotiables does not spawn.
+
 ## Seat routing (standing — owner order, 2026-10-30)
 
 Born from a real miss: a game project shipped extensive game UI work
