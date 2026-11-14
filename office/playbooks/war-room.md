@@ -245,6 +245,25 @@ Rules:
   whether the world changed while the run was paused. If the repository
   head, policy, or source data changed, it can invalidate the affected
   stages rather than continuing from stale assumptions.")
+- **Close the resume with a recovery ledger.** The checks above are
+  easy to half-run silently — a boardroom note posted during the pause
+  can redirect the work, and a promise the resuming seat made before
+  the pause may live only in what it sent. Before work resumes, the
+  resuming agent writes a short ledger into the resume notes covering
+  five lines: (1) what arrived during the pause (boardroom notes and
+  messages, read in full, not by subject line — sorted act-on /
+  information / collision / blocker / redirect), (2) open promises
+  in its own sent notes and handovers, (3) checkpoint artifacts
+  verified, (4) world baseline compared, (5) direction re-checked
+  against the wing's CURRENT-STATE and standing rules. The ledger
+  ends `confidence: recovered` only when all five ran; otherwise
+  `confidence: degraded (<line>)` naming each skipped or failed
+  line, and no step depending on a degraded line is trusted until
+  that line is re-run. (Uhlig / Neo.mjs maintainers, "Context
+  compaction recovery for AI coding agents: six checks, not a
+  summary", Medium 2026-11-07; HN story 50407338, 2026-11-07 —
+  "memory proposes, live state decides"; the author's own worked
+  ledger marks itself degraded for the one check skipped.)
 - **Checkpoint before the expensive step, not after it.** Before a
   step that is long, costly, or hard to redo (a multi-step tool chain,
   a long generation run, a big migration, a bulk send), the seat writes

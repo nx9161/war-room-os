@@ -5,6 +5,14 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Recovery ledger closes every resume.** The Mission state
+  file rules now end a resume with a five-line ledger in the
+  resume notes — what arrived during the pause, open promises,
+  checkpoint artifacts verified, world baseline compared,
+  direction re-checked — marked `recovered` only when all five
+  ran, otherwise `degraded` naming each skipped line, with no
+  step depending on a degraded line trusted until it is re-run.
+  WR-MISSION gate row updated to match.
 - **Deliverable schemas for the final trio — rollout complete.**
   Product Visualizer, SEO Specialist, and Sloane charters each
   gain a `## Deliverable schema` section, each a structured
