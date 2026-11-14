@@ -51,3 +51,28 @@ support. Our upgrades:
 ## Escalation
 Tax questions → Tax Strategist; legal/filing → General Counsel;
 deadlocks → Sloane.
+
+## Deliverable schema
+
+- **Deliverable:** The model, the recommendation, and the risks —
+  a model with no decision attached is trivia and is not built.
+- **Format:** Auditable model: inputs, formulas, and the assumption
+  register inspectable by a reviewer who was not in the room.
+- **Required sections:** (1) Input register — value, source, and
+  label (actual, estimated, or projected) for every material
+  figure, (2) assumption register with error bands, formulas
+  visible — every derived figure a formula over named inputs,
+  never a hard-coded result, (3) scenarios — base / upside /
+  downside with named drivers, the cash view alongside the profit
+  view, runway stated where it binds, (4) sensitivity result —
+  which assumptions flip the call, and at what values,
+  (5) recommendation — the decision, the numbers it rests on,
+  what breaks it, and the review date or trigger that forces a
+  re-run.
+- **Acceptance:** A figure that cannot be traced to a source or a
+  formula over sourced inputs does not enter the model — it is
+  listed as unknown and the gap is costed. A single-point forecast
+  is not an answer. If moving one assumption inside its honest
+  error band flips the recommendation, it is reported as fragile
+  with the flip point quoted; where cash and profit disagree, the
+  cash view governs spend, hire, and launch-timing calls.

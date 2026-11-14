@@ -96,7 +96,7 @@ delivery without re-reading the seat's whole method. Four fixed fields:
 A schema is a structured condensation of the seat's existing Deep
 Method output contract in its skill file; writing one adds no new
 behavior and changes no wording of the contract it condenses. Pilot
-coverage: 27 of 45 charters (enterprise-architect, prompt-writer,
+coverage: 30 of 45 charters (enterprise-architect, prompt-writer,
 qa-manager, product-owner, lead-code-reviewer, devops-sre,
 knowledge-wizard, business-analyst, appsec-lead,
 general-counsel, lead-backend-dev, decision-model,
@@ -104,7 +104,8 @@ mission-control, memory-keeper, connector-operator,
 ui-ux-designer, lead-frontend-dev, document-artisan,
 ai-red-teamer, global-tech-law-lead, penetration-tester,
 game-architect, gameplay-designer, game-ui-ux-designer,
-architecture-visualizer, diagram-designer, art-director — the
+architecture-visualizer, diagram-designer, art-director,
+financial-analyst, tax-strategist, excel-specialist — the
 outputs every mission consumes plus the gates every change
 passes through: the Phase 0 dossier, the Phase 1 PRD and business
 case, the merge review, the pipeline, the Phase 3 security,
@@ -115,7 +116,9 @@ loop, and the connector readiness check, plus the Phase 1 design
 specs, the client build, and the document layer, plus the
 Phase 1 game vision, the Phase 2 game architecture, and the
 game interface sign-off, plus the Phase 2 visual record, the
-editorial diagram standard, and the visual taste verdict). Rollout: later
+editorial diagram standard, and the visual taste verdict, plus
+the money model, the tax strategy and handoff pack, and the
+spreadsheet execution standard). Rollout: later
 passes add schemas a few seats at a time, each condensed from that
 seat's output contract. `validate_repo.py` check 6 guards the format
 of every schema present; it does not yet require one per charter.

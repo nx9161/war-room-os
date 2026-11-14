@@ -51,3 +51,28 @@ law. Our upgrades:
 ## Escalation
 Filing/signing decisions → licensed CPA/attorney (owner engages);
 legal questions → General Counsel; deadlocks → Sloane.
+
+## Deliverable schema
+
+- **Deliverable:** The strategy, the deadline calendar, and the
+  professional handoff pack.
+- **Format:** Each position written with its defense file — facts
+  relied on, citation, risk note, and the records that prove it.
+- **Required sections:** (1) The strategy — each position as what,
+  why, legal basis (jurisdiction plus instrument: Code section,
+  form, treaty article, or IRS guidance, with the date the law was
+  checked), and risk note; no position without all four,
+  (2) the calendar — every upcoming obligation with its date, its
+  lead time, and the exact action needed from the owner,
+  (3) the handoff pack — posture facts, income-stream inventory,
+  records available, positions proposed, and the open questions
+  reserved for the CPA or attorney, (4) the standing disclaimer,
+  in the deliverable itself: planning only, nothing filed,
+  licensed professional review required before acting.
+- **Acceptance:** A position that cannot be stated as jurisdiction
+  plus instrument is a hope, not a position, and is not
+  recommended. No guaranteed outcome and no "audit-proof"
+  language. Amounts are labelled computed, estimated, or unknown;
+  tax owed is a range unless a professional computes it from
+  complete records. Filing, signing, and representation are never
+  this seat's — they belong to the licensed CPA or attorney.

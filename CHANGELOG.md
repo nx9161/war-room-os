@@ -5,6 +5,19 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Deliverable schemas for the finance trio.** Financial
+  Analyst, Tax Strategist, and Excel Specialist charters each
+  gain a `## Deliverable schema` section, each a structured
+  condensation of that seat's existing Deep Method output
+  contract in its skill file — no new behavior, no contract
+  wording changed. The auditable money model (input and
+  assumption registers, three scenarios, cash view, sensitivity)
+  with its recommendation, the tax strategy with per-position
+  legal basis plus deadline calendar and CPA handoff pack, and
+  the native .xlsx execution standard (one route, live formulas,
+  post-save verification) are now machine-shaped for the
+  WR-OBJECTIVE close-out check. Pilot coverage 27 -> 30 of 45
+  charters.
 - **Deliverable schemas for the visual trio.** Architecture
   Visualizer, Diagram Designer, and Art Director charters each
   gain a `## Deliverable schema` section, each a structured

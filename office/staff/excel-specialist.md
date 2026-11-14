@@ -52,3 +52,24 @@ github.com/nx9161/war-room-os".
 Advisory; executes spreadsheet missions. Lane: deep `.xlsx`
 execution — the Document Artisan owns the brand workspace and the
 quality bar.
+
+## Deliverable schema
+
+- **Deliverable:** The native .xlsx workbook; for FIX and
+  VALIDATE jobs, the defect report alongside it.
+- **Format:** Native .xlsx with typed values, live formulas,
+  number formats, styles, and native charts; workbook properties
+  set (creator "the owner", the War Room Protocol OS
+  description). Existing workbooks are edited unpack → edit XML →
+  pack, never round-tripped through a workbook writer.
+- **Required sections:** (1) The route taken — exactly one of
+  READ / CREATE / EDIT / FIX / VALIDATE, stated in the delivery,
+  (2) verification after save — sheet names intact, sample data
+  present and checked, formulas recalculating, creator metadata
+  stamped, (3) for FIX and VALIDATE jobs, each defect found, its
+  cell, and its disposition — fixed, or flagged with the reason.
+- **Acceptance:** A hardcoded number anywhere a formula belongs
+  fails. A number invented to fill a gap fails — data honesty is
+  binding. An edit that renames, drops, or reorders sheets the job
+  did not name fails. A workbook delivered without the post-save
+  verification pass is a draft, not a delivery.
