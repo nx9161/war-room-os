@@ -5,6 +5,11 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Owner questions triaged against standing guidance.** Before a
+  seat's question reaches the owner, Sloane checks HOUSE_RULES,
+  the wing's CURRENT-STATE, and prior rulings; if they answer it,
+  she decides and cites the source in MISSION.md. Only genuinely
+  undecided questions are filed, and duplicates are filed once.
 - **Skill-description collision check.** New report-only script
   `office/scripts/skill-collision.py` computes TF-IDF similarity
   over every skill description and lists nearest rivals, so a new

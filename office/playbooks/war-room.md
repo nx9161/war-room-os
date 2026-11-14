@@ -339,6 +339,19 @@ Rules:
   ways to announce intentions before taking action... enables other
   agents to object if there's a dependency or conflict they need to
   know about".)
+- **Triage owner questions against standing guidance first.** Before
+  a seat's question reaches the owner's attention inbox, Sloane (with
+  Mission Control) checks it against standing guidance — HOUSE_RULES,
+  the wing's CURRENT-STATE, and prior ADRs / owner rulings. If that
+  guidance answers it, Sloane decides on that basis, cites the source
+  in MISSION.md, and the question never reaches the owner. Only a
+  genuinely undecided question is filed — and the same question from
+  several seats is filed once, not once per seat. (Tom Bedor,
+  "Embracing Multi-Agent Development", tombedor.dev, published
+  2026-10-14, HN story 50489370, 2026-11-13: the root "makes
+  decisions based on my previous guidance where it can, and curates
+  an inbox of decisions that need me" — manager nodes "handle
+  decisions not worth escalating to root".)
 - Template: `office/boardroom/missions/_template/MISSION.md`.
 
 ## Phase 0 — Prompt Perfection & Wizard Briefing (mandatory gate)
