@@ -228,6 +228,22 @@ is written into it, not into the shared board. It holds:
    HEAD commit of every repo touched, and the read dates of the
    dossier's key external inputs (live pages, prices, availability).
    The resume check compares against this, not against memory.
+9. **Checkpoint tail** — updated at every phase boundary alongside
+   the resume notes: the **remaining budget** (the Cast Check budget
+   minus the actions each seat has spent) and **pending side
+   effects** — sends, commits, deploys, or external writes started
+   but not yet confirmed landed, each named with the
+   verify-at-destination check that will confirm it, or `none`.
+   A checkpoint that records only progress cannot tell a resuming
+   agent what it may still spend or what may already have landed
+   (rmehan, "Reliable Agent Workflows: Code, Contracts, and
+   Judgment", rmehan.dev, 2026-11-14: a pause checkpoint must
+   commit "remaining budget" and "pending side effects", not just
+   completed outputs). On resume, an unknown remaining budget is
+   re-derived from the step checklist before new work is seated,
+   and every pending side effect is verified at its destination
+   before it is re-applied — the idempotency rule, applied from
+   the file.
 
 Rules:
 

@@ -5,6 +5,7 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Checkpoint tail in MISSION.md.** Every mission checkpoint now records remaining budget and pending side effects (started but not yet confirmed landed, each with its verify-at-destination check) at every phase boundary — a checkpoint that records only progress cannot tell a resuming agent what it may still spend or what may already have landed (rmehan, 2026-11-14).
 - **First learned skill admitted: metric-evidence-audit.** Through the admission gate, a procedure distilled from the office's own learnings — audit a metric against the exact files its reader scans, classify reader bug vs evidence misplacement vs genuine absence, fix the smallest side, and re-run before reporting. Demonstrated twice before admission (seat-coverage corrections in Director passes 62 and 67).
 - **Sloane's first learnings entry.** The Director's learnings file
   was still "(none yet)" after 66 self-improvement passes, so the

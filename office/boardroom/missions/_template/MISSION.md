@@ -41,6 +41,11 @@ Phase 0 — <current step>
 <!-- Objective verification (WR-OBJECTIVE): before release authorization. -->
 - Objective verification: <date — each deliverable checked against the Goal above; result, or loop-back if any>
 
+## Checkpoint tail
+<!-- Updated at every phase boundary, alongside the resume notes. On resume: re-derive an unknown remaining budget from the step checklist before seating new work, and verify every pending side effect at its destination before re-applying it. -->
+- Remaining budget: <Cast Check budget minus actions spent, per seat>
+- Pending side effects: <none | each send/commit/deploy/external write started but not confirmed landed — with the destination check that confirms it>
+
 ## Resume notes
 <!-- Director updates at every phase boundary. Newest entry on top. -->
 - <date> — <where we are, what's next, what's blocked>
