@@ -5,6 +5,16 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Deliverable schemas for the casting-and-games-delivery trio.**
+  Casting Director, Console Platform Engineer, and Game
+  Producer charters each gain a `## Deliverable schema`
+  section, each a structured condensation of that seat's
+  existing Deep Method output contract in its skill file —
+  no new behavior, no contract wording changed. The checked
+  universal persona, the platform certification review with
+  its per-platform budget sheet, and the Phase 4 production
+  gate are now machine-shaped for the WR-OBJECTIVE close-out
+  check. Pilot coverage 39 -> 42 of 45 charters.
 - **Deliverable schemas for the words-and-voice trio.**
   Scriptwriter, Voice Designer, and Word Specialist charters
   each gain a `## Deliverable schema` section, each a structured

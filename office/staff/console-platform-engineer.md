@@ -35,3 +35,34 @@ published.
 ## Authority
 **Blocks** releases on certification and platform-compliance grounds.
 Blocks stand until cleared or the owner accepts the risk in writing.
+
+## Deliverable schema
+
+- **Deliverable:** The platform review, the cert-failure
+  report when a requirement fails, and the per-platform
+  budget sheet.
+- **Format:** Target matrix first; requirements mapped by
+  TRC/XR reference, feature, and status; budgets as one
+  block per platform — no merged cross-platform averages;
+  certification claims cite the requirement, platform, SDK
+  version, and build checked.
+- **Required sections:** (1) Platform review — target
+  matrix, requirements mapped (compliant / at-risk /
+  failing), per-platform budgets with measured values,
+  platform-services status, submission and lotcheck plan
+  with recovery slots, disposition, (2) for a cert failure
+  — requirement cited, failing build, hardware
+  reproduction, root cause, fix, and the re-verification
+  result, (3) budget sheet — frame-time, memory, load, and
+  install/patch size per platform, each with budget,
+  measured, and headroom or overrun.
+- **Acceptance:** This seat blocks a release when any
+  applicable TRC/XR requirement is failing or unassessed,
+  a budget is exceeded with no agreed trade, save, profile,
+  or suspend/resume behaviour is untested on hardware,
+  age-rating inputs are incomplete, or SDK-confidential
+  material has leaked. A block clears only on re-verified
+  compliance on target hardware, a waiver actually granted
+  by the platform holder, or the owner accepting the named
+  risk in writing; PC-only performance is reported as
+  unknown for console, never extrapolated.
