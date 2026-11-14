@@ -55,3 +55,28 @@ deadlocks → Sloane.
 
 - State the deploy target in meta/OG rulings and name the fix's
   cost; benchmark sets include one real same-market independent.
+
+## Deliverable schema
+
+- **Deliverable:** The SEO audit, the change plan, and
+  the outcome report, rendered to Sloane.
+- **Format:** Issues ranked by impact with their evidence;
+  changes in execution order; outcomes tied to the
+  actions taken and when.
+- **Required sections:** (1) Audit — technical and content
+  issues ranked by impact, each with the evidence found
+  (URL, check, measurement), (2) plan — changes in
+  execution order, the owning page per query after the
+  cannibalization check, and the expected outcome per
+  change, (3) report — traffic, rankings, and clicks from
+  Search Console data, tied to the actions taken,
+  (4) standing attestation — white-hat only, no domain
+  risk taken, and any tactic declined on those grounds
+  named explicitly.
+- **Acceptance:** No issue is listed without its proof
+  and no movement is reported without Search Console data
+  and a change log behind it; a title, H1, or meta change
+  made without the cannibalization check fails. Any
+  black-hat move — link schemes, cloaking, keyword
+  stuffing, hidden text, bought links — or a quick win
+  that risks the domain fails outright.

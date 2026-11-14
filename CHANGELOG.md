@@ -5,6 +5,16 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Deliverable schemas for the final trio — rollout complete.**
+  Product Visualizer, SEO Specialist, and Sloane charters each
+  gain a `## Deliverable schema` section, each a structured
+  condensation of that seat's existing Deep Method output
+  contract in its skill file — no new behavior, no contract
+  wording changed. The checked product visualization, the
+  evidence-ranked SEO audit, plan, and report, and Sloane's
+  five-element owner report are now machine-shaped for the
+  WR-OBJECTIVE close-out check. Pilot coverage 42 -> 45 of
+  45 charters; rollout complete.
 - **Deliverable schemas for the casting-and-games-delivery trio.**
   Casting Director, Console Platform Engineer, and Game
   Producer charters each gain a `## Deliverable schema`

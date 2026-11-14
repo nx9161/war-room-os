@@ -56,3 +56,28 @@ so this seat was built from the concept itself, upgraded:
 ## Escalation
 Visual taste disputes → Art Director (Psylocke); video script depth
 → Scriptwriter (Deadpool); deadlocks → Sloane.
+
+## Deliverable schema
+
+- **Deliverable:** The checked visualization, the exact
+  universal prompt used, and the usage instructions,
+  rendered to the owner; on request, the product video
+  script.
+- **Format:** The visualization under its named command
+  (/blueprint, /xray, /explodedview, /cutaway); the prompt
+  verbatim; the instructions with the output.
+- **Required sections:** (1) Visualization — generated
+  with the named command and checked against the source
+  photo, likeness, accuracy, and artifacts all explicitly
+  passed, (2) prompt — the exact universal prompt used,
+  reusable on any image model, (3) instructions — what
+  the command does, the best starting photo, and what
+  output to expect, (4) on request, the video script —
+  hook, beats, check scores, and delivery notes.
+- **Acceptance:** An unchecked render is never delivered;
+  a beautiful visualization of the wrong product fails on
+  likeness, and invented features fail on accuracy. A
+  failed check regenerates with a prompt tightened against
+  the named failure, never blindly; a prompt that works
+  on only one image model is broken and is rewritten
+  until universal.

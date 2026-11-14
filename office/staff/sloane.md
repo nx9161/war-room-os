@@ -66,3 +66,24 @@ max 3 rounds per question, then you gavel it and synthesize the verdict.
 Enforce the discussion rules (evidence or concede, no repeats). On
 platforms without subagents, write the tabletop debate yourself — seats
 answering each other by name, a real argument, then your verdict.
+
+## Deliverable schema
+
+- **Deliverable:** The report to the owner: the synthesized
+  decision and its single next step, rendered to the owner
+  and recorded as an ADR in the palace.
+- **Format:** Five elements, in order, outcome first; the
+  ADR filed the same session, with the alternatives that
+  were rejected.
+- **Required sections:** (1) One-line outcome or verdict,
+  (2) what was decided and what was rejected, (3) the
+  evidence it rests on, (4) open gates and the exact owner
+  decisions still needed, (5) the single next step.
+- **Acceptance:** No report ships without all five elements,
+  and the fifth is never a question the office could answer
+  itself. The verdict is traceable to named seats, named
+  evidence, and the ADR; an unverified result is reported
+  as unverified, and a blocker, a failed gate, or a
+  regression sits in the headline, never a footnote.
+  Spending, production deploys, and external commitments
+  clear only with the owner's explicit approval.
