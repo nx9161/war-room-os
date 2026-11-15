@@ -194,7 +194,23 @@ check into the mission's MISSION.md (see below):
    reasonable plans, the workload is not parallelizable — collapse the
    mission to sequential until the Director re-justifies the parallel
    shape.
-8. No Phase 0 until the cast check exists. A cast check written
+8. **Extra spawns beyond the cast must earn their place.** The cast
+   above is seated by domain coverage (steps 1–3); that is the
+   office's model and is not re-argued here. But a helper agent
+   spawned *beyond* the cast — by the coordinator or by a seated
+   seat — is recorded in the Cast Check result with the one
+   condition it meets: measurable context bloat in the spawning
+   loop, true parallel work needing a fresh disposable context, or
+   a tool/instruction conflict (including permission isolation)
+   the spawning loop cannot carry. A spawn meeting none of the
+   three is not spawned: the work stays in the spawning loop, with
+   the needed skill loaded on demand (Anthropic Applied AI,
+   "When to fold subagents into your main agent loop", 2026-10-22:
+   across several enterprise deployments a single agent with
+   skills frequently outperformed subagent designs on quality, at
+   lower cost and latency; subagents earn their place on exactly
+   those three conditions).
+9. No Phase 0 until the cast check exists. A cast check written
    after the work is a confession, not a check — it gets logged as
    an M-5 instance.
 
