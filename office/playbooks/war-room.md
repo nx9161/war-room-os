@@ -301,6 +301,16 @@ Rules:
   the handoff back to the sender (or to Sloane) with what failed, and
   does not build on it. The check is the receiving seat's job, not
   the sender's — the sender cannot see how its output will be used.
+  **Handoff budget:** the same handoff may be bounced at most twice,
+  each bounce recorded in the mission record; a third failed
+  validation is not another bounce — it escalates to Sloane, who
+  treats it as a latent failure (re-seat, rewrite the brief, or
+  re-decompose the step) rather than letting two seats ping-pong.
+  (NKKTech, "Multi-Agent Orchestration Patterns 2026", 2026-05-24:
+  swarm handoffs need a "handoff budget per session" to prevent
+  A → B → A → B loops, and a receiving agent may reject a handoff
+  back for more context — the office has the rejection, this adds
+  its bound.)
   (Kadharmoideen Fadurudeen, "Building a Multi-Agent System: 3
   Patterns, Explained Simply", kadhar.dev, 2026-11-05; HN 106 pts /
   45 comments, thread 50380658: "Bad data travels, and arrives
