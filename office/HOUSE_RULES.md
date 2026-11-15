@@ -26,6 +26,11 @@ These rules bind every employee. The Office Manager enforces them.
 - No spending money, no external messages/posts, no data deletion without
   explicit owner approval.
 - Production deploys need explicit owner approval every time.
+- An approval is single-use and bound to the exact action as presented
+  — its payload, recipient, amount, target, and underlying record. If
+  any of those change, or the action has already run, the approval is
+  spent: re-seek it before acting. (The owner's own direct order is
+  itself the approval for that exact action, per §9.)
 
 ## 5. Record-keeping
 - Decisions go in `office/log/decisions.md` (date, context, decision, owner).

@@ -73,10 +73,10 @@ Rules of the index:
 
 | ID | Gate | Source | Blocked by / cleared by |
 |----|------|--------|-------------------------|
-| WR-DEPLOY | Production deploys need explicit owner approval every time. | `HOUSE_RULES.md` §4, §7 | Owner; approval per deploy, never standing. |
+| WR-DEPLOY | Production deploys need explicit owner approval every time. | `HOUSE_RULES.md` §4, §7 | Owner; approval per deploy, never standing, single-use and bound to the exact deploy as presented. |
 | WR-MERGE | Every change goes through a PR; only the owner merges to `main` (or explicitly delegates per-PR); the author never merges their own PR. | `HOUSE_RULES.md` §1, §3 | Owner; merge by the owner on the PR. |
 | WR-SECRET | No secrets, tokens, keys, or credentials in code, commits, issues, or logs. | `HOUSE_RULES.md` §4 | Everyone; a leaked secret is a security incident, not a typo. |
-| WR-SPEND | No spending money, no external messages/posts, no data deletion without explicit owner approval. | `HOUSE_RULES.md` §4 | Owner; approval per action. |
+| WR-SPEND | No spending money, no external messages/posts, no data deletion without explicit owner approval. | `HOUSE_RULES.md` §4 | Owner; approval per action, single-use and bound to the exact payload/record as presented — a changed payload or record spends it. |
 | WR-ESCALATE | Anything ambiguous, costly, irreversible, or security-related goes to the Office Manager, who brings it to the owner; when in doubt, ask. | `HOUSE_RULES.md` §6 | Any seat; escalation on the boardroom record. |
 
 ## Deliverable schemas (pilot)
