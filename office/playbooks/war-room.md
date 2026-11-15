@@ -167,7 +167,19 @@ check into the mission's MISSION.md (see below):
    modules, or tables it will write — not just its feature. Two
    seats writing the same file, module, or table never run at the
    same time: they run sequentially, or the work is re-split until
-   their write surfaces are disjoint. Read-only seats (research,
+   their write surfaces are disjoint. Exception — collector
+   files: a file whose whole job is to collect one-line appends
+   from many writers (an index, a changelog, a translation
+   catalogue, a generated export barrel — in this office,
+   `memory/INDEX.md` ADR lines and wing entries) is never a
+   reason to serialize work: name it as a collector file in the
+   map, every writer appends, and the coordinator reconciles
+   the appends at merge, one at a time. (Krizaka, "Agents under
+   a coordinator, with the measures", Nov 2026, read in full
+   2026-11-15: of 1,782 PRs measured 2026-10-26 – 2026-11-09,
+   46% shared a file with another open PR, and 65% of the
+   overlapping pairs shared only collector files; their ADR of
+   2026-11-09 never reserves them.) Read-only seats (research,
    audit, review) may run in parallel freely. Tickets split by
    feature still collide when the code underneath is shared — the
    exact failure that wrecked an 18-subagent sprint (Wasim, "I Had
