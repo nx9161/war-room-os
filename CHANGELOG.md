@@ -5,6 +5,7 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- **Verification judges the artifact, not the producer's account of it.** Phase 4 gate/verification seats decide from the candidate artifact, the acceptance contract, and the evidence needed to test it; the producing seat's reasoning or self-verification claim counts as no evidence (rmehan, 2026-11-15).
 - **Approvals are single-use and bound to the exact action.** An approval covers only the payload, recipient, amount, target, and underlying record as presented; if any of those change, or the action has already run, the approval is spent and must be re-sought (Reddit practitioner discussions, 2026-11-11 — a stale approval caused a duplicate refund).
 - **Extra spawns beyond the cast must earn their place.** A helper agent spawned beyond the Cast Check cast is recorded with the one condition it meets — measurable context bloat, true parallel work in a fresh disposable context, or a tool/instruction conflict (including permission isolation); otherwise the work stays in the spawning loop with the skill loaded on demand (Anthropic Applied AI, 2026-10-22).
 - **Whole-board review + single-writer mission state.** MISSION.md is written only by the coordinator (seats return results, never rewrite it wholesale), and reviewer/QA packets in parallel/mixed missions carry every parallel step's write surface and allowed operations, with adjudication at the Director — scoped reviewers otherwise flag legitimate parallel work as violations (yuhaixia, DEV, 2026-10-24).

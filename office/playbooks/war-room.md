@@ -498,6 +498,22 @@ Engineer, Penetration Tester, and General Counsel (in parallel):
   acceptance criteria. A deliverable that passes its tests but does not
   serve the objective fails this check and loops back under Phase
   regression; the check and its result are recorded in `MISSION.md`.
+- **Verification judges the artifact, not the producer's account of
+  it.** A gate or verification seat (QA Manager, Lead Code Reviewer,
+  any Phase 3/4 gate seat) decides from three inputs: the candidate
+  artifact, the acceptance contract (the step's criteria and the
+  mission objective), and the evidence needed to test it. The
+  producing seat's reasoning, summary, or self-verification claim is
+  not a verification input and counts as no evidence; where the
+  producer's account and the artifact disagree, the artifact and the
+  tested evidence decide. (rmehan, "Reliable Agent Workflows: Code,
+  Contracts, and Judgment", rmehan.dev, 2026-11-15, read in full:
+  "A verification stage needs different inputs and authority from
+  the stage it checks. It should receive the candidate artifact,
+  the acceptance contract, and the evidence required to test it.
+  It should not need the original agent's reasoning to decide
+  whether the artifact satisfies the contract." Extends M-2 —
+  verify at the destination — to the gate itself.)
 - Voice Designer produces the voice layer: voiceovers, dubs,
   in-product TTS.
 - Document Artisan produces the document layer: decks, documents,
