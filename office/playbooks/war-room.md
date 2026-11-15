@@ -381,6 +381,16 @@ Rules:
   2026-02-08: the coordinator "checks in after 30 minutes if there's
   no update"; Wasim, "I Had a Perfect Sprint Board", 2026-11-12,
   rule 7: "Stop idle agents".)
+- **Silence is never completion.** A seat ending its turn, making no
+  handoff, or going quiet does not complete its step — and a harness
+  or runtime status of "completed" earned that way is unverified, not
+  done. A step is complete only when the coordinator marks it done in
+  MISSION.md after the step's listed artifacts are checked at their
+  destinations. (pinxiong, "Orchestrating Agents: Nobody Decides Who
+  Goes Next", DEV, verified 2026-11-11 against strands-agents 1.63.0:
+  "Say nothing and the swarm runtime declares the task complete" — a
+  run whose writer never ran and which produced no deliverable still
+  reported `completed`.)
 - **Announce intent before acting.** In a `parallel` or `mixed`
   mission, a seat posts a short boardroom note naming the step and the
   files it is about to write *before* starting the work — not after.
