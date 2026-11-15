@@ -89,5 +89,25 @@ Every agent gets better constantly. Not as a slogan — as a mechanism:
    check is one read at the destination, not a re-run of the
    originating work.
 
+9. **Outcome is the update handle: a learning contradicted in
+   use gets flagged, not trusted.** Rules 5–7 govern writing,
+   superseding, and folding, but nothing fed a mission's outcome
+   back onto an entry that was actually relied on — a wrong
+   learning could be re-read at every spawn indefinitely. So a
+   seat that relied on an entry and saw the outcome contradict
+   it appends one dated outcome-flag line to that entry (what
+   was relied on, what happened instead). A flagged entry is
+   not relied on again as settled until it is re-reviewed; the
+   monthly review takes flagged entries first and corrects,
+   supersedes (rule 5), or folds them there. A learning that
+   was relied on and held needs no new entry — positive
+   confirmation stays silent, per rule 7's anti-bloat stance;
+   only the negative signal writes. (ElenaDaibunny, "Peer
+   Learning Between Agents in a Multi-Agent Team", HN
+   50389190, 2026-11-06: confidence is the update handle — a
+   card consulted on a task that passed goes up, on a task
+   that was rejected goes down and is flagged for re-review;
+   without it the store accumulates dead rules.)
+
 The file is the memory; judgment at write time and the monthly
 review are the evolution.
