@@ -46,6 +46,16 @@ change, what not to touch, and how to prove it is done. A spawned
 seat starts with a clean context and never sees the coordinator's
 conversation, so the brief must stand alone: no "as discussed", no
 assumed shared state. A packet without the three lines does not spawn.
+When the brief rests on a decision the coordinator already made, the
+brief also names that decision, the constraint behind it, and the
+alternative it rejected — instructions alone lose the *why*, and a
+seat that never sees the rejected alternative can silently re-open
+it when conditions shift. (Ming Zhou, "When Agents Collaborate:
+Failure Modes in Multi-Role LLM Systems", mzyag.github.io, May 2025,
+~1 year production: "Passing only instructions without reasoning
+between roles causes silent constraint violations — structured
+handoff schemas that carry rejected alternatives and decision
+rationale reduce context loss.")
 
 Every packet also restates the standing non-negotiables in the packet
 itself — a spawned seat does not inherit the coordinator's context, so
