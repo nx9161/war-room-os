@@ -4,6 +4,8 @@ All notable changes to this repository are documented here.
 Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
+
+- Phase 4: the judged seat does not edit the judge — no seat may delete, skip, weaken, or rewrite the tests, fixtures, or criteria judging its own work; stale-test fixes land as separate, independently reviewed changes (Director pass 96).
 ### Added
 - **Handoff bounces are budgeted.** The same handoff may be bounced back for failed validation at most twice, each bounce recorded; a third failed validation escalates to Sloane as a latent failure (re-seat, rewrite the brief, or re-decompose) instead of letting two seats ping-pong (NKKTech, 2026-05-24: swarm handoffs need a "handoff budget per session" to prevent A → B → A → B loops).
 - **Spawn briefs carry the decision, not just the instructions.** When a spawn packet's task brief rests on a decision the coordinator already made, the brief also names that decision, the constraint behind it, and the alternative it rejected — a seat that never sees the rejected alternative can silently re-open it when conditions shift (Ming Zhou, May 2025: passing only instructions without reasoning causes silent constraint violations).

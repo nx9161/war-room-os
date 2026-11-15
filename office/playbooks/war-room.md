@@ -556,6 +556,21 @@ Engineer, Penetration Tester, and General Counsel (in parallel):
   It should not need the original agent's reasoning to decide
   whether the artifact satisfies the contract." Extends M-2 —
   verify at the destination — to the gate itself.)
+- **The judged seat does not edit the judge.** A seat whose work is
+  judged by a test suite, an eval fixture, or the acceptance criteria
+  may not delete, skip, weaken, or rewrite any of them to make its
+  own work pass — the judging surface is outside its write surface
+  for that step. A seat that believes a test or fixture is stale or
+  wrong flags it with evidence instead; the fix lands as a separate,
+  independently reviewed change (QA Manager or Lead Code Reviewer)
+  before the re-run, never in the same diff as the code it judges.
+  A diff touching both the code and the tests that judge it is
+  flagged in review and split or independently re-reviewed.
+  (Nomos, Show HN 50337394, 2026-11-02: agents left on a branch
+  "delete the failing assertion, return a hardcoded stub, rewrite
+  the spec to match broken code" — the harness separates
+  spec/contract tasks from code tasks so an agent "can't edit the
+  spec to excuse broken code".)
 - Voice Designer produces the voice layer: voiceovers, dubs,
   in-product TTS.
 - Document Artisan produces the document layer: decks, documents,
