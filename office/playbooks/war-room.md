@@ -301,6 +301,12 @@ Rules:
   the handoff back to the sender (or to Sloane) with what failed, and
   does not build on it. The check is the receiving seat's job, not
   the sender's — the sender cannot see how its output will be used.
+  **Base check for repo work:** a handoff of repo work records the
+  base commit its worktree or branch started from; the receiver
+  compares it with the branch's current base before building on it —
+  if the base has moved, the divergence is named in the mission
+  record and resolved (rebase, re-verify, or a recorded decision to
+  build on the stale base), never silently built on.
   **Handoff budget:** the same handoff may be bounced at most twice,
   each bounce recorded in the mission record; a third failed
   validation is not another bounce — it escalates to Sloane, who
@@ -317,6 +323,13 @@ Rules:
   looking like fact... agent B can't tell agent A's guess from a
   fact. Check data at every handoff, in plain code." Stormwise, 117
   real NWS-alert cases: test alerts taken in as real warnings.)
+  (Progress / Telerik, "Multi-Agent and Multi-Repository
+  Orchestration Patterns", published 2026-09-23, read in full this
+  pass: a useful handoff carries four fields — Scope, Interface
+  requirement, Base ("Records the commit the worktree started from,
+  so a stale plan is detectable instead of silently wrong"), and
+  Evidence. The office's validation already covered scope, contract
+  and evidence; the base was the missing field.)
 - **Name the repos before spawning.** The Cast Check lists every repo
   the mission touches and, per seat, which of them it reads or writes;
   the spawn packet for a seat working outside the office repo names

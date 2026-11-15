@@ -5,6 +5,7 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+- Handoffs of repo work carry and check their base commit: the sender records the base its worktree or branch started from, the receiver compares it with the current base, and a moved base is named and resolved — never silently built on (Progress / Telerik, 2026-09-23) (Director pass 98).
 - Phase 4: the judged seat does not edit the judge — no seat may delete, skip, weaken, or rewrite the tests, fixtures, or criteria judging its own work; stale-test fixes land as separate, independently reviewed changes (Director pass 96).
 ### Added
 - **Handoff bounces are budgeted.** The same handoff may be bounced back for failed validation at most twice, each bounce recorded; a third failed validation escalates to Sloane as a latent failure (re-seat, rewrite the brief, or re-decompose) instead of letting two seats ping-pong (NKKTech, 2026-05-24: swarm handoffs need a "handoff budget per session" to prevent A → B → A → B loops).
