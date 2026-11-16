@@ -330,6 +330,24 @@ Rules:
   so a stale plan is detectable instead of silently wrong"), and
   Evidence. The office's validation already covered scope, contract
   and evidence; the base was the missing field.)
+  **Verify at the earliest boundary, against the source.** The first
+  receiver checks a raw claim against its original source artifact
+  before any seat transforms it; a later receiver traces a derived
+  claim (number → computation → prose → conclusion) back to that
+  source, not just to the immediate predecessor's version — a claim
+  that has been transformed and cannot be traced to its source
+  bounces like any other failed validation. A check deferred to the
+  end of the pipeline is not a substitute: errors transform as they
+  travel and get harder to detect at each stage.
+  (Alex Aslam, "Pipeline agents look efficient until one mistake
+  costs you the whole run", dev.to, published 2026-09-23, read in
+  full this pass — the 2026 ICML hallucination-snowball study it
+  reports: across 346 injected hallucinations in a four-agent
+  pipeline, detection fell from 72% at Stage 1 to 50.9% at Stage 4
+  and 23.7% survived undetected; boundary gates against a source of
+  truth cut hallucination survival from 58.4% to 16.2%, while
+  end-of-pipeline checking alone improved survival by only 2.3
+  points over no verification.)
 - **Name the repos before spawning.** The Cast Check lists every repo
   the mission touches and, per seat, which of them it reads or writes;
   the spawn packet for a seat working outside the office repo names
