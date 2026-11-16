@@ -424,6 +424,20 @@ Rules:
   "Say nothing and the swarm runtime declares the task complete" — a
   run whose writer never ran and which produced no deliverable still
   reported `completed`.)
+- **Status is reported from a fresh check, never from history.** A
+  status remembered from the conversation — a seat was `active`, a
+  step was nearly done, a run was still going — is stale by
+  definition. Before Sloane or Mission Control reports the status
+  of in-flight work (to the owner, another seat, or a mission
+  record), she re-reads the live source first: MISSION.md, the
+  boardroom, or the harness's own task list — and the report names
+  when it was checked. A status that cannot be re-checked is
+  reported as last-known with its check time, never as current.
+  (Gaurav Dadhich, "Async Subagents: What the Orchestrator Keeps
+  in Context", maximem.ai, 2026-11-06, read in full this pass:
+  "statuses in conversation history are stale by definition"; the
+  Deep Agents troubleshooting fix for "supervisor reports stale
+  status" is to call `check` or `list` before reporting.)
 - **Announce intent before acting.** In a `parallel` or `mixed`
   mission, a seat posts a short boardroom note naming the step and the
   files it is about to write *before* starting the work — not after.

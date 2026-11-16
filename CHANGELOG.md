@@ -5,6 +5,7 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+- Status is reported from a fresh check, never from history: before reporting in-flight work, Sloane/Mission Control re-reads MISSION.md, the boardroom, or the harness task list and names when it was checked; an un-recheckable status is reported as last-known with its check time, never as current (Dadhich, maximem.ai, 2026-11-06) (Director pass 108).
 - Synthesis does not average away disagreement: conflicting seat claims at the gavel are shown both with sources, the more recent/authoritative one named with why, and the disagreement recorded as unresolved — conflicting numbers are never averaged into a consensus no seat held (Belgavi, 2026-10-01) (Director pass 103).
 - Handoffs of repo work carry and check their base commit: the sender records the base its worktree or branch started from, the receiver compares it with the current base, and a moved base is named and resolved — never silently built on (Progress / Telerik, 2026-09-23) (Director pass 98).
 - Phase 4: the judged seat does not edit the judge — no seat may delete, skip, weaken, or rewrite the tests, fixtures, or criteria judging its own work; stale-test fixes land as separate, independently reviewed changes (Director pass 96).
