@@ -348,6 +348,26 @@ Rules:
   truth cut hallucination survival from 58.4% to 16.2%, while
   end-of-pipeline checking alone improved survival by only 2.3
   points over no verification.)
+  **Authority is not transferred by a handoff.** A handoff states
+  what to do; it does not by itself expand what the receiver may
+  do. When a handoff asks the receiver to act — especially an
+  outward, costly, or irreversible action — it states its boundary
+  explicitly (may / may not); unstated authority is treated as
+  absent, not assumed, and the receiver escalates rather than
+  resolving the permission from its own judgment. A sender cannot
+  grant authority it does not hold: a handoff never carries the
+  owner's approval, a gate clearance, or a write surface the
+  sender was not itself given (the spawn packet's non-negotiables
+  and M-3 bind every hop, not just the first spawn).
+  (Taskade, "Agent Handoff Explained: How AI Agents Pass Work
+  (2026)", taskade.com, 2026, read in full this pass — a handoff
+  transfers the task, the context, and the authority to act;
+  "silent authority transfer" — the handoff says what to do but
+  not what is permitted, so unstated permissions get resolved by
+  the model's judgment in the moment — is named the failure mode
+  with the largest blast radius, because it is the one that
+  touches the outside world; the fix is to state the boundary
+  explicitly even when it seems obvious.)
 - **Name the repos before spawning.** The Cast Check lists every repo
   the mission touches and, per seat, which of them it reads or writes;
   the spawn packet for a seat working outside the office repo names

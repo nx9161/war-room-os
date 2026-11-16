@@ -5,6 +5,7 @@ Format: Keep a Changelog (https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+- Authority is not transferred by a handoff: a handoff that asks a receiver to act states its may / may-not boundary explicitly; unstated authority is treated as absent, and a sender cannot grant authority it does not hold — a handoff never carries the owner's approval, a gate clearance, or an ungiven write surface (Taskade, "Agent Handoff Explained", 2026) (Director pass 117).
 - Handoffs are verified at the earliest boundary, against the source: the first receiver checks a raw claim against its original source artifact before transformation, and later receivers trace derived claims back to that source — an untraceable transformed claim bounces; end-of-pipeline checking alone is not a substitute (2026 ICML hallucination-snowball study, reported Aslam, dev.to, 2026-09-23) (Director pass 112).
 - Status is reported from a fresh check, never from history: before reporting in-flight work, Sloane/Mission Control re-reads MISSION.md, the boardroom, or the harness task list and names when it was checked; an un-recheckable status is reported as last-known with its check time, never as current (Dadhich, maximem.ai, 2026-11-06) (Director pass 108).
 - Synthesis does not average away disagreement: conflicting seat claims at the gavel are shown both with sources, the more recent/authoritative one named with why, and the disagreement recorded as unresolved — conflicting numbers are never averaged into a consensus no seat held (Belgavi, 2026-10-01) (Director pass 103).
