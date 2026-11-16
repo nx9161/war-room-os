@@ -648,6 +648,13 @@ Chief runs it:
 - Conceding when convinced is recorded as a win for the room.
 - Blocking seats argue their block with evidence; the Chief can only
   overrule a block with the owner's written risk acceptance.
+- **Synthesis does not average away disagreement.** When seats'
+  claims still conflict at the gavel, the synthesis and the ADR show
+  both claims with their sources, say which is more recent or more
+  authoritative and why, and name the disagreement as unresolved —
+  conflicting numbers are never averaged into a plausible consensus
+  no seat actually held. (Belgavi, "Multi-Agent Orchestration, in
+  depth", 2026-10-01.)
 
 **Tabletop mode (no subagents):** the agent writes the debate as a live
 dialogue in its response — seats answering each other by name, with
