@@ -18,6 +18,10 @@ Checks:
   7. Every staff charter carrying a `## Deliverable schema` section has
      all four fields (Deliverable, Format, Required sections,
      Acceptance); pilot coverage is reported, not enforced.
+  8. Anti-bloat budgets (HOUSE_RULES §12): live learnings files
+     (office/learnings/*.md, PROTOCOL.md exempt) stay at or under
+     150 lines, the War Room playbook at or under 1,000 lines, and
+     no file in the repo exceeds 1 MB.
 """
 import sys
 from pathlib import Path
@@ -169,6 +173,40 @@ for staff in sorted((ROOT / "office/staff").glob("*.md")):
                 f"in {staff.relative_to(ROOT)}"
             )
 print(f"deliverable schemas: {schema_covered}/45 charters (pilot)")
+
+LEARNINGS_CAP = 150
+PLAYBOOK_CAP = 1000
+FILE_SIZE_CAP = 1_000_000
+for lf in sorted((ROOT / "office/learnings").glob("*.md")):
+    if lf.name == "PROTOCOL.md":
+        continue
+    n = len(lf.read_text(encoding="utf-8").splitlines())
+    if n > LEARNINGS_CAP:
+        errors.append(
+            f"anti-bloat: learnings file over {LEARNINGS_CAP} lines "
+            f"({n}): {lf.relative_to(ROOT)}"
+        )
+playbook_lines = len(
+    (ROOT / "office/playbooks/war-room.md")
+    .read_text(encoding="utf-8")
+    .splitlines()
+)
+if playbook_lines > PLAYBOOK_CAP:
+    errors.append(
+        f"anti-bloat: playbook over {PLAYBOOK_CAP} lines "
+        f"({playbook_lines}): office/playbooks/war-room.md"
+    )
+for f in sorted(ROOT.rglob("*")):
+    if ".git" in f.parts or not f.is_file():
+        continue
+    if f.stat().st_size > FILE_SIZE_CAP:
+        errors.append(
+            f"anti-bloat: file over 1 MB: {f.relative_to(ROOT)}"
+        )
+print(
+    f"anti-bloat budgets: playbook {playbook_lines}/{PLAYBOOK_CAP} "
+    f"lines, learnings cap {LEARNINGS_CAP}, file cap 1 MB"
+)
 
 if errors:
     print("validate_repo.py FAILED:")

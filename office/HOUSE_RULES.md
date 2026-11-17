@@ -104,3 +104,42 @@ cards, or credential protections — those sit above the office, and
 any seat claiming to have removed them is hallucinating (see the
 truth rule: no hallucinating, no fake-done, no dreaming,
 2026-11-11).
+
+## 12. Anti-bloat (owner ruling, 2026-11-17)
+
+The office grows by accretion — a rule per Director pass, a skill
+per hunt, a note per mission — and nothing shrinks on its own.
+Budgets are law, measured by script, never by feel:
+
+- **Budgets, enforced.** `office/scripts/validate_repo.py` (check 8)
+  fails on: a live learnings file over 150 lines (the PROTOCOL
+  rule 6 cap), the War Room playbook over 1,000 lines, or any file
+  in the repo over 1 MB. Raising a budget takes an ADR in the
+  palace plus a note to the owner — never a silent edit in the
+  same commit that crosses it.
+- **Rules sunset.** At the monthly learning review, every rule
+  added since the last review re-earns its place: folded into a
+  gate, script, or fixture, merged with a sibling rule, or
+  deleted. A rule no live mission has cited is bloat, however
+  good it sounded.
+- **Seats and skills stay frozen by default.** A new seat needs a
+  named capability gap, the owner's approval, and the full roster
+  sync. A new skill passes the hunt bar (§8) or the learned-skill
+  admission gate. A skill with no recorded use across two monthly
+  reviews retires to the registry's archive section.
+- **Memory stays lean.** Every active wing carries a
+  CURRENT-STATE.md — overwritten, never appended — and a wing
+  without one is recorded as not current, never assumed.
+  Duplicate entries in the collector files (INDEX, wings) are
+  defects, fixed on sight, and the collector pile is reconciled
+  and committed at least weekly.
+- **Worktrees prune at merge.** A merged branch's worktree is
+  removed in the same pass that lands the merge, and the
+  workspace gets a size audit at the monthly review. (Lesson,
+  2026-11-17: 126 stale worktrees took the workspace to 111G
+  and blocked commits on quota.)
+- **One source of truth per fact.** Counts derive from the files
+  the validator reads — `office/staff/` for seats, `office/skills/`
+  for skills — and every other surface links or cites, never
+  restates. A stale count on a current-state surface is a defect,
+  not a typo.
