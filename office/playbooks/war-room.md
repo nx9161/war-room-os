@@ -478,6 +478,17 @@ Rules:
   if the loss is unexplained) and re-run, never carried forward as
   done from the file alone. (M-2: state is verified at the
   destination, never inherited from a record.)
+- **Audit inherited work before building on it.** Existence is not
+  integrity: when a seat takes over another seat's or session's
+  in-progress work, it checks the inherited diff against the original
+  spec and the unmodified tests for shortcuts — edited tests,
+  special-cased inputs, stubbed dependencies — before continuing.
+  Viewing the diff alone is not the check (it catches test edits,
+  not special-casing); a shortcut found demotes the step to `active`
+  and is recorded, never silently kept. (Collaborative Intelligence
+  Benchmark, Stanford/Oxford, via Chen 2026-11-17: takeover success
+  81% vs 97% from scratch; in 44 of 56 failed coding takeovers the
+  predecessor's cheat survived into the final code.)
 - **Check the world, not just the checkpoint, on resume.** Artifacts
   existing proves the checkpoint survived; it does not prove the world
   stood still while the mission was paused. On resume, the agent
