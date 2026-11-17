@@ -76,6 +76,17 @@ arriving late under a name the parent was not tracking; the fix that
 held was a first-line dispatch rule — do this yourself, do not
 delegate — plus rejecting "launched" as a result.)
 
+A read-only or research-only spawn may use a light packet: the
+self-contained brief, the non-negotiables below, and pointers to the
+shared decision/spec files it must read — not the full skill,
+learnings, board, and decision-log load. A light packet authorizes
+no writes and no blocking verdict; if the scope grows to either,
+the seat is re-spawned with a full packet first. (Reddit practitioner
+thread summarized in BaitBuzz, "Subagents: Great Idea, Terrible
+Group Project", 2026-11-15, read in full this pass — shared context
+belongs in repo files every agent reads, and research-only agents
+stay light by omitting the common context file.)
+
 Every packet also restates the standing non-negotiables in the packet
 itself — a spawned seat does not inherit the coordinator's context, so
 a rule that lives only in the main session does not bind it: no
