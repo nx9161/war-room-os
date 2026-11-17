@@ -382,6 +382,22 @@ Rules:
   memory compressors removed it entirely; carrying provenance
   as structured state attached to the claim is the prescribed
   fix.)
+  **Handoff chains stay short and return to the coordinator.**
+  Work passes seat-to-seat at most twice in sequence; a third
+  sequential hop routes back through Sloane (or Mission Control),
+  who re-checks it against the original brief and its source
+  before it goes onward. Each hop is a place a requirement can
+  drop, a constraint can be rewritten, or a fact can invert, and
+  the losses compound with chain length — a long chain is
+  shortened or re-decomposed, never just validated harder at
+  the end.
+  (Liu et al., "DynaFlow: Learning Free-Form Multi-Agent
+  Orchestration", arXiv:2610.34467, 2026-10 — with sub-agents
+  fixed, structured explicit information exchange and
+  verification raised six-benchmark accuracy from 77.18% to
+  88.08%; Washington, aihomebuilding.com, 2026-10-31 —
+  practitioner checklist: set a maximum hop count and make
+  it small, and verify where the compounding ends.)
 - **Name the repos before spawning.** The Cast Check lists every repo
   the mission touches and, per seat, which of them it reads or writes;
   the spawn packet for a seat working outside the office repo names
