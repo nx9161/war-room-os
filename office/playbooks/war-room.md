@@ -368,6 +368,20 @@ Rules:
   with the largest blast radius, because it is the one that
   touches the outside world; the fix is to state the boundary
   explicitly even when it seems obvious.)
+  **Verification status travels with the claim.** Every claim a
+  handoff, summary, or memory entry carries keeps its verification
+  status as a field attached to the claim — `verified` (with how
+  and when) or `unverified` — through every summarization,
+  compression, and re-handoff. A claim whose status was dropped
+  in transit is read as `unverified`, never as verified by
+  silence: the receiver re-verifies it before building on it or
+  using it for an approval.
+  (Yibo Hu, "Silence Is Endorsement: Verification-Status
+  Laundering in LLM Agent Pipelines", arXiv:2609.20211, submitted
+  2026-07-25 — summarizers weakened verification status and
+  memory compressors removed it entirely; carrying provenance
+  as structured state attached to the claim is the prescribed
+  fix.)
 - **Name the repos before spawning.** The Cast Check lists every repo
   the mission touches and, per seat, which of them it reads or writes;
   the spawn packet for a seat working outside the office repo names
