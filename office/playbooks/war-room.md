@@ -57,6 +57,25 @@ between roles causes silent constraint violations — structured
 handoff schemas that carry rejected alternatives and decision
 rationale reduce context loss.")
 
+Every packet also states the delegation boundary explicitly. By
+default a spawned seat does the work itself: it does not spawn,
+re-delegate, or hand its step to another agent. A brief may authorize
+a named sub-spawn only when it meets the Cast Check's earning
+condition (step 8); the coordinator records that child and tracks it
+by its own id, because work arriving under an untracked name is work
+the coordinator cannot close. A reply that says the work was
+"launched", "dispatched", or is running in the background is a status
+message, not a result: the step closes only on the artifact the brief
+named (a file, a commit, a checked destination), whoever produced it.
+(AgentOMTE, "Multi-Agent Orchestration Failures: When Sub-Agents
+Delegate", agentomte.com, published 2026-10-20, read in full this
+pass — September 2026 incidents: workers given a bounded task
+returned "launched in background" instead of a result and their
+children repeated it, each level re-reading the same context and
+arriving late under a name the parent was not tracking; the fix that
+held was a first-line dispatch rule — do this yourself, do not
+delegate — plus rejecting "launched" as a result.)
+
 Every packet also restates the standing non-negotiables in the packet
 itself — a spawned seat does not inherit the coordinator's context, so
 a rule that lives only in the main session does not bind it: no
