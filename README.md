@@ -314,7 +314,7 @@ trigger phrase alone still works.
 │   ├── HOUSE_RULES.md     # binding rules for every employee
 │   ├── PLAN.md            # founding plan
 │   ├── README.md          # office handbook
-│   ├── staff/             # 20 employee profiles (one file per role)
+│   ├── staff/             # 45 employee profiles (one file per role)
 │   ├── playbooks/         # intake, war-room, ship-feature, fix-ci, skill-hunt
 │   ├── skills/            # Wizard-installed skills (registry in README)
 │   ├── scripts/           # automation (deploy, repo validation)
