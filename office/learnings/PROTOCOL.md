@@ -109,5 +109,24 @@ Every agent gets better constantly. Not as a slogan — as a mechanism:
    that was rejected goes down and is flagged for re-review;
    without it the store accumulates dead rules.)
 
+10. **A resolved link is not a matching meaning: sample-check
+   distilled entries against their source.** Rules 5–9 check
+   that entries are superseded, folded, verified, or flagged —
+   all structural checks. None proves a paraphrased entry still
+   says what its source record said: repeated revision can
+   compound a paraphrase error while every pointer still
+   resolves. So at the monthly review, Sloane re-reads a small
+   sample of still-live and newly folded entries against the
+   mission record each cites; an entry whose wording has
+   drifted from its source is corrected at the source's
+   wording or outcome-flagged (rule 9), never left green on
+   link-resolution alone. (Fu, Qi et al., "Can LLM Agents
+   Organize Their Own Memory?", arXiv:2611.11929, 2026-11-09;
+   review 2026-11-12: SoMem's runtime "guarantees structure
+   and provenance, not that a summary still says what its
+   source said" — semantic drift is its named unguarded
+   failure, and removing the raw Source layer cost the most
+   in its ablations, −8.64 points.)
+
 The file is the memory; judgment at write time and the monthly
 review are the evolution.
