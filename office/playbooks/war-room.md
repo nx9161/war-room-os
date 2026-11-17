@@ -906,6 +906,15 @@ self-applied change, and it binds the Director's loop explicitly:
    AI Harness Tuner, Show HN 2026-11-13 — train/val/test enforced in
    code, test never read, "so the number you report is one it never
    optimized against.")
+6. **New gates start in observe mode.** A new blocking gate, check,
+   or validator rule runs observe-only first — it logs what it would
+   have blocked, without blocking — until its false positives have
+   been reviewed; only then does it move to enforce. A gate that
+   debuts in enforce mode is itself a defect. (Evidence: Anthropic,
+   "How the Claude Code team thinks about verification", 2026-11-16;
+   HN 50529612 — their commit gate ships off / observe / enforce,
+   observe logging would-be blocks so false positives are reviewed
+   before anyone is impacted.)
 
 Source: Director research pass 1 (2026-11-11) — Anthropic,
 *Demystifying evals for AI agents* (2026-01-09); The AI Runtime,
