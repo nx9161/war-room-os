@@ -685,6 +685,21 @@ Engineer, Penetration Tester, and General Counsel (in parallel):
 - Lead Code Reviewer reviews every PR before merge (Ponytail ladder:
   delete-list for over-engineering) and blocks on critical defects,
   security findings, or license/IP risk.
+- **Name the existing thing reused, or why none fits.** Every
+  agent-written PR or merge record carries one line naming the
+  existing helper, component, or pattern it reused — or stating why
+  none fits. Lead Code Reviewer checks that line against the
+  codebase; a change that adds a new way to do something the
+  codebase already does, without that justification, is blocked as
+  duplication — plausible and working is exactly what duplication
+  looks like, and a reviewer who cannot explain what a merged
+  change calls that already existed has not reviewed it. (Rembiq,
+  "A Year After the 100% AI Mandate, Nobody Understands Our Code",
+  Medium, 2026-11-13, read in full — reporting the r/ClaudeCode
+  post by u/gato5fication, 2026-11-07: an agent-written codebase
+  tripled while agents re-implemented helpers that already existed
+  because no step rewarded finding the existing thing; the piece's
+  fix is this required line, checked by a human reviewer.)
 - **Objective verification (WR-OBJECTIVE):** before Sloane authorizes
   the release, she re-reads the mission's stated objective — the Goal
   line in `MISSION.md`, taken from the perfected prompt — and verifies
