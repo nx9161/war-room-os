@@ -401,6 +401,35 @@ Rules:
   memory compressors removed it entirely; carrying provenance
   as structured state attached to the claim is the prescribed
   fix.)
+  **Boundary markers travel as a typed field, not as prose.** A
+  fact that carries an audience or use restriction — who may see
+  it, what it may be used for, "not for the report", "for this
+  seat only" — carries that restriction as an explicit, separate
+  field through every handoff, summary, and memory entry, stated
+  as an explicit constraint, never as a vague hedge ("use
+  discretion") and never only as a phrase buried in the prose
+  around the fact. Compression preferentially keeps the fact and
+  drops the marker, so a fact whose marker was dropped or
+  corrupted in transit is treated as restricted, not as
+  unconstrained: the receiver checks the source for the marker
+  before using or passing the fact to a wider audience, and a
+  marker that cannot be recovered keeps the fact at its
+  narrowest known audience. The field's correctness is the
+  protection, not its mere presence — a wrong allowlist protects
+  nothing.
+  (Wang, Goyal, Chandrasekharan & Sundaram, "Facts Without
+  Rules: Boundary Metadata Collapse in Multi-Agent LLM
+  Handoffs", arXiv:2608.29028, 2026-08-09, read in full this
+  pass — under a 25-word budget boundary-marker survival fell
+  to σb ≈ 0.57 while operational-fact survival stayed near
+  ceiling, and the two were nearly uncorrelated; vague markers
+  leaked in 73% / 50% of GPT / DeepSeek cases while explicit
+  constraints reduced leakage to under 15% on all three models
+  tested; a gold-derived typed audience allowlist suppressed
+  leakage to 0/48 on both primary models, while a corrupted
+  allowlist restored it to 44/48 — so the paper prescribes
+  boundary information as typed, machine-actionable constraints,
+  not natural-language sentiment.)
   **Handoff chains stay short and return to the coordinator.**
   Work passes seat-to-seat at most twice in sequence; a third
   sequential hop routes back through Sloane (or Mission Control),
