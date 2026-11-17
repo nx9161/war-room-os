@@ -500,7 +500,16 @@ Rules:
   never left running idle. (ripXG, "Coordinating AI agent teams",
   2026-02-08: the coordinator "checks in after 30 minutes if there's
   no update"; Wasim, "I Had a Perfect Sprint Board", 2026-11-12,
-  rule 7: "Stop idle agents".)
+  rule 7: "Stop idle agents".) Progress counts only as artifact
+  movement — a step artifact created or changed, a test or check
+  result, or a decision recorded in the mission record. Tool calls,
+  retries, and status updates alone are activity, not progress: a
+  seat active through two check-in intervals with no artifact
+  movement is stalled on the same terms, however busy it looks.
+  (Mittal et al., "Babysitting AI Agents", arXiv:2610.34748,
+  2026-10-26 — 163,487 Reddit posts coded into 6,623 delegation
+  failures; running without meaningful progress was the single most
+  reported category, 1,017 instances.)
 - **Silence is never completion.** A seat ending its turn, making no
   handoff, or going quiet does not complete its step — and a harness
   or runtime status of "completed" earned that way is unverified, not
