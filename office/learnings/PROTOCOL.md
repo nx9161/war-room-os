@@ -8,6 +8,19 @@ Every agent gets better constantly. Not as a slogan — as a mechanism:
    - What worked
    - What failed
    - What changes next time
+   - Source record: the path of the mission record the entry was
+     distilled from (MISSION.md, boardroom note, or wing entry).
+     A lesson stored without the run it came from cannot be
+     checked, and unchecked lessons cause memory-induced
+     degradation — agents fail tasks they would solve without
+     memory by following a wrong or misapplied one (Lee et al.,
+     "Don't Just Trust Your Memory", arXiv:2611.14320,
+     2026-11-10: 52% of such failures traced to a followed memory
+     item; evidence-linked lessons cut regression 6.5% → 4.5%).
+     So a reader who finds an entry vague, conflicting with
+     another entry, or drawn from a failed mission reads the
+     source record before relying on it — the descent rule
+     rule 10's sample-check presupposes.
 
    Subject to the write-time judgment in rule 7: log what earns its
    place, not everything that happened.
