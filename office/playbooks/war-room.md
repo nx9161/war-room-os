@@ -585,6 +585,17 @@ Rules:
   "statuses in conversation history are stale by definition"; the
   Deep Agents troubleshooting fix for "supervisor reports stale
   status" is to call `check` or `list` before reporting.)
+- **A failed recurring run shows as failed, never as fresh data.**
+  A scheduled or recurring job's output (dashboard, report, digest)
+  carries the time of its last successful run; when a run fails, the
+  failure is surfaced where the output is read — stale output is
+  labelled with its date, never presented as current, and a page
+  that merely loads is not evidence the job ran. (Bluhook, "AI
+  agents Reddit: 5 problems we hit and the fixes", 2026-11-07,
+  read in full this pass: a daily dashboard job failed every run
+  Oct 12 – Nov 4 while the page kept showing Oct 10 numbers, the
+  error in a log nobody read; their fix — a failed run shows as
+  failed.)
 - **Announce intent before acting.** In a `parallel` or `mixed`
   mission, a seat posts a short boardroom note naming the step and the
   files it is about to write *before* starting the work — not after.
