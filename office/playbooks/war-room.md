@@ -256,7 +256,12 @@ check into the mission's MISSION.md (see below):
    a tool/instruction conflict (including permission isolation)
    the spawning loop cannot carry. A spawn meeting none of the
    three is not spawned: the work stays in the spawning loop, with
-   the needed skill loaded on demand (Anthropic Applied AI,
+   the needed skill loaded on demand. Search or retrieval fan-out
+   alone meets none of the three: over 288 pre-registered runs,
+   instructing sub-agents for code search left recall unchanged
+   (97–99% vs 98–100%) and raised cost 74–221% (yunany90, Qiita,
+   2026-11-07; medium repos at near-ceiling recall — the claim is
+   cost, not quality). (Anthropic Applied AI,
    "When to fold subagents into your main agent loop", 2026-10-22:
    across several enterprise deployments a single agent with
    skills frequently outperformed subagent designs on quality, at
