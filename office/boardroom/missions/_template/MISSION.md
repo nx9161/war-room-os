@@ -7,6 +7,7 @@
 - shape: parallel | sequential | mixed
 - budget: <seats> × <max actions each>
 - Dependencies: <each step — the prior steps whose outputs it needs; mixed: the parallel groups in sequence order>
+- Reconciliation (parallel/mixed): <owner seat who checks the combined result at each join — branch outputs that must arrive; a missing output makes the join incomplete, not a pass>
 - Seated: <seat slugs>
 - Skipped (with reason): <seat — reason>
 - Write surface (parallel/mixed only): <seat — files/modules/tables it writes; shared surfaces run sequentially>

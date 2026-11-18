@@ -202,6 +202,16 @@ check into the mission's MISSION.md (see below):
    topology from the task dependency graph beat static
    single-topology baselines by 12–23% on SWE-bench, GPQA, and
    RAG tasks with identical models).
+   **Name the reconciliation owner before parallel branches start.**
+   A `parallel`/`mixed` mission names, in the Cast Check result, the
+   one seat who checks the combined result at each join — against the
+   shared inputs, not by vote — and the branch outputs that must
+   arrive. A missing branch output makes the join incomplete, not a
+   pass; branches that answered different questions are reconciled by
+   that owner, not averaged. (Paperclip, "AI Agent Orchestration
+   Patterns", 2026-11-09, read in full: parallel work runs from the
+   same inputs and names "a named reconciliation owner who checks the
+   combined result" before the branches start.)
 5. **Map the write surface before parallel work.** When `shape` is
    `parallel` or `mixed`, list for each seated writer the files,
    modules, or tables it will write — not just its feature. Two
