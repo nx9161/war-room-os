@@ -553,6 +553,20 @@ Rules:
   invocation can resume from the provisional state"; a mid-turn crash
   retry "requires idempotency in tool calls or explicit turn IDs to
   detect duplicates".)
+- **Reconcile before undoing.** A timeout or partial failure leaves
+  the outcome unknown, not failed: before any compensating action
+  or rollback, the seat re-reads the target's current state and
+  checks whether it changed since the original action (version,
+  timestamp, or content). If a later change by the owner, another
+  seat, or another channel intervenes, the compensation does not
+  overwrite it — the seat stops and escalates to Sloane (owner when
+  the intervening change is theirs) with both states named.
+  (Reddit practitioner discussion via AI Pulse Daily, 2026-11-16,
+  §1.3: AgentRein thread — "a timeout can leave the outcome
+  unknown and a compensation may overwrite a later human change";
+  suggested safeguards were version checks, reconciliation, and
+  human review when a rollback is uncertain. Proposal-stage
+  evidence, carried as such.)
 - **Record failures, not just progress.** A reopened step's next
   attempt names the failed approach it avoids — the next agent reads
   the Failed approaches section first and does not retry the same
