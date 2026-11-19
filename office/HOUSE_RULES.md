@@ -36,6 +36,14 @@ These rules bind every employee. The Office Manager enforces them.
 - Decisions go in `office/log/decisions.md` (date, context, decision, owner).
 - Each task run gets a journal entry in `office/log/runs/`.
 - Tasks are tracked as GitHub Issues; the board is the source of truth.
+- Absence is reported as checked, never concluded from one bounded
+  method: a seat writes "not found with X" (the search, API, or listing
+  it used), not "does not exist"; a decision that turns on the absence
+  first gets a second, differently-bounded check. (Nova, "Running a
+  Team of AI Sub-Agents: What Breaks", DEV, published 2026-07-11,
+  updated 2026-11-02, read in full in Director pass 178: a bug-hunter
+  reported a live file missing because its search skipped the hidden
+  directory holding it.)
 
 ## 6. Escalation
 Anything ambiguous, costly, irreversible, or security-related goes to the
