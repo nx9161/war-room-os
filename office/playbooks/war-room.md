@@ -602,6 +602,7 @@ Rules:
   2026-10-26 — 163,487 Reddit posts coded into 6,623 delegation
   failures; running without meaningful progress was the single most
   reported category, 1,017 instances.)
+- **Repetition is a loop, not persistence.** The same tool call with the same arguments three times in a row stops the step: the seat reports what it tried and hands the step back rather than firing a fourth identical call. Retries are per failure type — a timeout may retry, a permission error does not. (AI PM Interviews, "An Agent That Loops and Overspends", 2026-10-24, updated 2026-11-13: repeated-action detection — same tool + same arguments three times stops the run; retry limits per failure type.)
 - **Silence is never completion.** A seat ending its turn, making no
   handoff, or going quiet does not complete its step — and a harness
   or runtime status of "completed" earned that way is unverified, not
