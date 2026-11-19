@@ -57,6 +57,18 @@ between roles causes silent constraint violations — structured
 handoff schemas that carry rejected alternatives and decision
 rationale reduce context loss.")
 
+Every brief also marks its epistemic state: settled decisions are
+stated as settled, verified facts are stated plain, and a suspected
+fact is labelled suspected with the trace the seat must run to
+settle it. An uncertainty that would change the work is a named
+stop-and-report point — the seat stops and reports instead of
+proceeding on a guess, because a busy worker cannot be reached
+with a late answer. (Christopher Weir, "Coordinating coding
+agents in a large codebase", christopher-weir.com, Nov 2026,
+read in full this pass — ~90 worker sessions, 60+ merged PRs in
+five weeks: a worker waited ~10 minutes on a blocking question,
+then proceeded on its own and finished before the answer arrived.)
+
 Every packet also states the delegation boundary explicitly. By
 default a spawned seat does the work itself: it does not spawn,
 re-delegate, or hand its step to another agent. A brief may authorize
